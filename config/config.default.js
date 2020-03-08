@@ -27,7 +27,7 @@ module.exports = appInfo => {
   };
 
   // add your middleware config here
-  config.middleware = [];
+  config.middleware = ["csrfAuth"];
   
   config.api = "mongodb://admin:admin123@59.110.162.236:27017:27017/test?authSource=admin";
 

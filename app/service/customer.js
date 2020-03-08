@@ -8,7 +8,7 @@ const sendToWormhole = require('stream-wormhole');
 const Service = require('egg').Service;
 class CustomerService extends Service {
   // 用户注册
-  async add() {
+  async doAdd() {
     const { ctx,} = this;
     const data = this.ctx.request.body;
     const query = await this.ctx.model.Customer.find({

@@ -4,9 +4,13 @@ const Controller = require('egg').Controller;
 
 class CustomerController extends Controller {
 
+  async add() {
+    this.ctx.body = this.ctx.csrf;
+  }
+
   // 注册
-  async add(){
-    this.ctx.body = await this.ctx.service.customer.add();
+  async doAdd() {
+    this.ctx.body = await this.ctx.service.customer.doAdd();
   }
 
   async login() {

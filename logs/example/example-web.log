@@ -1,0 +1,90 @@
+2020-03-08 15:16:18,284 WARN 12156 [-/127.0.0.1/-/42ms POST /customer/add] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-03-08 15:16:18,288 WARN 12156 [-/127.0.0.1/-/46ms POST /customer/add] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\app\extend\context.js:162:19)
+    at csrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-bodyparser\index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "invalid csrf token"
+pid: 12156
+hostname: FS
+
+2020-03-08 15:45:01,445 WARN 12156 [-/127.0.0.1/-/7ms POST /customer/add] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-03-08 15:45:01,451 WARN 12156 [-/127.0.0.1/-/13ms POST /customer/add] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\app\extend\context.js:162:19)
+    at csrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-bodyparser\index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "invalid csrf token"
+pid: 12156
+hostname: FS
+
+2020-03-08 15:45:13,198 WARN 12156 [-/127.0.0.1/-/1ms POST /customer/add] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-03-08 15:45:13,199 WARN 12156 [-/127.0.0.1/-/2ms POST /customer/add] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\app\extend\context.js:162:19)
+    at csrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-bodyparser\index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "invalid csrf token"
+pid: 12156
+hostname: FS
+
+2020-03-08 16:09:18,327 WARN 22668 [-/127.0.0.1/-/42ms POST /customer/add] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-03-08 16:09:18,330 WARN 22668 [-/127.0.0.1/-/45ms POST /customer/add] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\app\extend\context.js:162:19)
+    at csrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-bodyparser\index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "invalid csrf token"
+pid: 22668
+hostname: FS
+
+2020-03-08 16:20:15,138 WARN 20308 [-/127.0.0.1/-/1ms POST /shoppingbar/doAdd] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-03-08 16:20:15,143 WARN 20308 [-/127.0.0.1/-/5ms POST /shoppingbar/doAdd] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\app\extend\context.js:162:19)
+    at csrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-bodyparser\index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "invalid csrf token"
+pid: 20308
+hostname: FS
+

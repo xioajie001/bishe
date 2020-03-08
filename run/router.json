@@ -15,11 +15,24 @@
   {
     "name": null,
     "methods": [
-      "POST"
+      "HEAD",
+      "GET"
     ],
     "paramNames": [],
     "path": "/customer/add",
     "regexp": "/^\\/customer\\/add(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/customer/doAdd",
+    "regexp": "/^\\/customer\\/doAdd(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

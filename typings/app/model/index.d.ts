@@ -12,6 +12,7 @@ import ExportCourse = require('../../../app/model/course');
 import ExportCustomer = require('../../../app/model/customer');
 import ExportDistributeOrder = require('../../../app/model/distributeOrder');
 import ExportFocus = require('../../../app/model/focus');
+import ExportItem = require('../../../app/model/item');
 import ExportItemjudge = require('../../../app/model/itemjudge');
 import ExportItemStateOnline = require('../../../app/model/itemStateOnline');
 import ExportOperatorJudge = require('../../../app/model/operatorJudge');
@@ -34,6 +35,7 @@ declare module 'egg' {
     Customer: ReturnType<typeof ExportCustomer>;
     DistributeOrder: ReturnType<typeof ExportDistributeOrder>;
     Focus: ReturnType<typeof ExportFocus>;
+    Item: ReturnType<typeof ExportItem>;
     Itemjudge: ReturnType<typeof ExportItemjudge>;
     ItemStateOnline: ReturnType<typeof ExportItemStateOnline>;
     OperatorJudge: ReturnType<typeof ExportOperatorJudge>;

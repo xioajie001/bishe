@@ -3,10 +3,26 @@
 const pump = require('mz-modules/pump');
 const path = require('path');
 const fs = require('fs');
+const sillyTime = require("silly-datetime")
 const sendToWormhole = require('stream-wormhole');
 
 const Service = require('egg').Service;
 class CustomerService extends Service {
+
+  //获取个人详情页面
+  async personal(){
+    const{ ctx } = this;
+    if(ctx.session.customerId){
+      const customerId = ctx.session.customerId;
+      const data = await ctx.model.Customer.findOne({customerId});
+      // data.csrf = ctx.csrf;
+      console.log(data);
+      return data;
+    }else{
+      return {status : 0, msg : "请登录"};
+    }  
+  }
+
   // 用户注册
   async doAdd() {
     const { ctx,} = this;
@@ -18,9 +34,13 @@ class CustomerService extends Service {
     if( query.length > 0 ){
       return {status : 0, msg : "该账号已存在，请重新输入账号"};
     }else if(data.password == data.password1){
+      //生成客户ID
       const cnum = await ctx .model.Customer.count();
       const customerId =( "000000" + (cnum +1)).slice(-6);
       data.customerId = customerId;
+      //添加注册时间
+      const time = sillyTime.format(new Date(), "YYYY-MM-DD HH:mm:ss");
+      data.customerRegistrationDate = time;
     }else{
       return {status : 0, msg : "密码1和密码1不一样，请确认后输入"};
     }
@@ -51,7 +71,7 @@ class CustomerService extends Service {
   }
 
   //客户信息修改
-  async edit(){
+  async doEdit(){
     if(this.ctx.session.customerId){
       const data = this.ctx.request.body;
       try{
@@ -95,6 +115,8 @@ class CustomerService extends Service {
       return {status : 0, msg : "请登录"};
     } 
   }
+
+  
 
 }
 module.exports = CustomerService;

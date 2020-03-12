@@ -167,7 +167,7 @@
       "app": true,
       "agent": false,
       "client": {
-        "url": "mongodb://admin:admin123@59.110.162.236:27017:27017/zxjtest?authSource=admin",
+        "url": "mongodb://admin:admin123@59.110.162.236:27017:27017/FW?authSource=admin",
         "options": {
           "useNewUrlParser": true
         }
@@ -333,7 +333,9 @@
     },
     "onClientError": null,
     "uploadDir": "app/public/admin/upload/customer",
-    "middleware": [],
+    "middleware": [
+      "csrfAuth"
+    ],
     "api": "mongodb://admin:admin123@59.110.162.236:27017:27017/test?authSource=admin",
     "coreMiddlewares": "~config~coreMiddleware",
     "appMiddlewares": "~config~middleware",

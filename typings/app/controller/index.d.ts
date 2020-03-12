@@ -7,6 +7,7 @@ import ExportCourse = require('../../../app/controller/course');
 import ExportCustomer = require('../../../app/controller/customer');
 import ExportFocus = require('../../../app/controller/focus');
 import ExportHome = require('../../../app/controller/home');
+import ExportItem = require('../../../app/controller/item');
 import ExportOrder = require('../../../app/controller/order');
 import ExportShoppingBar = require('../../../app/controller/shoppingBar');
 
@@ -17,6 +18,7 @@ declare module 'egg' {
     customer: ExportCustomer;
     focus: ExportFocus;
     home: ExportHome;
+    item: ExportItem;
     order: ExportOrder;
     shoppingBar: ExportShoppingBar;
   }

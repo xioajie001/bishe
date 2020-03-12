@@ -88,3 +88,130 @@ message: "invalid csrf token"
 pid: 20308
 hostname: FS
 
+2020-03-10 14:18:35,639 WARN 12608 [-/127.0.0.1/-/8ms POST /customer/edit] missing csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-03-10 14:18:35,643 WARN 12608 [-/127.0.0.1/-/12ms POST /customer/edit] nodejs.ForbiddenError: missing csrf token
+    at Object.throw (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\app\extend\context.js:153:19)
+    at csrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-bodyparser\index.js:86:11)
+message: "missing csrf token"
+pid: 12608
+hostname: FS
+
+2020-03-10 14:18:56,334 WARN 12608 [-/127.0.0.1/-/4ms POST /customer/doEdit] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-03-10 14:18:56,335 WARN 12608 [-/127.0.0.1/-/5ms POST /customer/doEdit] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\app\extend\context.js:162:19)
+    at csrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-bodyparser\index.js:86:11)
+message: "invalid csrf token"
+pid: 12608
+hostname: FS
+
+2020-03-10 14:52:55,999 ERROR 9744 [-/127.0.0.1/-/93ms GET /customer/personal] nodejs.ReferenceError: data is not defined
+    at CustomerService.personal (C:\Users\FS\Desktop\egg\bs\bishe\app\service\customer.js:104:12)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 9744
+hostname: FS
+
+2020-03-11 15:47:51,022 WARN 24164 [-/127.0.0.1/-/44ms POST /customer/add] missing csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-03-11 15:47:51,026 WARN 24164 [-/127.0.0.1/-/47ms POST /customer/add] nodejs.ForbiddenError: missing csrf token
+    at Object.throw (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\app\extend\context.js:153:19)
+    at csrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-bodyparser\index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "missing csrf token"
+pid: 24164
+hostname: FS
+
+2020-03-11 15:49:14,006 WARN 24164 [-/127.0.0.1/-/3ms POST /customer/doAdd?_csrf=hUVFQIhe-Lg7XNaU-zojLSghXIy2twxZZjoE] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-03-11 15:49:14,007 WARN 24164 [-/127.0.0.1/-/4ms POST /customer/doAdd?_csrf=hUVFQIhe-Lg7XNaU-zojLSghXIy2twxZZjoE] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\app\extend\context.js:162:19)
+    at csrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-bodyparser\index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "invalid csrf token"
+pid: 24164
+hostname: FS
+
+2020-03-11 15:52:43,321 ERROR 24164 [-/127.0.0.1/-/55ms POST /customer/doAdd?_csrf=knJ6ut5i-JfKn3vBV41IUe1jkttCRWisbrik] nodejs.ReferenceError: Data is not defined
+    at CustomerService.doAdd (C:\Users\FS\Desktop\egg\bs\bishe\app\service\customer.js:42:41)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 24164
+hostname: FS
+
+2020-03-11 15:53:05,729 ERROR 24164 [-/127.0.0.1/-/53ms POST /customer/doAdd?_csrf=QAz94ZIO-oKg5h_kcFMLQZQTfML-Kac3B5HA] nodejs.ReferenceError: Data is not defined
+    at CustomerService.doAdd (C:\Users\FS\Desktop\egg\bs\bishe\app\service\customer.js:42:41)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 24164
+hostname: FS
+
+2020-03-11 15:53:47,859 ERROR 13272 [-/127.0.0.1/-/116ms POST /customer/doAdd?_csrf=QAz94ZIO-oKg5h_kcFMLQZQTfML-Kac3B5HA] nodejs.ReferenceError: Console is not defined
+    at CustomerService.doAdd (C:\Users\FS\Desktop\egg\bs\bishe\app\service\customer.js:43:7)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 13272
+hostname: FS
+
+2020-03-11 16:35:11,911 ERROR 24824 [-/127.0.0.1/-/90ms GET /item/getItemDetail] nodejs.ObjectParameterError: Parameter "filter" to findOne() must be an object, got 5e624f170f80593d5c7032b4
+    at new ObjectParameterError (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\mongoose\lib\error\objectParameter.js:25:11)
+    at model.Query.Query.findOne (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\mongoose\lib\query.js:2206:16)
+    at Function.findOne (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\mongoose\lib\model.js:2194:13)
+    at ItemService.getItemDetail (C:\Users\FS\Desktop\egg\bs\bishe\app\service\item.js:17:47)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "Parameter \"filter\" to findOne() must be an object, got 5e624f170f80593d5c7032b4"
+name: "ObjectParameterError"
+pid: 24824
+hostname: FS
+
+2020-03-12 16:07:21,256 WARN 13056 [-/127.0.0.1/-/94ms POST /order/doAdd?_csrf=QAz94ZIO-oKg5h_kcFMLQZQTfML-Kac3B5HA] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-03-12 16:07:21,261 WARN 13056 [-/127.0.0.1/-/98ms POST /order/doAdd?_csrf=QAz94ZIO-oKg5h_kcFMLQZQTfML-Kac3B5HA] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\app\extend\context.js:162:19)
+    at csrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-bodyparser\index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "invalid csrf token"
+pid: 13056
+hostname: FS
+

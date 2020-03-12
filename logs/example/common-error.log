@@ -1,0 +1,79 @@
+2020-03-10 14:52:55,972 ERROR 9744 [-/127.0.0.1/-/93ms GET /customer/personal] nodejs.ReferenceError: data is not defined
+    at CustomerService.personal (C:\Users\FS\Desktop\egg\bs\bishe\app\service\customer.js:104:12)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 9744
+hostname: FS
+
+2020-03-10 16:00:07,280 ERROR 16700 nodejs.ClusterClientNoResponseError: client no response in 623500ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 16700
+hostname: FS
+
+2020-03-11 15:52:43,317 ERROR 24164 [-/127.0.0.1/-/55ms POST /customer/doAdd?_csrf=knJ6ut5i-JfKn3vBV41IUe1jkttCRWisbrik] nodejs.ReferenceError: Data is not defined
+    at CustomerService.doAdd (C:\Users\FS\Desktop\egg\bs\bishe\app\service\customer.js:42:41)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 24164
+hostname: FS
+
+2020-03-11 15:53:05,711 ERROR 24164 [-/127.0.0.1/-/53ms POST /customer/doAdd?_csrf=QAz94ZIO-oKg5h_kcFMLQZQTfML-Kac3B5HA] nodejs.ReferenceError: Data is not defined
+    at CustomerService.doAdd (C:\Users\FS\Desktop\egg\bs\bishe\app\service\customer.js:42:41)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 24164
+hostname: FS
+
+2020-03-11 15:53:47,851 ERROR 13272 [-/127.0.0.1/-/116ms POST /customer/doAdd?_csrf=QAz94ZIO-oKg5h_kcFMLQZQTfML-Kac3B5HA] nodejs.ReferenceError: Console is not defined
+    at CustomerService.doAdd (C:\Users\FS\Desktop\egg\bs\bishe\app\service\customer.js:43:7)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 13272
+hostname: FS
+
+2020-03-11 16:35:11,910 ERROR 24824 [-/127.0.0.1/-/90ms GET /item/getItemDetail] nodejs.ObjectParameterError: Parameter "filter" to findOne() must be an object, got 5e624f170f80593d5c7032b4
+    at new ObjectParameterError (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\mongoose\lib\error\objectParameter.js:25:11)
+    at model.Query.Query.findOne (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\mongoose\lib\query.js:2206:16)
+    at Function.findOne (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\mongoose\lib\model.js:2194:13)
+    at ItemService.getItemDetail (C:\Users\FS\Desktop\egg\bs\bishe\app\service\item.js:17:47)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "Parameter \"filter\" to findOne() must be an object, got 5e624f170f80593d5c7032b4"
+name: "ObjectParameterError"
+pid: 24824
+hostname: FS
+
+2020-03-11 19:01:43,277 ERROR 14044 nodejs.ClusterClientNoResponseError: client no response in 419731ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 14044
+hostname: FS
+
+2020-03-11 20:54:30,277 ERROR 14044 nodejs.ClusterClientNoResponseError: client no response in 785863ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 14044
+hostname: FS
+
+2020-03-11 21:33:59,604 ERROR 14044 nodejs.ClusterClientNoResponseError: client no response in 1448778ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 14044
+hostname: FS
+

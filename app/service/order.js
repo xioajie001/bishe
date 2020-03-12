@@ -4,8 +4,20 @@ const Service = require('egg').Service;
 const sillyTime = require("silly-datetime");
 
 class OrderService extends Service {
-  // 添加订单
 
+  //查看订单
+  async getOrder(){
+    const{ ctx } = this;
+    if(ctx.session.customerId){
+      const customerId = ctx.session.customerId;
+      const data = await ctx.model.Order.find({buyerID : customerId});
+      return data;
+    }else{
+      return {status : 0, msg : "请登录"}
+    }
+  }
+
+  // 添加订单
   async doAdd() {   
     const { ctx,} = this;
     const data = await ctx.request.body;
@@ -22,7 +34,7 @@ class OrderService extends Service {
     data.orderID = orderID;
 
     // 添加下单时间
-    const Time = sillyTime.format(new Date(), 'YYYY-MM-DD HH:mm');
+    const Time = sillyTime.format(new Date(), 'YYYY-MM-DD HH:mm:ss');
     const orderTime = new Date(Time);
     data.orderTime = orderTime;
 

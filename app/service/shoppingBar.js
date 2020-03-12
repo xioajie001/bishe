@@ -4,35 +4,56 @@ const Service = require('egg').Service;
 const sillyTime = require("silly-datetime");
 
 class ShoppingBarService extends Service {
-  // 添加订单
 
+  //获取购物车信息
+  async getShoppingBar(){
+    const{ ctx } = this;
+    if(ctx.session.customerId){
+      const customerId = ctx.session.customerId;
+      console.log(customerId);
+      const data = await ctx.model.ShoppingBar.find({customerId : customerId});
+      return data;
+    }else{
+      return {status : 0, msg : "请登录"}
+    }
+  }
+
+  // 添加购物车
   async doAdd() {   
     const { ctx,} = this;
-    const data = await ctx.request.body;
 
-    //  添加购物车id
-    const day1 = sillyTime.format(new Date(), 'YYYYMMDD');
-    const day2 = sillyTime.format(new Date(), 'YYYY-MM-DD');
-    const id_number = await ctx.model.ShoppingBar.count({
-        addTime:{
-        "$gte": day2
+    if(ctx.session.customerId){
+      const data = await ctx.request.body;
+
+      //  添加购物车id
+      // const day1 = sillyTime.format(new Date(), 'YYYYMMDD');
+      // const day2 = sillyTime.format(new Date(), 'YYYY-MM-DD');
+      // const id_number = await ctx.model.ShoppingBar.count({
+      //     addTime:{
+      //     "$gte": day2
+      //   }
+      // });
+      // const collectShopingID = day1 + ("00" + (id_number+1)).slice(-2);
+      // data.collectShopingID = collectShopingID;
+
+      //获取客户id
+      data.customerId = ctx.session.customerId;
+
+      // 添加加入购物车时间
+      const Time = sillyTime.format(new Date(), 'YYYY-MM-DD HH:mm');
+      const addTime = new Date(Time);
+      data.addTime = addTime;
+
+      //添加数据到数据库
+      try{
+        const result = await ctx.model.ShoppingBar.create(data);    
+        return result;
+      }catch(err){
+        return err;
       }
-    });
-    const collectShopingID = day1 + ("00" + (id_number+1)).slice(-2);
-    data.collectShopingID = collectShopingID;
-
-    // 添加下单时间
-    const Time = sillyTime.format(new Date(), 'YYYY-MM-DD HH:mm');
-    const addTime = new Date(Time);
-    data.addTime = addTime;
-
-    try{
-      const result = await ctx.model.ShoppingBar.create(data);    
-      return result;
-    }catch(err){
-      return err;
+    }else{
+      return {status : 0, msg : "请登录"};
     }
- 
   }
 
 }

@@ -41,7 +41,7 @@ module.exports = appInfo => {
   // 数据库配置
   config.mongoose = {
     client: {
-      url: 'mongodb://admin:admin123@59.110.162.236:27017:27017/zxjtest?authSource=admin', 
+      url: 'mongodb://admin:admin123@59.110.162.236:27017:27017/FW?authSource=admin', 
       options: {
         useNewUrlParser: true,
       },

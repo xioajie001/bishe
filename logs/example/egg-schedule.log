@@ -28,3 +28,183 @@
 2020-03-08 16:15:24,114 INFO 20308 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
 2020-03-08 16:15:24,115 INFO 20308 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
 2020-03-08 16:15:24,115 INFO 20308 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 14:15:16,186 INFO 12608 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 14:15:16,186 INFO 12608 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 14:15:16,186 INFO 12608 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 14:15:18,585 INFO 16700 [Timer] C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 51281419ms at 2020-03-11 04:30:00.004
+2020-03-10 14:15:18,586 INFO 16700 [Timer] C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 35081415ms at 2020-03-11 00:00:00.001
+2020-03-10 14:15:18,587 INFO 16700 [Timer] C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 35082414ms at 2020-03-11 00:00:01.001
+2020-03-10 14:42:32,621 INFO 18888 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 14:42:32,621 INFO 18888 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 14:42:32,621 INFO 18888 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 14:51:28,286 INFO 9744 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 14:51:28,286 INFO 9744 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 14:51:28,286 INFO 9744 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 14:55:02,334 INFO 1976 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 14:55:02,334 INFO 1976 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 14:55:02,334 INFO 1976 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 14:56:31,588 INFO 10396 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 14:56:31,588 INFO 10396 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 14:56:31,588 INFO 10396 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 14:57:00,431 INFO 4876 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 14:57:00,431 INFO 4876 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 14:57:00,431 INFO 4876 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 14:58:13,935 INFO 6960 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 14:58:13,935 INFO 6960 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 14:58:13,935 INFO 6960 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 15:01:39,673 INFO 11268 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 15:01:39,673 INFO 11268 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 15:01:39,673 INFO 11268 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 15:03:21,035 INFO 11760 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 15:03:21,035 INFO 11760 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 15:03:21,035 INFO 11760 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 16:03:38,844 INFO 8912 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 16:03:38,844 INFO 8912 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 16:03:38,844 INFO 8912 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 16:07:39,826 INFO 24516 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 16:07:39,827 INFO 24516 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 16:07:39,827 INFO 24516 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 16:08:43,862 INFO 17824 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 16:08:43,862 INFO 17824 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 16:08:43,862 INFO 17824 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 16:09:07,410 INFO 24216 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 16:09:07,410 INFO 24216 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 16:09:07,410 INFO 24216 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 16:10:08,167 INFO 8276 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 16:10:08,167 INFO 8276 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 16:10:08,167 INFO 8276 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 16:13:51,239 INFO 14308 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 16:13:51,239 INFO 14308 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 16:13:51,239 INFO 14308 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 16:14:18,241 INFO 23580 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 16:14:18,241 INFO 23580 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 16:14:18,241 INFO 23580 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 16:15:32,096 INFO 21884 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 16:15:32,096 INFO 21884 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 16:15:32,096 INFO 21884 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 16:16:25,467 INFO 12072 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 16:16:25,467 INFO 12072 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 16:16:25,467 INFO 12072 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 16:16:27,656 INFO 22328 [Timer] C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 44012348ms at 2020-03-11 04:30:00.004
+2020-03-10 16:16:27,656 INFO 22328 [Timer] C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 27812344ms at 2020-03-11 00:00:00.000
+2020-03-10 16:16:27,657 INFO 22328 [Timer] C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 27813344ms at 2020-03-11 00:00:01.001
+2020-03-10 16:20:23,500 INFO 23236 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 16:20:23,500 INFO 23236 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 16:20:23,500 INFO 23236 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 16:21:03,177 INFO 20748 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 16:21:03,177 INFO 20748 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 16:21:03,177 INFO 20748 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 16:28:08,263 INFO 24060 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 16:28:08,263 INFO 24060 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 16:28:08,263 INFO 24060 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 16:29:07,969 INFO 23588 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 16:29:07,969 INFO 23588 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 16:29:07,969 INFO 23588 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 16:29:23,922 INFO 22612 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 16:29:23,922 INFO 22612 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 16:29:23,922 INFO 22612 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 16:30:05,123 INFO 4580 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 16:30:05,123 INFO 4580 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 16:30:05,123 INFO 4580 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 16:30:28,481 INFO 23388 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 16:30:28,481 INFO 23388 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 16:30:28,481 INFO 23388 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-11 15:47:41,471 INFO 24164 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-11 15:47:41,471 INFO 24164 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-11 15:47:41,471 INFO 24164 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-11 15:47:43,716 INFO 23212 [Timer] C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 45736289ms at 2020-03-12 04:30:00.005
+2020-03-11 15:47:43,717 INFO 23212 [Timer] C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 29536284ms at 2020-03-12 00:00:00.001
+2020-03-11 15:47:43,717 INFO 23212 [Timer] C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 29537283ms at 2020-03-12 00:00:01.000
+2020-03-11 15:53:43,695 INFO 13272 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-11 15:53:43,695 INFO 13272 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-11 15:53:43,695 INFO 13272 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-11 15:54:07,908 INFO 24288 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-11 15:54:07,908 INFO 24288 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-11 15:54:07,908 INFO 24288 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-11 15:54:39,525 INFO 23500 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-11 15:54:39,525 INFO 23500 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-11 15:54:39,525 INFO 23500 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-11 15:57:40,519 INFO 25592 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-11 15:57:40,519 INFO 25592 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-11 15:57:40,519 INFO 25592 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-11 16:00:13,863 INFO 24644 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-11 16:00:13,863 INFO 24644 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-11 16:00:13,863 INFO 24644 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-11 16:02:35,245 INFO 24776 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-11 16:02:35,245 INFO 24776 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-11 16:02:35,245 INFO 24776 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-11 16:06:50,526 INFO 24584 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-11 16:06:50,526 INFO 24584 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-11 16:06:50,526 INFO 24584 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-11 16:18:14,292 INFO 25188 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-11 16:18:14,292 INFO 25188 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-11 16:18:14,292 INFO 25188 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-11 16:19:42,121 INFO 24956 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-11 16:19:42,121 INFO 24956 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-11 16:19:42,121 INFO 24956 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-11 16:20:00,055 INFO 23736 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-11 16:20:00,055 INFO 23736 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-11 16:20:00,055 INFO 23736 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-11 16:22:17,477 INFO 20696 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-11 16:22:17,477 INFO 20696 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-11 16:22:17,477 INFO 20696 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-11 16:23:31,511 INFO 24380 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-11 16:23:31,511 INFO 24380 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-11 16:23:31,511 INFO 24380 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-11 16:23:33,345 INFO 14044 [Timer] C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 43586660ms at 2020-03-12 04:30:00.005
+2020-03-11 16:23:33,346 INFO 14044 [Timer] C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 27386654ms at 2020-03-12 00:00:00.000
+2020-03-11 16:23:33,346 INFO 14044 [Timer] C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 27387654ms at 2020-03-12 00:00:01.000
+2020-03-11 16:32:19,826 INFO 25136 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-11 16:32:19,826 INFO 25136 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-11 16:32:19,826 INFO 25136 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-11 16:32:48,490 INFO 24828 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-11 16:32:48,490 INFO 24828 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-11 16:32:48,490 INFO 24828 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-11 16:33:12,700 INFO 24824 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-11 16:33:12,700 INFO 24824 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-11 16:33:12,700 INFO 24824 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-11 16:36:00,738 INFO 22216 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-11 16:36:00,738 INFO 22216 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-11 16:36:00,738 INFO 22216 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-12 15:47:51,475 INFO 3352 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-12 15:47:51,475 INFO 3352 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-12 15:47:51,475 INFO 3352 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-12 15:47:53,968 INFO 20296 [Timer] C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 45726037ms at 2020-03-13 04:30:00.005
+2020-03-12 15:47:53,968 INFO 20296 [Timer] C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 29526032ms at 2020-03-13 00:00:00.000
+2020-03-12 15:47:53,968 INFO 20296 [Timer] C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 29527032ms at 2020-03-13 00:00:01.000
+2020-03-12 16:02:26,171 INFO 21244 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-12 16:02:26,171 INFO 21244 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-12 16:02:26,171 INFO 21244 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-12 16:02:54,897 INFO 13056 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-12 16:02:54,897 INFO 13056 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-12 16:02:54,897 INFO 13056 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-12 16:02:56,769 INFO 8372 [Timer] C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 44823235ms at 2020-03-13 04:30:00.004
+2020-03-12 16:02:56,770 INFO 8372 [Timer] C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 28623230ms at 2020-03-13 00:00:00.000
+2020-03-12 16:02:56,770 INFO 8372 [Timer] C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 28624230ms at 2020-03-13 00:00:01.000
+2020-03-12 16:08:47,169 INFO 13200 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-12 16:08:47,169 INFO 13200 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-12 16:08:47,169 INFO 13200 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-12 16:11:39,820 INFO 2940 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-12 16:11:39,820 INFO 2940 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-12 16:11:39,820 INFO 2940 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-12 16:13:50,157 INFO 452 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-12 16:13:50,157 INFO 452 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-12 16:13:50,157 INFO 452 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-12 16:16:03,746 INFO 852 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-12 16:16:03,746 INFO 852 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-12 16:16:03,746 INFO 852 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-12 16:23:52,746 INFO 3796 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-12 16:23:52,746 INFO 3796 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-12 16:23:52,746 INFO 3796 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-12 16:29:03,868 INFO 13032 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-12 16:29:03,868 INFO 13032 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-12 16:29:03,868 INFO 13032 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-12 16:30:40,455 INFO 9104 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-12 16:30:40,455 INFO 9104 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-12 16:30:40,455 INFO 9104 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-12 16:31:00,769 INFO 9372 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-12 16:31:00,769 INFO 9372 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-12 16:31:00,769 INFO 9372 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-12 16:34:21,626 INFO 14392 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-12 16:34:21,626 INFO 14392 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-12 16:34:21,626 INFO 14392 [egg-schedule]: register schedule C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-logrotator\app\schedule\rotate_by_file.js

@@ -5,12 +5,12 @@ module.exports = app =>{
     const Schema = mongoose.Schema;
 
     const shoppingBarSchema = new Schema({
-        collectShopingID : {type : String, required : true, unique : true},   //购物车商品ID
-        collectServeId : {type : String, required : true},  //所收藏的服务id
+        _Id :  Schema.Types.ObjectId,   //购物车商品ID
+        itemId : {type : String, required : true},  //所收藏的服务id
         partitionId : {type : String, required : true}, //服务分区ID
         purchaseQuantity : {type : String, required : true},    //购买数量
-        buyerID : {type : String, required : true}, //买家id
-        addTime : {type : Date, required : true} //买家id
+        customerId : {type : String, required : true}, //买家id
+        addTime : {type : Date, required : true} //添加时间
     });
     return mongoose.model("ShoppingBar",shoppingBarSchema);
 }

@@ -22,6 +22,7 @@ import ExportOrder = require('../../../app/model/order');
 import ExportServicer = require('../../../app/model/servicer');
 import ExportShoppingBar = require('../../../app/model/shoppingBar');
 import ExportShoppinglist = require('../../../app/model/shoppinglist');
+import ExportWorkorder = require('../../../app/model/workorder');
 
 declare module 'egg' {
   interface IModel {
@@ -45,5 +46,6 @@ declare module 'egg' {
     Servicer: ReturnType<typeof ExportServicer>;
     ShoppingBar: ReturnType<typeof ExportShoppingBar>;
     Shoppinglist: ReturnType<typeof ExportShoppinglist>;
+    Workorder: ReturnType<typeof ExportWorkorder>;
   }
 }

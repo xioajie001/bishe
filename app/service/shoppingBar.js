@@ -25,17 +25,6 @@ class ShoppingBarService extends Service {
     if(ctx.session.customerId){
       const data = await ctx.request.body;
 
-      //  添加购物车id
-      // const day1 = sillyTime.format(new Date(), 'YYYYMMDD');
-      // const day2 = sillyTime.format(new Date(), 'YYYY-MM-DD');
-      // const id_number = await ctx.model.ShoppingBar.count({
-      //     addTime:{
-      //     "$gte": day2
-      //   }
-      // });
-      // const collectShopingID = day1 + ("00" + (id_number+1)).slice(-2);
-      // data.collectShopingID = collectShopingID;
-
       //获取客户id
       data.customerId = ctx.session.customerId;
 

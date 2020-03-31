@@ -3,6 +3,8 @@
 
 import 'egg';
 import ExportBase = require('../../../app/controller/base');
+import ExportComment = require('../../../app/controller/comment');
+import ExportComplain = require('../../../app/controller/complain');
 import ExportCourse = require('../../../app/controller/course');
 import ExportCustomer = require('../../../app/controller/customer');
 import ExportFocus = require('../../../app/controller/focus');
@@ -14,6 +16,8 @@ import ExportShoppingBar = require('../../../app/controller/shoppingBar');
 declare module 'egg' {
   interface IController {
     base: ExportBase;
+    comment: ExportComment;
+    complain: ExportComplain;
     course: ExportCourse;
     customer: ExportCustomer;
     focus: ExportFocus;

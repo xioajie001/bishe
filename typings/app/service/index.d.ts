@@ -2,6 +2,8 @@
 // Do not modify this file!!!!!!!!!
 
 import 'egg';
+import ExportComment = require('../../../app/service/comment');
+import ExportComplain = require('../../../app/service/complain');
 import ExportCourse = require('../../../app/service/course');
 import ExportCustomer = require('../../../app/service/customer');
 import ExportItem = require('../../../app/service/item');
@@ -11,6 +13,8 @@ import ExportTools = require('../../../app/service/tools');
 
 declare module 'egg' {
   interface IService {
+    comment: ExportComment;
+    complain: ExportComplain;
     course: ExportCourse;
     customer: ExportCustomer;
     item: ExportItem;

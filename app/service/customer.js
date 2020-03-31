@@ -57,6 +57,8 @@ class CustomerService extends Service {
   // 登录
   async login(){
     const{customerZhanghao,password} = this.ctx.request.body;
+    console.log("customerZhanghao",customerZhanghao)
+    console.log("password",password)
     const query = await this.ctx.model.Customer.find({customerZhanghao,password});
     console.log(query)
     if(query.length > 0){
@@ -115,8 +117,6 @@ class CustomerService extends Service {
       return {status : 0, msg : "请登录"};
     } 
   }
-
   
-
 }
 module.exports = CustomerService;

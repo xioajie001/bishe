@@ -15,6 +15,18 @@ class OrderController extends Controller {
     const { ctx } = this;
     ctx.body = await ctx.service.order.doAdd();
   }
+
+  //验收订单
+  async confirm() {
+    const { ctx } = this;
+    ctx.body = await ctx.service.order.confirm();
+  }
+
+  //取消订单
+  async cancel() {
+    const { ctx } = this;
+    ctx.body = await ctx.service.order.cancel();
+  }
 }
 
 module.exports = OrderController;

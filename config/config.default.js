@@ -26,6 +26,16 @@ module.exports = appInfo => {
     renew: true,
   };
 
+  //关闭csrf
+  config.security = {
+    csrf: {
+      enable: false,
+      ignoreJSON: true,
+    },
+    // 白名单
+    // domainWhiteList: [ 'http://localhost:8080' ],
+  };
+
   // add your middleware config here
   config.middleware = ["csrfAuth"];
   

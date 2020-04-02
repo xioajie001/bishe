@@ -8,6 +8,7 @@ import ExportCourse = require('../../../app/service/course');
 import ExportCustomer = require('../../../app/service/customer');
 import ExportItem = require('../../../app/service/item');
 import ExportOrder = require('../../../app/service/order');
+import ExportServicer = require('../../../app/service/servicer');
 import ExportShoppingBar = require('../../../app/service/shoppingBar');
 import ExportTools = require('../../../app/service/tools');
 
@@ -19,6 +20,7 @@ declare module 'egg' {
     customer: ExportCustomer;
     item: ExportItem;
     order: ExportOrder;
+    servicer: ExportServicer;
     shoppingBar: ExportShoppingBar;
     tools: ExportTools;
   }

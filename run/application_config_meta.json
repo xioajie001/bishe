@@ -8,39 +8,11 @@
     "encrypt": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\config\\config.default.js",
     "renew": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\config\\config.default.js"
   },
-  "middleware": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\config\\config.default.js",
-  "api": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\config\\config.default.js",
-  "view": {
-    "mapping": {
-      ".html": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\config\\config.default.js"
-    },
-    "root": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-view\\config\\config.default.js",
-    "cache": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-view\\config\\config.local.js",
-    "defaultExtension": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-view\\config\\config.default.js",
-    "defaultViewEngine": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-view\\config\\config.default.js"
-  },
-  "mongoose": {
-    "client": {
-      "url": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\config\\config.default.js",
-      "options": {
-        "useNewUrlParser": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\config\\config.default.js"
-      }
-    },
-    "url": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-mongoose\\config\\config.default.js",
-    "options": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-mongoose\\config\\config.default.js",
-    "plugins": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-mongoose\\config\\config.default.js",
-    "loadModel": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-mongoose\\config\\config.default.js",
-    "app": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-mongoose\\config\\config.default.js",
-    "agent": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-mongoose\\config\\config.default.js"
-  },
   "security": {
-    "domainWhiteList": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-security\\config\\config.default.js",
-    "protocolWhiteList": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-security\\config\\config.default.js",
-    "defaultMiddleware": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-security\\config\\config.default.js",
     "csrf": {
-      "enable": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-security\\config\\config.default.js",
+      "enable": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\config\\config.default.js",
+      "ignoreJSON": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\config\\config.default.js",
       "type": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-security\\config\\config.default.js",
-      "ignoreJSON": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-security\\config\\config.default.js",
       "useSession": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-security\\config\\config.default.js",
       "cookieName": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-security\\config\\config.default.js",
       "sessionName": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-security\\config\\config.default.js",
@@ -49,6 +21,9 @@
       "queryName": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-security\\config\\config.default.js",
       "refererWhiteList": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-security\\config\\config.default.js"
     },
+    "domainWhiteList": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-security\\config\\config.default.js",
+    "protocolWhiteList": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-security\\config\\config.default.js",
+    "defaultMiddleware": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-security\\config\\config.default.js",
     "xframe": {
       "enable": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-security\\config\\config.default.js",
       "value": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-security\\config\\config.default.js"
@@ -86,6 +61,31 @@
       "ipBlackList": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-security\\config\\config.default.js",
       "checkAddress": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-security\\config\\config.default.js"
     }
+  },
+  "middleware": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\config\\config.default.js",
+  "api": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\config\\config.default.js",
+  "view": {
+    "mapping": {
+      ".html": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\config\\config.default.js"
+    },
+    "root": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-view\\config\\config.default.js",
+    "cache": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-view\\config\\config.local.js",
+    "defaultExtension": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-view\\config\\config.default.js",
+    "defaultViewEngine": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-view\\config\\config.default.js"
+  },
+  "mongoose": {
+    "client": {
+      "url": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\config\\config.default.js",
+      "options": {
+        "useNewUrlParser": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\config\\config.default.js"
+      }
+    },
+    "url": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-mongoose\\config\\config.default.js",
+    "options": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-mongoose\\config\\config.default.js",
+    "plugins": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-mongoose\\config\\config.default.js",
+    "loadModel": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-mongoose\\config\\config.default.js",
+    "app": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-mongoose\\config\\config.default.js",
+    "agent": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-mongoose\\config\\config.default.js"
   },
   "helper": {
     "shtml": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-security\\config\\config.default.js"

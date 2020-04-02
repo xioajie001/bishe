@@ -11,6 +11,7 @@ import ExportFocus = require('../../../app/controller/focus');
 import ExportHome = require('../../../app/controller/home');
 import ExportItem = require('../../../app/controller/item');
 import ExportOrder = require('../../../app/controller/order');
+import ExportServicer = require('../../../app/controller/servicer');
 import ExportShoppingBar = require('../../../app/controller/shoppingBar');
 
 declare module 'egg' {
@@ -24,6 +25,7 @@ declare module 'egg' {
     home: ExportHome;
     item: ExportItem;
     order: ExportOrder;
+    servicer: ExportServicer;
     shoppingBar: ExportShoppingBar;
   }
 }

@@ -12,12 +12,15 @@ class ItemService extends Service {
   //获取商品详情
   async getItemDetail() {
       const{ ctx } = this;
-      const data = await ctx.request.body;
+      const data = await ctx.query;
       console.log(data);
-      const itemDetail = await ctx.model.Item.findOne(data);
-      // itemDetail.csrf = ctx.csrf;
-      console.log(itemDetail);
-      return itemDetail;
+      console.log(data.length);
+      if(data._id){
+        const itemDetail = await ctx.model.Item.findOne(data);
+        return itemDetail;
+      }else{
+        return {state : 0, msg : "出现错误，未能获取商品详情信息"}
+      }
   }
 }
 module.exports = ItemService;

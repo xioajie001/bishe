@@ -63,7 +63,7 @@ class CustomerService extends Service {
       return {
         status:1,
         msg:"登录成功", 
-        token: await this.ctx.service.actionToken.apply( query[0].customerId )
+        // token: await this.ctx.service.actionToken.apply( query[0].customerId )
       };
     }else{
       return {status:0, msg:"账号不存在或密码不正确"};

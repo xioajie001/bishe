@@ -849,3 +849,220 @@ inner: {"message":"No authorization token was found"}
 pid: 10336
 hostname: FS
 
+2020-04-26 15:14:52,934 WARN 5344 [-/127.0.0.1/-/44ms POST /customer/login] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:89:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at noopen (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 5344
+hostname: FS
+
+2020-04-26 15:17:42,998 WARN 5344 [-/127.0.0.1/-/48ms POST /customer/login] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:89:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at noopen (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 5344
+hostname: FS
+
+2020-04-26 15:24:44,464 WARN 14852 [-/127.0.0.1/-/37ms POST /customer/login] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:89:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at noopen (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 14852
+hostname: FS
+
+2020-04-26 15:25:02,698 WARN 14852 [-/127.0.0.1/-/1ms POST /customer/login] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:89:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at noopen (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 14852
+hostname: FS
+
+2020-04-26 15:27:36,671 WARN 4172 [-/127.0.0.1/-/38ms POST /customer/login] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:89:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at noopen (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 4172
+hostname: FS
+
+2020-04-26 15:44:55,533 WARN 14544 [-/127.0.0.1/-/35ms POST /customer/login] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:89:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at noopen (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 14544
+hostname: FS
+
+2020-04-26 15:47:54,559 WARN 2632 [-/127.0.0.1/-/38ms POST /customer/login] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:89:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at noopen (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 2632
+hostname: FS
+
+2020-04-26 15:52:54,642 ERROR 5620 [-/127.0.0.1/-/54ms POST /order/doAdd] nodejs.TypeError: Cannot read property 'data' of undefined
+    at OrderService.doAdd (C:\Users\FS\Desktop\egg\bs\bishe\app\service\order.js:25:36)
+    at OrderController.doAdd (C:\Users\FS\Desktop\egg\bs\bishe\app\controller\order.js:16:40)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at fn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\middleware.js:111:29)
+
+pid: 5620
+hostname: FS
+
+2020-04-26 15:53:47,006 ERROR 5620 [-/127.0.0.1/-/6ms POST /order/doAdd] nodejs.TypeError: Cannot read property 'data' of undefined
+    at OrderService.doAdd (C:\Users\FS\Desktop\egg\bs\bishe\app\service\order.js:25:36)
+    at OrderController.doAdd (C:\Users\FS\Desktop\egg\bs\bishe\app\controller\order.js:16:40)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at fn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\middleware.js:111:29)
+
+pid: 5620
+hostname: FS
+

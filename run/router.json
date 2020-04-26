@@ -22,7 +22,6 @@
     "path": "/customer/personal",
     "regexp": "/^\\/customer\\/personal(?:\\/(?=$))?$/",
     "stack": [
-      "middleware",
       "wrappedController"
     ]
   },
@@ -60,7 +59,6 @@
     "path": "/customer/edit",
     "regexp": "/^\\/customer\\/edit(?:\\/(?=$))?$/",
     "stack": [
-      "middleware",
       "wrappedController"
     ]
   },
@@ -73,7 +71,6 @@
     "path": "/customer/doEdit",
     "regexp": "/^\\/customer\\/doEdit(?:\\/(?=$))?$/",
     "stack": [
-      "middleware",
       "wrappedController"
     ]
   },
@@ -86,7 +83,6 @@
     "path": "/customer/upload",
     "regexp": "/^\\/customer\\/upload(?:\\/(?=$))?$/",
     "stack": [
-      "middleware",
       "wrappedController"
     ]
   },
@@ -100,7 +96,6 @@
     "path": "/order/getOrder",
     "regexp": "/^\\/order\\/getOrder(?:\\/(?=$))?$/",
     "stack": [
-      "middleware",
       "wrappedController"
     ]
   },
@@ -126,7 +121,6 @@
     "path": "/order/confirm",
     "regexp": "/^\\/order\\/confirm(?:\\/(?=$))?$/",
     "stack": [
-      "middleware",
       "wrappedController"
     ]
   },
@@ -139,7 +133,6 @@
     "path": "/order/cancel",
     "regexp": "/^\\/order\\/cancel(?:\\/(?=$))?$/",
     "stack": [
-      "middleware",
       "wrappedController"
     ]
   },
@@ -153,7 +146,6 @@
     "path": "/shoppingbar/getShoppingBar",
     "regexp": "/^\\/shoppingbar\\/getShoppingBar(?:\\/(?=$))?$/",
     "stack": [
-      "middleware",
       "wrappedController"
     ]
   },
@@ -166,7 +158,6 @@
     "path": "/shoppingbar/doAdd",
     "regexp": "/^\\/shoppingbar\\/doAdd(?:\\/(?=$))?$/",
     "stack": [
-      "middleware",
       "wrappedController"
     ]
   },
@@ -180,7 +171,6 @@
     "path": "/item/getItem",
     "regexp": "/^\\/item\\/getItem(?:\\/(?=$))?$/",
     "stack": [
-      "middleware",
       "wrappedController"
     ]
   },
@@ -194,7 +184,6 @@
     "path": "/item/getItemDetail",
     "regexp": "/^\\/item\\/getItemDetail(?:\\/(?=$))?$/",
     "stack": [
-      "middleware",
       "wrappedController"
     ]
   },
@@ -207,7 +196,6 @@
     "path": "/complain/doAdd",
     "regexp": "/^\\/complain\\/doAdd(?:\\/(?=$))?$/",
     "stack": [
-      "middleware",
       "wrappedController"
     ]
   },
@@ -220,7 +208,6 @@
     "path": "/comment/doAdd",
     "regexp": "/^\\/comment\\/doAdd(?:\\/(?=$))?$/",
     "stack": [
-      "middleware",
       "wrappedController"
     ]
   },
@@ -234,7 +221,6 @@
     "path": "/servicer/personal",
     "regexp": "/^\\/servicer\\/personal(?:\\/(?=$))?$/",
     "stack": [
-      "middleware",
       "wrappedController"
     ]
   },
@@ -298,7 +284,6 @@
     "path": "/servicer/doEdit",
     "regexp": "/^\\/servicer\\/doEdit(?:\\/(?=$))?$/",
     "stack": [
-      "middleware",
       "wrappedController"
     ]
   },
@@ -311,7 +296,6 @@
     "path": "/servicer/upload",
     "regexp": "/^\\/servicer\\/upload(?:\\/(?=$))?$/",
     "stack": [
-      "middleware",
       "wrappedController"
     ]
   },

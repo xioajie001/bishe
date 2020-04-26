@@ -2551,3 +2551,45 @@ hostname: FS
   name: 'MongoNetworkError',
   [Symbol(mongoErrorContextSymbol)]: {} }
 2020-04-10 19:04:40,834 ERROR 4960 [Job#1586516613687379819465224003534] C:\Users\FS\Desktop\egg\bs\bishe\app\schedule\orderStart.js execute failed, used 67147ms
+2020-04-26 15:52:54,555 ERROR 5620 [-/127.0.0.1/-/54ms POST /order/doAdd] nodejs.TypeError: Cannot read property 'data' of undefined
+    at OrderService.doAdd (C:\Users\FS\Desktop\egg\bs\bishe\app\service\order.js:25:36)
+    at OrderController.doAdd (C:\Users\FS\Desktop\egg\bs\bishe\app\controller\order.js:16:40)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at fn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\middleware.js:111:29)
+
+pid: 5620
+hostname: FS
+
+2020-04-26 15:53:46,973 ERROR 5620 [-/127.0.0.1/-/6ms POST /order/doAdd] nodejs.TypeError: Cannot read property 'data' of undefined
+    at OrderService.doAdd (C:\Users\FS\Desktop\egg\bs\bishe\app\service\order.js:25:36)
+    at OrderController.doAdd (C:\Users\FS\Desktop\egg\bs\bishe\app\controller\order.js:16:40)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at fn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\middleware.js:111:29)
+
+pid: 5620
+hostname: FS
+

@@ -55,7 +55,7 @@ module.exports = appInfo => {
   config.jwt = {
     secret: 'Great4-M',
     enable: true, // default is false
-    // match: '/jwt', // optional
+    match: '/jwt', // optional
   };
 
   // 数据库配置

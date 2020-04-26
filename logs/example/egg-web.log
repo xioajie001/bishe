@@ -3068,3 +3068,37 @@
 2020-04-26 11:57:06,072 INFO 15252 [egg-mongoose] mongodb://admin:******@59.110.162.236:27017:27017/FW?authSource=admin connected successfully
 2020-04-26 11:57:06,080 INFO 15252 [egg-mongoose] instance[0] start successfully
 2020-04-26 11:57:06,092 INFO 15252 [egg:core] dump config after ready, 10ms
+2020-04-26 14:38:08,709 INFO 10072 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\logs\\example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-04-26 14:38:08,773 INFO 10072 [egg-multipart] stream mode enable
+2020-04-26 14:38:10,209 INFO 10072 [egg-mongoose] connecting mongodb://admin:******@59.110.162.236:27017:27017/FW?authSource=admin
+2020-04-26 14:38:10,907 INFO 10072 [egg-static] starting static serve /public/ -> C:\Users\FS\Desktop\egg\bs\bishe\app\public
+2020-04-26 14:38:10,914 INFO 10072 [egg-security] use methodnoallow middleware
+2020-04-26 14:38:10,917 INFO 10072 [egg-security] use noopen middleware
+2020-04-26 14:38:10,922 INFO 10072 [egg-security] use nosniff middleware
+2020-04-26 14:38:10,923 INFO 10072 [egg-security] use xssProtection middleware
+2020-04-26 14:38:10,925 INFO 10072 [egg-security] use xframe middleware
+2020-04-26 14:38:10,926 INFO 10072 [egg-security] use dta middleware
+2020-04-26 14:38:10,926 INFO 10072 [egg-security] compose 6 middlewares into one security middleware
+2020-04-26 14:38:10,980 INFO 10072 [egg:core] dump config after load, 17ms
+2020-04-26 14:38:10,985 INFO 10072 [egg-mongoose] starting...
+2020-04-26 14:38:11,098 INFO 10072 [egg-watcher:application] watcher start success
+2020-04-26 14:38:11,531 INFO 10072 [egg-mongoose] mongodb://admin:******@59.110.162.236:27017:27017/FW?authSource=admin connected successfully
+2020-04-26 14:38:11,537 INFO 10072 [egg-mongoose] instance[0] start successfully
+2020-04-26 14:38:11,548 INFO 10072 [egg:core] dump config after ready, 9ms
+2020-04-26 14:54:44,743 INFO 16624 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\logs\\example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-04-26 14:54:44,803 INFO 16624 [egg-multipart] stream mode enable
+2020-04-26 14:54:46,109 INFO 16624 [egg-mongoose] connecting mongodb://admin:******@59.110.162.236:27017:27017/FW?authSource=admin
+2020-04-26 14:54:46,497 INFO 16624 [egg-static] starting static serve /public/ -> C:\Users\FS\Desktop\egg\bs\bishe\app\public
+2020-04-26 14:54:46,504 INFO 16624 [egg-security] use methodnoallow middleware
+2020-04-26 14:54:46,507 INFO 16624 [egg-security] use noopen middleware
+2020-04-26 14:54:46,513 INFO 16624 [egg-security] use nosniff middleware
+2020-04-26 14:54:46,515 INFO 16624 [egg-security] use xssProtection middleware
+2020-04-26 14:54:46,516 INFO 16624 [egg-security] use xframe middleware
+2020-04-26 14:54:46,518 INFO 16624 [egg-security] use dta middleware
+2020-04-26 14:54:46,518 INFO 16624 [egg-security] compose 6 middlewares into one security middleware
+2020-04-26 14:54:46,564 INFO 16624 [egg:core] dump config after load, 15ms
+2020-04-26 14:54:46,569 INFO 16624 [egg-mongoose] starting...
+2020-04-26 14:54:46,717 INFO 16624 [egg-watcher:application] watcher start success
+2020-04-26 14:54:46,963 INFO 16624 [egg-mongoose] mongodb://admin:******@59.110.162.236:27017:27017/FW?authSource=admin connected successfully
+2020-04-26 14:54:46,972 INFO 16624 [egg-mongoose] instance[0] start successfully
+2020-04-26 14:54:46,988 INFO 16624 [egg:core] dump config after ready, 14ms

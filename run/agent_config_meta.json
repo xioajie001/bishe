@@ -198,6 +198,7 @@
     },
     "dependencies": {
       "egg": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg\\config\\config.default.js",
+      "egg-cors": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg\\config\\config.default.js",
       "egg-jwt": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg\\config\\config.default.js",
       "egg-mongoose": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg\\config\\config.default.js",
       "egg-scripts": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg\\config\\config.default.js",

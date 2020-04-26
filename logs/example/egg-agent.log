@@ -1235,3 +1235,13 @@ hostname: FS
 2020-04-26 16:15:19,155 INFO 18988 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\app\\service\\customer.js","stat":{"dev":3055004393,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":562949955673290,"size":3696,"atimeMs":1587888919128.8423,"mtimeMs":1587888919128.8423,"ctimeMs":1587888919128.8423,"birthtimeMs":1583651581525.683,"atime":"2020-04-26T08:15:19.129Z","mtime":"2020-04-26T08:15:19.129Z","ctime":"2020-04-26T08:15:19.129Z","birthtime":"2020-03-08T07:13:01.526Z"},"remove":false,"isDirectory":false,"isFile":true}
 2020-04-26 16:15:19,356 WARN 18988 [agent:development] reload worker because C:\Users\FS\Desktop\egg\bs\bishe\app\service\customer.js change
 2020-04-26 16:15:25,072 WARN 18988 [ClusterClient:Connection] socket is closed by other side while there were still unhandled data in the socket buffer
+2020-04-26 17:15:23,404 INFO 11728 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\logs\\example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-04-26 17:15:23,418 INFO 11728 [egg:core] dump config after load, 6ms
+2020-04-26 17:15:23,526 INFO 11728 [egg-watcher] Start watching: ["C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\app","C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\config","C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\mocks","C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\mocks_proxy","C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\app.js"]
+2020-04-26 17:15:23,526 INFO 11728 [egg-watcher] Start watching: "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\app"
+2020-04-26 17:15:23,527 INFO 11728 [egg-watcher] Start watching: "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\config"
+2020-04-26 17:15:23,527 INFO 11728 [egg-watcher] Start watching: "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\mocks"
+2020-04-26 17:15:23,528 INFO 11728 [egg-watcher] Start watching: "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\mocks_proxy"
+2020-04-26 17:15:23,528 INFO 11728 [egg-watcher] Start watching: "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\app.js"
+2020-04-26 17:15:23,528 INFO 11728 [egg-watcher:agent] watcher start success
+2020-04-26 17:15:23,568 INFO 11728 [egg:core] dump config after ready, 7ms

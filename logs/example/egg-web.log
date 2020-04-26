@@ -3272,3 +3272,20 @@
 2020-04-26 16:15:25,041 INFO 16640 [egg-mongoose] mongodb://admin:******@59.110.162.236:27017:27017/FW?authSource=admin connected successfully
 2020-04-26 16:15:25,051 INFO 16640 [egg-mongoose] instance[0] start successfully
 2020-04-26 16:15:25,063 INFO 16640 [egg:core] dump config after ready, 9ms
+2020-04-26 17:15:27,499 INFO 14936 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\logs\\example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-04-26 17:15:27,567 INFO 14936 [egg-multipart] stream mode enable
+2020-04-26 17:15:29,455 INFO 14936 [egg-mongoose] connecting mongodb://admin:******@59.110.162.236:27017:27017/FW?authSource=admin
+2020-04-26 17:15:29,854 INFO 14936 [egg-static] starting static serve /public/ -> C:\Users\FS\Desktop\egg\bs\bishe\app\public
+2020-04-26 17:15:29,861 INFO 14936 [egg-security] use methodnoallow middleware
+2020-04-26 17:15:29,863 INFO 14936 [egg-security] use noopen middleware
+2020-04-26 17:15:29,869 INFO 14936 [egg-security] use nosniff middleware
+2020-04-26 17:15:29,871 INFO 14936 [egg-security] use xssProtection middleware
+2020-04-26 17:15:29,872 INFO 14936 [egg-security] use xframe middleware
+2020-04-26 17:15:29,874 INFO 14936 [egg-security] use dta middleware
+2020-04-26 17:15:29,874 INFO 14936 [egg-security] compose 6 middlewares into one security middleware
+2020-04-26 17:15:29,921 INFO 14936 [egg:core] dump config after load, 13ms
+2020-04-26 17:15:29,928 INFO 14936 [egg-mongoose] starting...
+2020-04-26 17:15:30,060 INFO 14936 [egg-watcher:application] watcher start success
+2020-04-26 17:15:30,246 INFO 14936 [egg-mongoose] mongodb://admin:******@59.110.162.236:27017:27017/FW?authSource=admin connected successfully
+2020-04-26 17:15:30,253 INFO 14936 [egg-mongoose] instance[0] start successfully
+2020-04-26 17:15:30,276 INFO 14936 [egg:core] dump config after ready, 22ms

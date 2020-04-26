@@ -3047,3 +3047,24 @@
 2020-04-26 11:30:47,702 INFO 17732 [egg-security] compose 6 middlewares into one security middleware
 2020-04-26 11:30:47,793 INFO 17732 [egg:core] dump config after load, 56ms
 2020-04-26 11:30:47,798 INFO 17732 [egg-mongoose] starting...
+2020-04-26 11:30:47,900 INFO 17732 [egg-watcher:application] watcher start success
+2020-04-26 11:30:48,130 INFO 17732 [egg-mongoose] mongodb://admin:******@59.110.162.236:27017:27017/FW?authSource=admin connected successfully
+2020-04-26 11:30:48,139 INFO 17732 [egg-mongoose] instance[0] start successfully
+2020-04-26 11:30:48,148 INFO 17732 [egg:core] dump config after ready, 7ms
+2020-04-26 11:57:04,085 INFO 15252 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\logs\\example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-04-26 11:57:04,151 INFO 15252 [egg-multipart] stream mode enable
+2020-04-26 11:57:05,347 INFO 15252 [egg-mongoose] connecting mongodb://admin:******@59.110.162.236:27017:27017/FW?authSource=admin
+2020-04-26 11:57:05,718 INFO 15252 [egg-static] starting static serve /public/ -> C:\Users\FS\Desktop\egg\bs\bishe\app\public
+2020-04-26 11:57:05,725 INFO 15252 [egg-security] use methodnoallow middleware
+2020-04-26 11:57:05,728 INFO 15252 [egg-security] use noopen middleware
+2020-04-26 11:57:05,733 INFO 15252 [egg-security] use nosniff middleware
+2020-04-26 11:57:05,734 INFO 15252 [egg-security] use xssProtection middleware
+2020-04-26 11:57:05,736 INFO 15252 [egg-security] use xframe middleware
+2020-04-26 11:57:05,737 INFO 15252 [egg-security] use dta middleware
+2020-04-26 11:57:05,737 INFO 15252 [egg-security] compose 6 middlewares into one security middleware
+2020-04-26 11:57:05,783 INFO 15252 [egg:core] dump config after load, 13ms
+2020-04-26 11:57:05,788 INFO 15252 [egg-mongoose] starting...
+2020-04-26 11:57:05,892 INFO 15252 [egg-watcher:application] watcher start success
+2020-04-26 11:57:06,072 INFO 15252 [egg-mongoose] mongodb://admin:******@59.110.162.236:27017:27017/FW?authSource=admin connected successfully
+2020-04-26 11:57:06,080 INFO 15252 [egg-mongoose] instance[0] start successfully
+2020-04-26 11:57:06,092 INFO 15252 [egg:core] dump config after ready, 10ms

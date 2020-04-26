@@ -9,9 +9,6 @@ class CustomerController extends Controller {
     this.ctx.body = await this.ctx.service.customer.personal();
   }
 
-  async add() {
-    this.ctx.body = this.ctx.csrf;
-  }
 
   // 注册
   async doAdd() {

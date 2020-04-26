@@ -175,8 +175,7 @@
     },
     "jwt": {
       "secret": "<String len: 8>",
-      "enable": false,
-      "match": "/jwt"
+      "enable": true
     },
     "cors": {
       "credentials": true

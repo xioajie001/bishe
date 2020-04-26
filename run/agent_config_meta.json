@@ -78,8 +78,7 @@
   },
   "jwt": {
     "secret": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\config\\config.default.js",
-    "match": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\config\\config.default.js",
-    "enable": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-jwt\\config\\config.default.js"
+    "enable": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\config\\config.default.js"
   },
   "mongoose": {
     "client": {

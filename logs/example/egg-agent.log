@@ -1114,3 +1114,13 @@ hostname: FS
 2020-04-10 21:10:10,515 WARN 3928 [agent:development] reload worker because C:\Users\FS\Desktop\egg\bs\bishe\app\service\order.js change
 2020-04-10 21:10:16,529 WARN 3928 [ClusterClient:Connection] socket is closed by other side while there were still unhandled data in the socket buffer
 2020-04-10 22:28:49,063 WARN 3928 [ClusterClient:Connection] socket is closed by other side while there were still unhandled data in the socket buffer
+2020-04-26 11:25:07,306 INFO 15728 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\logs\\example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-04-26 11:25:07,320 INFO 15728 [egg:core] dump config after load, 6ms
+2020-04-26 11:25:07,433 INFO 15728 [egg-watcher] Start watching: ["C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\app","C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\config","C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\mocks","C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\mocks_proxy","C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\app.js"]
+2020-04-26 11:25:07,433 INFO 15728 [egg-watcher] Start watching: "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\app"
+2020-04-26 11:25:07,433 INFO 15728 [egg-watcher] Start watching: "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\config"
+2020-04-26 11:25:07,434 INFO 15728 [egg-watcher] Start watching: "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\mocks"
+2020-04-26 11:25:07,434 INFO 15728 [egg-watcher] Start watching: "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\mocks_proxy"
+2020-04-26 11:25:07,434 INFO 15728 [egg-watcher] Start watching: "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\app.js"
+2020-04-26 11:25:07,435 INFO 15728 [egg-watcher:agent] watcher start success
+2020-04-26 11:25:07,573 INFO 15728 [egg:core] dump config after ready, 9ms

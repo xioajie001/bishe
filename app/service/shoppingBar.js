@@ -6,8 +6,7 @@ const sillyTime = require("silly-datetime");
 class ShoppingBarService extends Service {
 
   //获取购物车信息
-  async 
-  getShoppingBar(){
+  async getShoppingBar(){
     const{ ctx } = this;
     if(ctx.session.customerId){
       const customerId = ctx.session.customerId;

@@ -121,6 +121,7 @@
     "path": "/order/doAdd",
     "regexp": "/^\\/order\\/doAdd(?:\\/(?=$))?$/",
     "stack": [
+      "middleware",
       "wrappedController"
     ]
   },

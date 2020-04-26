@@ -2,6 +2,7 @@
 // Do not modify this file!!!!!!!!!
 
 import 'egg';
+import ExportActionToken = require('../../../app/service/actionToken');
 import ExportComment = require('../../../app/service/comment');
 import ExportComplain = require('../../../app/service/complain');
 import ExportCourse = require('../../../app/service/course');
@@ -14,6 +15,7 @@ import ExportTools = require('../../../app/service/tools');
 
 declare module 'egg' {
   interface IService {
+    actionToken: ExportActionToken;
     comment: ExportComment;
     complain: ExportComplain;
     course: ExportCourse;

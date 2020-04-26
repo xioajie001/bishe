@@ -48,6 +48,16 @@ module.exports = appInfo => {
     },
   };
 
+  config.cors = {
+    credentials: true,
+  };
+
+  config.jwt = {
+    secret: 'Great4-M',
+    enable: true, // default is false
+    // match: '/jwt', // optional
+  };
+
   // 数据库配置
   config.mongoose = {
     client: {

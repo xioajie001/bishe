@@ -73,6 +73,14 @@
     "defaultExtension": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-view\\config\\config.default.js",
     "defaultViewEngine": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-view\\config\\config.default.js"
   },
+  "cors": {
+    "credentials": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\config\\config.default.js"
+  },
+  "jwt": {
+    "secret": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\config\\config.default.js",
+    "match": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\config\\config.default.js",
+    "enable": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-jwt\\config\\config.default.js"
+  },
   "mongoose": {
     "client": {
       "url": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\config\\config.default.js",
@@ -191,6 +199,7 @@
     },
     "dependencies": {
       "egg": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg\\config\\config.default.js",
+      "egg-jwt": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg\\config\\config.default.js",
       "egg-mongoose": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg\\config\\config.default.js",
       "egg-scripts": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg\\config\\config.default.js",
       "egg-view-ejs": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg\\config\\config.default.js",

@@ -13,8 +13,6 @@ class ItemService extends Service {
   async getItemDetail() {
       const{ ctx } = this;
       const data = await ctx.query;
-      console.log(data);
-      console.log(data.length);
       if(data._id){
         const itemDetail = await ctx.model.Item.findOne(data);
         return itemDetail;

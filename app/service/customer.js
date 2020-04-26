@@ -51,28 +51,27 @@ class CustomerService extends Service {
     }catch(err){
       return err;
     }
-    
+
   }
 
   // 登录
   async login(){
     const{customerZhanghao,password} = this.ctx.request.body;
-    console.log("customerZhanghao",customerZhanghao)
-    console.log("password",password)
     const query = await this.ctx.model.Customer.find({customerZhanghao,password});
     console.log(query)
     if(query.length > 0){
-      console.log(query[0].customerId)
-      // 设置session
-      this.ctx.session.customerId = query[0].customerId;
-      console.log(this.ctx.session)
-      return {status:1, msg:"登录成功"};
+      return {
+        status:1,
+        msg:"登录成功", 
+        token: await this.ctx.service.actionToken.apply( query[0].customerId )
+      };
     }else{
       return {status:0, msg:"账号不存在或密码不正确"};
     } 
   }
 
-  //客户信息修改
+  //客户信息完善
+  
   async doEdit(){
     if(this.ctx.session.customerId){
       const data = this.ctx.request.body;

@@ -173,6 +173,14 @@
         }
       }
     },
+    "jwt": {
+      "secret": "<String len: 8>",
+      "enable": false,
+      "match": "/jwt"
+    },
+    "cors": {
+      "credentials": true
+    },
     "env": "local",
     "name": "example",
     "keys": "<String len: 26>",
@@ -193,6 +201,7 @@
       },
       "dependencies": {
         "egg": "^2.15.1",
+        "egg-jwt": "^3.1.7",
         "egg-mongoose": "^3.2.0",
         "egg-scripts": "^2.11.0",
         "egg-view-ejs": "^2.0.1",
@@ -511,6 +520,30 @@
       "from": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\config\\plugin.js",
       "path": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-mongoose",
       "version": "3.2.0"
+    },
+    "jwt": {
+      "enable": true,
+      "package": "egg-jwt",
+      "name": "jwt",
+      "dependencies": [],
+      "optionalDependencies": [
+        "onerror"
+      ],
+      "env": [],
+      "from": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\config\\plugin.js",
+      "path": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-jwt",
+      "version": "3.1.7"
+    },
+    "cors": {
+      "enable": true,
+      "package": "egg-cors",
+      "name": "cors",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\config\\plugin.js",
+      "path": "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\node_modules\\egg-cors",
+      "version": "2.2.3"
     }
   }
 }

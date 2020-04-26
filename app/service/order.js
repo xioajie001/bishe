@@ -8,9 +8,10 @@ class OrderService extends Service {
   //查看订单
   async getOrder(){
     const{ ctx } = this;
-    if(ctx.session.customerId){
-      const customerId = ctx.session.customerId;
-      const data = await ctx.model.Order.find({customerId : customerId});
+    const id =await ctx.state.user.data.id;
+    if(id){
+      const customerId = id;
+      const data = await ctx.model.Order.find({customerId : id});
       return data;
     }else{
       return {status : 0, msg : "请登录"}
@@ -21,7 +22,9 @@ class OrderService extends Service {
   async doAdd() {   
     const { ctx,} = this;
 
-    if(ctx.session.customerId){
+    const id =await ctx.state.user.data.id;
+
+    if(id){
       const data = await ctx.request.body;
 
       //  添加订单id
@@ -36,7 +39,7 @@ class OrderService extends Service {
       data.orderId = orderId;
 
       //添加下单人
-      const customerId = ctx.session.customerId;
+      const customerId = id;
       data.customerId = customerId;
 
       // 添加下单时间
@@ -61,6 +64,7 @@ class OrderService extends Service {
   //验收服务
   async confirm(){
     const { ctx } = this;
+    
     if(ctx.session.customerId){
       const data = ctx.request.body;
       try{
@@ -104,10 +108,9 @@ class OrderService extends Service {
         "$lte": nowTime
       }
     });
-
+    
     for(const i in query){
-      const orderID = query[i].orderID
-
+      const orderId = query[i].orderId
       //将订单状态变为2（订单开始）
       try{
         await ctx.model.Order.updateOne(query[i],{orderState : "2"});
@@ -117,7 +120,7 @@ class OrderService extends Service {
 
       //将工单状态变为2（订单进行）
       try{
-        await ctx.model.Workorder.updateOne({orderID}, {W_state : "2"})
+        await ctx.model.Workorder.updateOne({orderId}, {W_state : "2"})
       }catch(err){
         console.log(err);
       }

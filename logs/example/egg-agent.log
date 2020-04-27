@@ -1245,3 +1245,23 @@ hostname: FS
 2020-04-26 17:15:23,528 INFO 11728 [egg-watcher] Start watching: "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\app.js"
 2020-04-26 17:15:23,528 INFO 11728 [egg-watcher:agent] watcher start success
 2020-04-26 17:15:23,568 INFO 11728 [egg:core] dump config after ready, 7ms
+2020-04-26 17:19:05,361 INFO 7908 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\logs\\example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-04-26 17:19:05,375 INFO 7908 [egg:core] dump config after load, 6ms
+2020-04-26 17:19:05,468 INFO 7908 [egg-watcher] Start watching: ["C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\app","C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\config","C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\mocks","C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\mocks_proxy","C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\app.js"]
+2020-04-26 17:19:05,468 INFO 7908 [egg-watcher] Start watching: "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\app"
+2020-04-26 17:19:05,468 INFO 7908 [egg-watcher] Start watching: "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\config"
+2020-04-26 17:19:05,469 INFO 7908 [egg-watcher] Start watching: "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\mocks"
+2020-04-26 17:19:05,469 INFO 7908 [egg-watcher] Start watching: "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\mocks_proxy"
+2020-04-26 17:19:05,469 INFO 7908 [egg-watcher] Start watching: "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\app.js"
+2020-04-26 17:19:05,470 INFO 7908 [egg-watcher:agent] watcher start success
+2020-04-26 17:19:05,503 INFO 7908 [egg:core] dump config after ready, 6ms
+2020-04-26 17:53:14,413 INFO 19980 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\logs\\example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-04-26 17:53:14,426 INFO 19980 [egg:core] dump config after load, 5ms
+2020-04-26 17:53:14,511 INFO 19980 [egg-watcher] Start watching: ["C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\app","C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\config","C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\mocks","C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\mocks_proxy","C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\app.js"]
+2020-04-26 17:53:14,511 INFO 19980 [egg-watcher] Start watching: "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\app"
+2020-04-26 17:53:14,512 INFO 19980 [egg-watcher] Start watching: "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\config"
+2020-04-26 17:53:14,512 INFO 19980 [egg-watcher] Start watching: "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\mocks"
+2020-04-26 17:53:14,512 INFO 19980 [egg-watcher] Start watching: "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\mocks_proxy"
+2020-04-26 17:53:14,512 INFO 19980 [egg-watcher] Start watching: "C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\app.js"
+2020-04-26 17:53:14,513 INFO 19980 [egg-watcher:agent] watcher start success
+2020-04-26 17:53:14,542 INFO 19980 [egg:core] dump config after ready, 6ms

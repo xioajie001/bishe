@@ -8,8 +8,9 @@ class ShoppingBarService extends Service {
   //获取购物车信息
   async getShoppingBar(){
     const{ ctx } = this;
-    if(ctx.session.customerId){
-      const customerId = ctx.session.customerId;
+    const id =await ctx.state.user.data.id;
+    if(id){
+      const customerId = id;
       console.log(customerId);
       const data = await ctx.model.ShoppingBar.find({customerId : customerId});
       return data;
@@ -21,12 +22,12 @@ class ShoppingBarService extends Service {
   // 添加购物车
   async doAdd() {   
     const { ctx,} = this;
-
-    if(ctx.session.customerId){
+    const id =await ctx.state.user.data.id;
+    if(id){
       const data = await ctx.request.body;
 
       //获取客户id
-      data.customerId = ctx.session.customerId;
+      data.customerId = id;
 
       // 添加加入购物车时间
       const Time = sillyTime.format(new Date(), 'YYYY-MM-DD HH:mm');

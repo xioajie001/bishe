@@ -89,7 +89,6 @@ class CustomerService extends Service {
 
   async upload() {
     const { ctx } = this;
-    if(ctx.session.customerId){
       // 读取表单提交的文件流
       const stream = await ctx.getFileStream();
       const dir = await this.service.tools.getUploadFile(stream.filename);
@@ -112,9 +111,6 @@ class CustomerService extends Service {
           await sendToWormhole(stream)
           return {status : 0, msg : "头像上传失败"};
       }
-    }else{
-      return {status : 0, msg : "请登录"};
-    } 
   }
   
 }

@@ -64,8 +64,8 @@ class OrderService extends Service {
   //验收服务
   async confirm(){
     const { ctx } = this;
-    
-    if(ctx.session.customerId){
+    const id =await ctx.state.user.data.id;
+    if(id){
       const data = ctx.request.body;
       try{
         await ctx.model.Order.updateOne(data,{orderState : "4"});
@@ -82,7 +82,8 @@ class OrderService extends Service {
   //取消服务
   async cancel(){
     const { ctx } = this;
-    if(ctx.session.customerId){
+    const id =await ctx.state.user.data.id;
+    if(id){
       const data = ctx.request.body;
       try{
         await ctx.model.Order.updateOne(data,{orderState : "3"});

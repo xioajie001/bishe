@@ -15,14 +15,14 @@ module.exports = app => {
   router.post('/customer/upload',controller.customer.upload);  //客户上传头像
 
   //订单
-  router.get('/order/getOrder',controller.order.getOrder);  //获取订单信息
+  router.get('/order/getOrder',app.jwt,controller.order.getOrder);  //获取订单信息
   router.post('/order/doAdd',app.jwt,controller.order.doAdd);  //下单功能
-  router.post('/order/confirm',controller.order.confirm);  //验收订单
-  router.post('/order/cancel',controller.order.cancel);  //取消订单
+  router.post('/order/confirm',app.jwt,controller.order.confirm);  //验收订单
+  router.post('/order/cancel',app.jwt,controller.order.cancel);  //取消订单
 
   //购物车
-  router.get('/shoppingbar/getShoppingBar',controller.shoppingBar.getShoppingBar);  //获取购物车信息
-  router.post('/shoppingbar/doAdd',controller.shoppingBar.doAdd);//添加购物车
+  router.get('/shoppingbar/getShoppingBar',app.jwt,controller.shoppingBar.getShoppingBar);  //获取购物车信息
+  router.post('/shoppingbar/doAdd',app.jwt,controller.shoppingBar.doAdd);//添加购物车
 
   //商品
   router.get('/item/getItem',controller.item.getItem) //获取全部商品信息

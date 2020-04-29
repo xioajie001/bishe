@@ -20,6 +20,7 @@ import ExportOperatorJudgeStandard = require('../../../app/model/operatorJudgeSt
 import ExportOperatorRP = require('../../../app/model/operatorRP');
 import ExportOrder = require('../../../app/model/order');
 import ExportServicer = require('../../../app/model/servicer');
+import ExportServicerApply = require('../../../app/model/servicerApply');
 import ExportShoppingBar = require('../../../app/model/shoppingBar');
 import ExportShoppinglist = require('../../../app/model/shoppinglist');
 import ExportWorkorder = require('../../../app/model/workorder');
@@ -44,6 +45,7 @@ declare module 'egg' {
     OperatorRP: ReturnType<typeof ExportOperatorRP>;
     Order: ReturnType<typeof ExportOrder>;
     Servicer: ReturnType<typeof ExportServicer>;
+    ServicerApply: ReturnType<typeof ExportServicerApply>;
     ShoppingBar: ReturnType<typeof ExportShoppingBar>;
     Shoppinglist: ReturnType<typeof ExportShoppinglist>;
     Workorder: ReturnType<typeof ExportWorkorder>;

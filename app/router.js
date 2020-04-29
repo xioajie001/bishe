@@ -10,9 +10,9 @@ module.exports = app => {
   router.get('/customer/personal',controller.customer.personal); //获取用户个人信息
   router.post('/customer/doAdd', controller.customer.doAdd); //客户注册
   router.post('/customer/login',controller.customer.login);  //客户登录
-  router.get('/customer/edit',controller.customer.edit);  //客户修改页面
-  router.post('/customer/doEdit',controller.customer.doEdit);  //客户做修改
-  router.post('/customer/upload',controller.customer.upload);  //客户上传头像
+  router.get('/customer/edit',app.jwt,controller.customer.edit);  //客户修改页面
+  router.post('/customer/doEdit',app.jwt,controller.customer.doEdit);  //客户做修改
+  router.post('/customer/upload',app.jwt,controller.customer.upload);  //客户上传头像
 
   //订单
   router.get('/order/getOrder',app.jwt,controller.order.getOrder);  //获取订单信息
@@ -35,16 +35,21 @@ module.exports = app => {
   router.post('/comment/doAdd',controller.comment.doAdd) //评论
 
   // 专才
-  router.get('/servicer/personal', controller.servicer.personal); //获取专才个人信息
-  router.get('/servicer/add', controller.servicer.add); //专才注册页面
+  router.get('/servicer/personal',app.jwt, controller.servicer.personal); //获取专才个人信息
   router.post('/servicer/doAdd', controller.servicer.doAdd); //专才注册
-  router.get('/servicer/login',controller.servicer.login);  //专才登录
-  router.get('/servicer/edit',controller.servicer.edit);  //专才修改页面
-  router.post('/servicer/doEdit',controller.servicer.doEdit);  //专才做修改
-  router.post('/servicer/upload',controller.servicer.upload);  //专才上传头像
+  router.post('/servicer/login',controller.servicer.login);  //专才登录
+  router.post('/servicer/doEdit',app.jwt,controller.servicer.doEdit);  //专才做修改
+  router.post('/servicer/upload',app.jwt,controller.servicer.upload);  //专才上传头像
+  router.post('/servicer/setMaxWorkeOrder',app.jwt,controller.servicer.setMaxWorkeOrder);  //最大接单数设置
+  router.post('/servicer/setServicerStatus',app.jwt,controller.servicer.setServicerStatus);  //接单状态调整
+
+  //专才项目申请
+  router.get('/servicerApply/getServicerApplyItem', controller.servicerApply.getServicerApplyItem); //专才申请时获取可选单品
+  router.post('/servicerApply/servicerApply', app.jwt, controller.servicerApply.servicerApply); //专才申请时获取可选单品
 
   // 图片上传尝试
   router.get('/focus', controller.focus.index);
   router.get('/focus/add', controller.focus.add);
   router.post('/focus/doAdd', controller.focus.doAdd);
+  
 };

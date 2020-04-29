@@ -37,8 +37,15 @@ class CustomerController extends Controller {
     this.ctx.body = await this.ctx.service.servicer.upload();
   }
 
-  
+  //最大接单数设置
+  async setMaxWorkeOrder() {
+    this.ctx.body = await this.ctx.service.servicer.setMaxWorkeOrder();
+  }
 
+  //接单状态调整
+  async setServicerStatus() {
+    this.ctx.body = await this.ctx.service.servicer.setServicerStatus();
+  }
 
 }
 

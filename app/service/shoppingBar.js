@@ -39,6 +39,7 @@ class ShoppingBarService extends Service {
         const result = await ctx.model.ShoppingBar.create(data);    
         return result;
       }catch(err){
+        console.log(err);
         return err;
       }
     }else{

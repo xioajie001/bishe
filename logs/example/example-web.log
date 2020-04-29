@@ -1066,3 +1066,151 @@ hostname: FS
 pid: 5620
 hostname: FS
 
+2020-04-28 10:31:59,940 ERROR 10436 [-/127.0.0.1/-/3ms POST /servicer/setMaxWorkeOrder] nodejs.TypeError: Cannot read property 'data' of undefined
+    at ServicerService.setMaxWorkeOrder (C:\Users\FS\Desktop\egg\bs\bishe\app\service\servicer.js:126:37)
+    at CustomerController.setMaxWorkeOrder (C:\Users\FS\Desktop\egg\bs\bishe\app\controller\servicer.js:42:53)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at fn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\middleware.js:111:29)
+
+pid: 10436
+hostname: FS
+
+2020-04-28 15:17:44,792 ERROR 15292 [-/127.0.0.1/-/60ms GET /servicerApply/getServicerApplyItem] nodejs.TypeError: ctx.service.shoppingBar.getServicerApplyItem is not a function
+    at ServicerApplyController.getServicerApplyItem (C:\Users\FS\Desktop\egg\bs\bishe\app\controller\servicerApply.js:10:46)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at fn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\middleware.js:111:29)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+
+pid: 15292
+hostname: FS
+
+2020-04-28 17:20:13,595 WARN 8632 [-/127.0.0.1/-/14ms GET /servicerApply/servicerApply] nodejs.BadRequestError: Content-Type must be multipart/*
+    at Object.throw (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\lib\context.js:97:11)
+    at Object.multipart (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\extend\context.js:166:17)
+    at ServicerApplyService.servicerApply (C:\Users\FS\Desktop\egg\bs\bishe\app\service\servicerApply.js:32:21)
+    at ServicerApplyController.servicerApply (C:\Users\FS\Desktop\egg\bs\bishe\app\controller\servicerApply.js:16:48)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+message: "Content-Type must be multipart/*"
+pid: 8632
+hostname: FS
+
+2020-04-28 18:00:49,671 WARN 8632 [-/127.0.0.1/-/85ms GET /servicerApply/servicerApply] nodejs.BadRequestError: Content-Type must be multipart/*
+    at Object.throw (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\lib\context.js:97:11)
+    at Object.multipart (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\extend\context.js:166:17)
+    at ServicerApplyService.servicerApply (C:\Users\FS\Desktop\egg\bs\bishe\app\service\servicerApply.js:32:21)
+    at ServicerApplyController.servicerApply (C:\Users\FS\Desktop\egg\bs\bishe\app\controller\servicerApply.js:16:48)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+message: "Content-Type must be multipart/*"
+pid: 8632
+hostname: FS
+
+2020-04-28 18:08:18,133 WARN 19720 [-/127.0.0.1/-/31ms GET /servicerApply/servicerApply] nodejs.BadRequestError: Content-Type must be multipart/*
+    at Object.throw (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\lib\context.js:97:11)
+    at Object.multipart (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\extend\context.js:166:17)
+    at ServicerApplyService.servicerApply (C:\Users\FS\Desktop\egg\bs\bishe\app\service\servicerApply.js:32:21)
+    at ServicerApplyController.servicerApply (C:\Users\FS\Desktop\egg\bs\bishe\app\controller\servicerApply.js:16:48)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+message: "Content-Type must be multipart/*"
+pid: 19720
+hostname: FS
+
+2020-04-28 18:43:34,022 ERROR 21228 [-/127.0.0.1/-/4ms GET /servicerApply/servicerApply] nodejs.ReferenceError: 表单的名字 is not defined
+    at ServicerApplyService.servicerApply (C:\Users\FS\Desktop\egg\bs\bishe\app\service\servicerApply.js:39:9)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 21228
+hostname: FS
+
+2020-04-29 15:02:36,751 ERROR 15344 [-/127.0.0.1/-/24ms POST /customer/upload] nodejs.TypeError: Cannot read property 'data' of undefined
+    at CustomerService.upload (C:\Users\FS\Desktop\egg\bs\bishe\app\service\customer.js:97:46)
+
+pid: 15344
+hostname: FS
+
+2020-04-29 15:03:11,707 ERROR 15344 [-/127.0.0.1/-/3ms POST /customer/upload] nodejs.TypeError: Cannot read property 'data' of undefined
+    at CustomerService.upload (C:\Users\FS\Desktop\egg\bs\bishe\app\service\customer.js:97:46)
+
+pid: 15344
+hostname: FS
+
+2020-04-29 15:03:59,727 ERROR 15344 [-/127.0.0.1/-/4ms POST /customer/upload] nodejs.TypeError: Cannot read property 'data' of undefined
+    at CustomerService.upload (C:\Users\FS\Desktop\egg\bs\bishe\app\service\customer.js:97:46)
+
+pid: 15344
+hostname: FS
+
+2020-04-29 15:04:26,063 ERROR 15344 [-/127.0.0.1/-/4ms POST /customer/upload] nodejs.TypeError: Cannot read property 'data' of undefined
+    at CustomerService.upload (C:\Users\FS\Desktop\egg\bs\bishe\app\service\customer.js:97:46)
+
+pid: 15344
+hostname: FS
+
+2020-04-29 15:04:32,213 ERROR 15344 [-/127.0.0.1/-/4ms POST /customer/upload] nodejs.TypeError: Cannot read property 'data' of undefined
+    at CustomerService.upload (C:\Users\FS\Desktop\egg\bs\bishe\app\service\customer.js:97:46)
+
+pid: 15344
+hostname: FS
+
+2020-04-29 15:05:27,030 ERROR 15344 [-/127.0.0.1/-/3ms POST /customer/upload] nodejs.TypeError: Cannot read property 'data' of undefined
+    at CustomerService.upload (C:\Users\FS\Desktop\egg\bs\bishe\app\service\customer.js:97:46)
+
+pid: 15344
+hostname: FS
+

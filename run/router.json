@@ -59,6 +59,7 @@
     "path": "/customer/edit",
     "regexp": "/^\\/customer\\/edit(?:\\/(?=$))?$/",
     "stack": [
+      "middleware",
       "wrappedController"
     ]
   },
@@ -71,6 +72,7 @@
     "path": "/customer/doEdit",
     "regexp": "/^\\/customer\\/doEdit(?:\\/(?=$))?$/",
     "stack": [
+      "middleware",
       "wrappedController"
     ]
   },
@@ -83,6 +85,7 @@
     "path": "/customer/upload",
     "regexp": "/^\\/customer\\/upload(?:\\/(?=$))?$/",
     "stack": [
+      "middleware",
       "wrappedController"
     ]
   },
@@ -96,6 +99,7 @@
     "path": "/order/getOrder",
     "regexp": "/^\\/order\\/getOrder(?:\\/(?=$))?$/",
     "stack": [
+      "middleware",
       "wrappedController"
     ]
   },
@@ -121,6 +125,7 @@
     "path": "/order/confirm",
     "regexp": "/^\\/order\\/confirm(?:\\/(?=$))?$/",
     "stack": [
+      "middleware",
       "wrappedController"
     ]
   },
@@ -133,6 +138,7 @@
     "path": "/order/cancel",
     "regexp": "/^\\/order\\/cancel(?:\\/(?=$))?$/",
     "stack": [
+      "middleware",
       "wrappedController"
     ]
   },
@@ -146,6 +152,7 @@
     "path": "/shoppingbar/getShoppingBar",
     "regexp": "/^\\/shoppingbar\\/getShoppingBar(?:\\/(?=$))?$/",
     "stack": [
+      "middleware",
       "wrappedController"
     ]
   },
@@ -158,6 +165,7 @@
     "path": "/shoppingbar/doAdd",
     "regexp": "/^\\/shoppingbar\\/doAdd(?:\\/(?=$))?$/",
     "stack": [
+      "middleware",
       "wrappedController"
     ]
   },
@@ -221,19 +229,7 @@
     "path": "/servicer/personal",
     "regexp": "/^\\/servicer\\/personal(?:\\/(?=$))?$/",
     "stack": [
-      "wrappedController"
-    ]
-  },
-  {
-    "name": null,
-    "methods": [
-      "HEAD",
-      "GET"
-    ],
-    "paramNames": [],
-    "path": "/servicer/add",
-    "regexp": "/^\\/servicer\\/add(?:\\/(?=$))?$/",
-    "stack": [
+      "middleware",
       "wrappedController"
     ]
   },
@@ -252,25 +248,11 @@
   {
     "name": null,
     "methods": [
-      "HEAD",
-      "GET"
+      "POST"
     ],
     "paramNames": [],
     "path": "/servicer/login",
     "regexp": "/^\\/servicer\\/login(?:\\/(?=$))?$/",
-    "stack": [
-      "wrappedController"
-    ]
-  },
-  {
-    "name": null,
-    "methods": [
-      "HEAD",
-      "GET"
-    ],
-    "paramNames": [],
-    "path": "/servicer/edit",
-    "regexp": "/^\\/servicer\\/edit(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -284,6 +266,7 @@
     "path": "/servicer/doEdit",
     "regexp": "/^\\/servicer\\/doEdit(?:\\/(?=$))?$/",
     "stack": [
+      "middleware",
       "wrappedController"
     ]
   },
@@ -296,6 +279,59 @@
     "path": "/servicer/upload",
     "regexp": "/^\\/servicer\\/upload(?:\\/(?=$))?$/",
     "stack": [
+      "middleware",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/servicer/setMaxWorkeOrder",
+    "regexp": "/^\\/servicer\\/setMaxWorkeOrder(?:\\/(?=$))?$/",
+    "stack": [
+      "middleware",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/servicer/setServicerStatus",
+    "regexp": "/^\\/servicer\\/setServicerStatus(?:\\/(?=$))?$/",
+    "stack": [
+      "middleware",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/servicerApply/getServicerApplyItem",
+    "regexp": "/^\\/servicerApply\\/getServicerApplyItem(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/servicerApply/servicerApply",
+    "regexp": "/^\\/servicerApply\\/servicerApply(?:\\/(?=$))?$/",
+    "stack": [
+      "middleware",
       "wrappedController"
     ]
   },

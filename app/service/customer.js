@@ -12,9 +12,9 @@ class CustomerService extends Service {
   //获取个人详情页面
   async personal(){
     const{ ctx } = this;
-    if(ctx.session.customerId){
-      const customerId = ctx.session.customerId;
-      const data = await ctx.model.Customer.findOne({customerId});
+    const id =await ctx.state.user.data.id;
+    if(id){
+      const data = await ctx.model.Customer.findOne({id});
       // data.csrf = ctx.csrf;
       console.log(data);
       return data;
@@ -58,7 +58,7 @@ class CustomerService extends Service {
   async login(){
     const{customerZhanghao,password} = this.ctx.request.body;
     const query = await this.ctx.model.Customer.find({customerZhanghao,password});
-    console.log(query)
+    // console.log(query)
     if(query.length > 0){
       return {
         status:1,
@@ -71,20 +71,15 @@ class CustomerService extends Service {
   }
 
   //客户信息完善
-  
   async doEdit(){
-    if(this.ctx.session.customerId){
-      const data = this.ctx.request.body;
-      try{
-        const customerId = this.ctx.session.customerId;
-        await this.ctx.model.Customer.updateOne({customerId},data);
-        return {status : 1, msg : "更新成功"};
-      }catch(err){
-        return err;
-      }     
-    }else{
-      return {status : 0, msg : "请登录"};
-    }   
+    const id =await ctx.state.user.data.id;
+    const data = this.ctx.request.body;
+    try{
+      await this.ctx.model.Customer.updateOne({id},data);
+      return {status : 1, msg : "更新成功"};
+    }catch(err){
+      return err;
+    }      
   }
 
   async upload() {
@@ -98,8 +93,8 @@ class CustomerService extends Service {
       const target = dir.uploadDir;
       const writeStream = fs.createWriteStream(target);
 
-      //根据session获取要更改头像的客户的id
-      const customerId = ctx.session.customerId;
+      //根据token获取要更改头像的客户的id
+      const customerId =await ctx.state.user.data.id;
       const saveDir = dir.saveDir;
       try {
         // 把读取到的表单信息流写入创建的可写流

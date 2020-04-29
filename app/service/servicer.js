@@ -9,11 +9,12 @@ const sendToWormhole = require('stream-wormhole');
 const Service = require('egg').Service;
 class ServicerService extends Service {
 
-  //获取专才个人详情页面
+  //获取专才个人详情页面（待添加可接项目信息）
   async personal(){
     const{ ctx } = this;
-    if(ctx.session.servicerId){
-      const servicerId = ctx.session.servicerId;
+    const id =await ctx.state.user.data.id;
+    if(id){
+      const servicerId = id;
       const data = await ctx.model.Servicer.findOne({servicerId});
       // data.csrf = ctx.csrf;
       console.log(data);
@@ -27,6 +28,7 @@ class ServicerService extends Service {
   async doAdd() {
     const { ctx,} = this;
     const data = this.ctx.request.body;
+    console.log(data);
     const query = await this.ctx.model.Servicer.find({
       servicerZhanghao : data.servicerZhanghao
     });
@@ -60,9 +62,10 @@ class ServicerService extends Service {
     const query = await this.ctx.model.Servicer.find({servicerZhanghao,password});
     if(query.length > 0){
       console.log(query[0].servicerId)
-      // 设置session
-      this.ctx.session.servicerId = query[0].servicerId;
-      return {status:1, msg:"登录成功"};
+      return {status:1,
+         msg:"登录成功",
+         token: await this.ctx.service.actionToken.apply( query[0].servicerId ) //设置
+        };
     }else{
       return {status:0, msg:"账号不存在或密码不正确"};
     } 
@@ -70,10 +73,11 @@ class ServicerService extends Service {
 
   //专才信息修改
   async doEdit(){
-    if(this.ctx.session.servicerId){
+    const id =await ctx.state.user.data.id;
+    if(id){
       const data = this.ctx.request.body;
       try{
-        const servicerId = this.ctx.session.servicerId;
+        const servicerId = id;
         await this.ctx.model.Servicer.updateOne({servicerId},data);
         return {status : 1, msg : "更新成功"};
       }catch(err){
@@ -87,7 +91,8 @@ class ServicerService extends Service {
   //专才头像上传
   async upload() {
     const { ctx } = this;
-    if(ctx.session.servicerId){
+    const id =await ctx.state.user.data.id;
+    if(id){
       // 读取表单提交的文件流
       const stream = await ctx.getFileStream();
       const dir = await this.service.tools.getUploadFile(stream.filename);
@@ -98,7 +103,7 @@ class ServicerService extends Service {
       const writeStream = fs.createWriteStream(target);
 
       //根据session获取要更改头像的专才的id
-      const servicerId = ctx.session.servicerId;
+      const servicerId = id;
       const saveDir = dir.saveDir;
       try {
         // 把读取到的表单信息流写入创建的可写流
@@ -114,6 +119,37 @@ class ServicerService extends Service {
       return {status : 0, msg : "请登录"};
     } 
   }
-  
+
+  //最大接单数设置
+  async setMaxWorkeOrder(){
+    const {ctx} = this;
+    const id = await ctx.state.user.data.id;
+    console.log(id);
+    //从前端接收接单数数量参数
+    const data = await ctx.request.body;
+    console.log(data);
+    try{
+      await ctx.model.Servicer.updateOne({servicerId : id }, data);
+      return {status : 1, msg : "最大接单数设置成功"};
+    }catch(err){
+      console.log(err);
+      return err;
+    }
+  }
+
+  //接单状态调整
+  async setServicerStatus(){
+    const {ctx} = this;
+    const id = ctx.state.user.data.id;
+    //从前端获取servicerStatus参数
+    const data = ctx.request.body;
+    try{
+      await ctx.model.Servicer.updateOne({servicerId : id}, data);
+      return {status : 1, msg : "接单状态调整成功"};
+    }catch(err){
+      console.log(err);
+      return err;
+    }
+  }
 }
 module.exports = ServicerService;

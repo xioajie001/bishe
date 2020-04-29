@@ -4713,3 +4713,7 @@
 2020-04-29 15:05:42,156 INFO 15976 [egg-security] compose 6 middlewares into one security middleware
 2020-04-29 15:05:42,205 INFO 15976 [egg:core] dump config after load, 14ms
 2020-04-29 15:05:42,211 INFO 15976 [egg-mongoose] starting...
+2020-04-29 15:05:42,310 INFO 15976 [egg-watcher:application] watcher start success
+2020-04-29 15:05:42,559 INFO 15976 [egg-mongoose] mongodb://admin:******@59.110.162.236:27017:27017/FW?authSource=admin connected successfully
+2020-04-29 15:05:42,568 INFO 15976 [egg-mongoose] instance[0] start successfully
+2020-04-29 15:05:42,580 INFO 15976 [egg:core] dump config after ready, 9ms

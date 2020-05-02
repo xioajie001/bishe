@@ -6,16 +6,37 @@ class ItemService extends Service {
   async getItem() {
     const { ctx } = this;
 
-    //单品表关联单品分区表
-    const data =await ctx.model.Item.aggregate([{
-      $lookup : {
-        from : 'partitions',
-        localField : "_id",
-        foreignField : 'itemID',
-        as : 'partitions',
-      },
-    }]);
-    return data;
+    try{
+      //单品表关联单品分区表
+      const data =await ctx.model.Item.aggregate([{
+        $lookup : {
+          from : 'partitions',
+          localField : "_id",
+          foreignField : 'itemID',
+          as : 'partitions',
+        },
+      }]);
+      
+      for(let i =0; i < data.length; i++){
+        let itemMinMaxPrice = {};
+        let itemPrices = [];
+        console.log(data[i].partitions);
+        for(let j = 0; j < data[i].partitions.length; j++){
+          itemPrices.push(data[i].partitions[j].price);
+        };
+        let minPrice = await ctx.service.tools.getMin(itemPrices);
+        let maxPrice = await ctx.service.tools.getMax(itemPrices);
+        itemMinMaxPrice.minPrice = minPrice;
+        itemMinMaxPrice.maxPrice = maxPrice;
+        data[i].itemMinMaxPrice = itemMinMaxPrice;
+      }
+      return {status : 1, msg : data};
+    }catch(err){
+      console.log(err);
+      return {status : 0, msg : err};
+    }
+    
+    
   }
 
   //获取商品详情
@@ -23,11 +44,10 @@ class ItemService extends Service {
     const mongoose = require('mongoose')
     var ObjectId = mongoose.Types.ObjectId;
     const{ ctx } = this;
-    const data = await ctx.query;
-    console.log(data._id)
-    if(data._id){
+    const query = await ctx.query;
+    if(query._id){
       try{
-        const itemDetail = await ctx.model.Item.aggregate([{
+        const data = await ctx.model.Item.aggregate([{
           $lookup : {
             from : 'partitions',
             localField : "_id",
@@ -35,10 +55,25 @@ class ItemService extends Service {
             as : 'partitions',
           },
         },{
-          $match : { "_id" : new ObjectId(data._id) }
+          $match : { "_id" : new ObjectId(query._id) }
         }]);
-        const itemDetailData = await ctx.model.Item.find({_id : data._id});
-        return itemDetail;
+
+        //取出单品分区价格中的最小值和最大值保存在itemMinMaxPrice中
+        for(let i =0; i < data.length; i++){
+          let itemMinMaxPrice = {};
+          let itemPrices = [];
+          console.log(data[i].partitions);
+          for(let j = 0; j < data[i].partitions.length; j++){
+            itemPrices.push(data[i].partitions[j].price);
+          };
+          let minPrice = await ctx.service.tools.getMin(itemPrices);
+          let maxPrice = await ctx.service.tools.getMax(itemPrices);
+          itemMinMaxPrice.minPrice = minPrice;
+          itemMinMaxPrice.maxPrice = maxPrice;
+          data[i].itemMinMaxPrice = itemMinMaxPrice;
+        }
+        
+        return {status : 1, msg : data};
       }catch(err){
         console.log(err);
         return err;

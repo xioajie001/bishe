@@ -55,6 +55,22 @@ class ToolsService extends Service {
       uploadDir,
     };
   }
+
+  //获取数组中最小值
+  async getMin(arr){
+    arr.sort(function (a, b) {
+      return a-b;
+    }); 
+    return arr[0];
+  }
+
+  //获取数组中最大值
+  async getMax(arr){
+    arr.sort(function (a, b) {
+      return a-b;
+    }); 
+    return arr[arr.length - 1 ];
+  }
 }
 
 module.exports = ToolsService;

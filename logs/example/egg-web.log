@@ -981,3 +981,360 @@
 2020-05-02 16:21:40,696 INFO 12000 [egg-security] compose 6 middlewares into one security middleware
 2020-05-02 16:21:40,735 INFO 12000 [egg:core] dump config after load, 8ms
 2020-05-02 16:21:40,740 INFO 12000 [egg-mongoose] starting...
+2020-05-02 16:21:40,850 INFO 12000 [egg-watcher:application] watcher start success
+2020-05-02 16:21:41,056 INFO 12000 [egg-mongoose] mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin connected successfully
+2020-05-02 16:21:41,067 INFO 12000 [egg-mongoose] instance[0] start successfully
+2020-05-02 16:21:41,080 INFO 12000 [egg:core] dump config after ready, 10ms
+2020-05-02 18:42:30,181 INFO 15788 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\logs\\example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-05-02 18:42:30,255 INFO 15788 [egg-multipart] stream mode enable
+2020-05-02 18:42:31,844 INFO 15788 [egg-mongoose] connecting mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin
+2020-05-02 18:42:32,232 INFO 15788 [egg-static] starting static serve /public/ -> C:\Users\FS\Desktop\egg\bs\bishe\app\public
+2020-05-02 18:42:32,239 INFO 15788 [egg-security] use methodnoallow middleware
+2020-05-02 18:42:32,242 INFO 15788 [egg-security] use noopen middleware
+2020-05-02 18:42:32,248 INFO 15788 [egg-security] use nosniff middleware
+2020-05-02 18:42:32,250 INFO 15788 [egg-security] use xssProtection middleware
+2020-05-02 18:42:32,252 INFO 15788 [egg-security] use xframe middleware
+2020-05-02 18:42:32,254 INFO 15788 [egg-security] use dta middleware
+2020-05-02 18:42:32,254 INFO 15788 [egg-security] compose 6 middlewares into one security middleware
+2020-05-02 18:42:32,304 INFO 15788 [egg:core] dump config after load, 13ms
+2020-05-02 18:42:32,309 INFO 15788 [egg-mongoose] starting...
+2020-05-02 18:42:32,422 INFO 15788 [egg-watcher:application] watcher start success
+2020-05-02 18:42:33,027 INFO 15788 [egg-mongoose] mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin connected successfully
+2020-05-02 18:42:33,035 INFO 15788 [egg-mongoose] instance[0] start successfully
+2020-05-02 18:42:33,096 INFO 15788 [egg:core] dump config after ready, 59ms
+2020-05-02 18:42:44,280 INFO 23272 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\logs\\example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-05-02 18:42:44,336 INFO 23272 [egg-multipart] stream mode enable
+2020-05-02 18:42:45,453 INFO 23272 [egg-mongoose] connecting mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin
+2020-05-02 18:42:45,781 INFO 23272 [egg-static] starting static serve /public/ -> C:\Users\FS\Desktop\egg\bs\bishe\app\public
+2020-05-02 18:42:45,788 INFO 23272 [egg-security] use methodnoallow middleware
+2020-05-02 18:42:45,790 INFO 23272 [egg-security] use noopen middleware
+2020-05-02 18:42:45,795 INFO 23272 [egg-security] use nosniff middleware
+2020-05-02 18:42:45,796 INFO 23272 [egg-security] use xssProtection middleware
+2020-05-02 18:42:45,798 INFO 23272 [egg-security] use xframe middleware
+2020-05-02 18:42:45,799 INFO 23272 [egg-security] use dta middleware
+2020-05-02 18:42:45,799 INFO 23272 [egg-security] compose 6 middlewares into one security middleware
+2020-05-02 18:42:45,834 INFO 23272 [egg:core] dump config after load, 7ms
+2020-05-02 18:42:45,838 INFO 23272 [egg-mongoose] starting...
+2020-05-02 18:42:45,951 INFO 23272 [egg-watcher:application] watcher start success
+2020-05-02 18:42:46,416 INFO 23272 [egg-mongoose] mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin connected successfully
+2020-05-02 18:42:46,443 INFO 23272 [egg-mongoose] instance[0] start successfully
+2020-05-02 18:42:46,476 INFO 23272 [egg:core] dump config after ready, 28ms
+2020-05-02 18:47:47,143 INFO 23288 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\logs\\example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-05-02 18:47:47,202 INFO 23288 [egg-multipart] stream mode enable
+2020-05-02 18:47:48,501 INFO 23288 [egg-mongoose] connecting mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin
+2020-05-02 18:47:48,869 INFO 23288 [egg-static] starting static serve /public/ -> C:\Users\FS\Desktop\egg\bs\bishe\app\public
+2020-05-02 18:47:48,875 INFO 23288 [egg-security] use methodnoallow middleware
+2020-05-02 18:47:48,878 INFO 23288 [egg-security] use noopen middleware
+2020-05-02 18:47:48,882 INFO 23288 [egg-security] use nosniff middleware
+2020-05-02 18:47:48,884 INFO 23288 [egg-security] use xssProtection middleware
+2020-05-02 18:47:48,885 INFO 23288 [egg-security] use xframe middleware
+2020-05-02 18:47:48,886 INFO 23288 [egg-security] use dta middleware
+2020-05-02 18:47:48,886 INFO 23288 [egg-security] compose 6 middlewares into one security middleware
+2020-05-02 18:47:48,926 INFO 23288 [egg:core] dump config after load, 9ms
+2020-05-02 18:47:48,930 INFO 23288 [egg-mongoose] starting...
+2020-05-02 18:47:49,039 INFO 23288 [egg-watcher:application] watcher start success
+2020-05-02 18:47:49,255 INFO 23288 [egg-mongoose] mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin connected successfully
+2020-05-02 18:47:49,264 INFO 23288 [egg-mongoose] instance[0] start successfully
+2020-05-02 18:47:49,280 INFO 23288 [egg:core] dump config after ready, 12ms
+2020-05-02 18:58:05,898 INFO 17732 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\logs\\example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-05-02 18:58:05,957 INFO 17732 [egg-multipart] stream mode enable
+2020-05-02 18:58:07,223 INFO 17732 [egg-mongoose] connecting mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin
+2020-05-02 18:58:07,588 INFO 17732 [egg-static] starting static serve /public/ -> C:\Users\FS\Desktop\egg\bs\bishe\app\public
+2020-05-02 18:58:07,595 INFO 17732 [egg-security] use methodnoallow middleware
+2020-05-02 18:58:07,598 INFO 17732 [egg-security] use noopen middleware
+2020-05-02 18:58:07,603 INFO 17732 [egg-security] use nosniff middleware
+2020-05-02 18:58:07,604 INFO 17732 [egg-security] use xssProtection middleware
+2020-05-02 18:58:07,606 INFO 17732 [egg-security] use xframe middleware
+2020-05-02 18:58:07,607 INFO 17732 [egg-security] use dta middleware
+2020-05-02 18:58:07,607 INFO 17732 [egg-security] compose 6 middlewares into one security middleware
+2020-05-02 18:58:07,656 INFO 17732 [egg:core] dump config after load, 15ms
+2020-05-02 18:58:07,660 INFO 17732 [egg-mongoose] starting...
+2020-05-02 18:58:07,770 INFO 17732 [egg-watcher:application] watcher start success
+2020-05-02 18:58:09,240 INFO 17732 [egg-mongoose] mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin connected successfully
+2020-05-02 18:58:09,250 INFO 17732 [egg-mongoose] instance[0] start successfully
+2020-05-02 18:58:09,265 INFO 17732 [egg:core] dump config after ready, 13ms
+2020-05-02 18:58:33,770 INFO 21844 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\logs\\example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-05-02 18:58:33,838 INFO 21844 [egg-multipart] stream mode enable
+2020-05-02 18:58:35,090 INFO 21844 [egg-mongoose] connecting mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin
+2020-05-02 18:58:35,498 INFO 21844 [egg-static] starting static serve /public/ -> C:\Users\FS\Desktop\egg\bs\bishe\app\public
+2020-05-02 18:58:35,505 INFO 21844 [egg-security] use methodnoallow middleware
+2020-05-02 18:58:35,507 INFO 21844 [egg-security] use noopen middleware
+2020-05-02 18:58:35,512 INFO 21844 [egg-security] use nosniff middleware
+2020-05-02 18:58:35,513 INFO 21844 [egg-security] use xssProtection middleware
+2020-05-02 18:58:35,514 INFO 21844 [egg-security] use xframe middleware
+2020-05-02 18:58:35,515 INFO 21844 [egg-security] use dta middleware
+2020-05-02 18:58:35,515 INFO 21844 [egg-security] compose 6 middlewares into one security middleware
+2020-05-02 18:58:35,603 INFO 21844 [egg:core] dump config after load, 57ms
+2020-05-02 18:58:35,608 INFO 21844 [egg-mongoose] starting...
+2020-05-02 18:58:35,727 INFO 21844 [egg-watcher:application] watcher start success
+2020-05-02 18:58:36,170 INFO 21844 [egg-mongoose] mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin connected successfully
+2020-05-02 18:58:36,181 INFO 21844 [egg-mongoose] instance[0] start successfully
+2020-05-02 18:58:36,193 INFO 21844 [egg:core] dump config after ready, 9ms
+2020-05-02 18:59:33,188 INFO 11244 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\logs\\example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-05-02 18:59:33,254 INFO 11244 [egg-multipart] stream mode enable
+2020-05-02 18:59:34,393 INFO 11244 [egg-mongoose] connecting mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin
+2020-05-02 18:59:34,728 INFO 11244 [egg-static] starting static serve /public/ -> C:\Users\FS\Desktop\egg\bs\bishe\app\public
+2020-05-02 18:59:34,736 INFO 11244 [egg-security] use methodnoallow middleware
+2020-05-02 18:59:34,738 INFO 11244 [egg-security] use noopen middleware
+2020-05-02 18:59:34,743 INFO 11244 [egg-security] use nosniff middleware
+2020-05-02 18:59:34,744 INFO 11244 [egg-security] use xssProtection middleware
+2020-05-02 18:59:34,746 INFO 11244 [egg-security] use xframe middleware
+2020-05-02 18:59:34,747 INFO 11244 [egg-security] use dta middleware
+2020-05-02 18:59:34,747 INFO 11244 [egg-security] compose 6 middlewares into one security middleware
+2020-05-02 18:59:34,786 INFO 11244 [egg:core] dump config after load, 8ms
+2020-05-02 18:59:34,790 INFO 11244 [egg-mongoose] starting...
+2020-05-02 18:59:34,899 INFO 11244 [egg-watcher:application] watcher start success
+2020-05-02 18:59:35,436 INFO 11244 [egg-mongoose] mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin connected successfully
+2020-05-02 18:59:35,445 INFO 11244 [egg-mongoose] instance[0] start successfully
+2020-05-02 18:59:35,456 INFO 11244 [egg:core] dump config after ready, 9ms
+2020-05-02 19:00:06,749 INFO 16612 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\logs\\example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-05-02 19:00:06,810 INFO 16612 [egg-multipart] stream mode enable
+2020-05-02 19:00:08,100 INFO 16612 [egg-mongoose] connecting mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin
+2020-05-02 19:00:08,479 INFO 16612 [egg-static] starting static serve /public/ -> C:\Users\FS\Desktop\egg\bs\bishe\app\public
+2020-05-02 19:00:08,486 INFO 16612 [egg-security] use methodnoallow middleware
+2020-05-02 19:00:08,488 INFO 16612 [egg-security] use noopen middleware
+2020-05-02 19:00:08,492 INFO 16612 [egg-security] use nosniff middleware
+2020-05-02 19:00:08,494 INFO 16612 [egg-security] use xssProtection middleware
+2020-05-02 19:00:08,495 INFO 16612 [egg-security] use xframe middleware
+2020-05-02 19:00:08,497 INFO 16612 [egg-security] use dta middleware
+2020-05-02 19:00:08,497 INFO 16612 [egg-security] compose 6 middlewares into one security middleware
+2020-05-02 19:00:08,540 INFO 16612 [egg:core] dump config after load, 12ms
+2020-05-02 19:00:08,544 INFO 16612 [egg-mongoose] starting...
+2020-05-02 19:00:08,653 INFO 16612 [egg-watcher:application] watcher start success
+2020-05-02 19:00:08,962 INFO 16612 [egg-mongoose] mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin connected successfully
+2020-05-02 19:00:08,973 INFO 16612 [egg-mongoose] instance[0] start successfully
+2020-05-02 19:00:08,985 INFO 16612 [egg:core] dump config after ready, 10ms
+2020-05-02 19:08:57,914 INFO 15924 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\logs\\example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-05-02 19:08:57,977 INFO 15924 [egg-multipart] stream mode enable
+2020-05-02 19:08:59,224 INFO 15924 [egg-mongoose] connecting mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin
+2020-05-02 19:08:59,595 INFO 15924 [egg-static] starting static serve /public/ -> C:\Users\FS\Desktop\egg\bs\bishe\app\public
+2020-05-02 19:08:59,602 INFO 15924 [egg-security] use methodnoallow middleware
+2020-05-02 19:08:59,604 INFO 15924 [egg-security] use noopen middleware
+2020-05-02 19:08:59,608 INFO 15924 [egg-security] use nosniff middleware
+2020-05-02 19:08:59,609 INFO 15924 [egg-security] use xssProtection middleware
+2020-05-02 19:08:59,611 INFO 15924 [egg-security] use xframe middleware
+2020-05-02 19:08:59,612 INFO 15924 [egg-security] use dta middleware
+2020-05-02 19:08:59,612 INFO 15924 [egg-security] compose 6 middlewares into one security middleware
+2020-05-02 19:08:59,650 INFO 15924 [egg:core] dump config after load, 7ms
+2020-05-02 19:08:59,656 INFO 15924 [egg-mongoose] starting...
+2020-05-02 19:08:59,767 INFO 15924 [egg-watcher:application] watcher start success
+2020-05-02 19:09:00,103 INFO 15924 [egg-mongoose] mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin connected successfully
+2020-05-02 19:09:00,113 INFO 15924 [egg-mongoose] instance[0] start successfully
+2020-05-02 19:09:00,124 INFO 15924 [egg:core] dump config after ready, 9ms
+2020-05-02 19:11:16,124 INFO 23344 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\logs\\example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-05-02 19:11:16,183 INFO 23344 [egg-multipart] stream mode enable
+2020-05-02 19:11:17,305 INFO 23344 [egg-mongoose] connecting mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin
+2020-05-02 19:11:17,687 INFO 23344 [egg-static] starting static serve /public/ -> C:\Users\FS\Desktop\egg\bs\bishe\app\public
+2020-05-02 19:11:17,694 INFO 23344 [egg-security] use methodnoallow middleware
+2020-05-02 19:11:17,696 INFO 23344 [egg-security] use noopen middleware
+2020-05-02 19:11:17,701 INFO 23344 [egg-security] use nosniff middleware
+2020-05-02 19:11:17,702 INFO 23344 [egg-security] use xssProtection middleware
+2020-05-02 19:11:17,704 INFO 23344 [egg-security] use xframe middleware
+2020-05-02 19:11:17,705 INFO 23344 [egg-security] use dta middleware
+2020-05-02 19:11:17,705 INFO 23344 [egg-security] compose 6 middlewares into one security middleware
+2020-05-02 19:11:17,747 INFO 23344 [egg:core] dump config after load, 8ms
+2020-05-02 19:11:17,752 INFO 23344 [egg-mongoose] starting...
+2020-05-02 19:11:17,863 INFO 23344 [egg-watcher:application] watcher start success
+2020-05-02 19:11:18,063 INFO 23344 [egg-mongoose] mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin connected successfully
+2020-05-02 19:11:18,072 INFO 23344 [egg-mongoose] instance[0] start successfully
+2020-05-02 19:11:18,083 INFO 23344 [egg:core] dump config after ready, 9ms
+2020-05-02 19:11:40,425 INFO 22808 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\logs\\example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-05-02 19:11:40,486 INFO 22808 [egg-multipart] stream mode enable
+2020-05-02 19:11:41,664 INFO 22808 [egg-mongoose] connecting mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin
+2020-05-02 19:11:42,043 INFO 22808 [egg-static] starting static serve /public/ -> C:\Users\FS\Desktop\egg\bs\bishe\app\public
+2020-05-02 19:11:42,051 INFO 22808 [egg-security] use methodnoallow middleware
+2020-05-02 19:11:42,055 INFO 22808 [egg-security] use noopen middleware
+2020-05-02 19:11:42,062 INFO 22808 [egg-security] use nosniff middleware
+2020-05-02 19:11:42,064 INFO 22808 [egg-security] use xssProtection middleware
+2020-05-02 19:11:42,065 INFO 22808 [egg-security] use xframe middleware
+2020-05-02 19:11:42,068 INFO 22808 [egg-security] use dta middleware
+2020-05-02 19:11:42,068 INFO 22808 [egg-security] compose 6 middlewares into one security middleware
+2020-05-02 19:11:42,126 INFO 22808 [egg:core] dump config after load, 10ms
+2020-05-02 19:11:42,164 INFO 22808 [egg-mongoose] starting...
+2020-05-02 19:11:42,301 INFO 22808 [egg-watcher:application] watcher start success
+2020-05-02 19:11:42,490 INFO 22808 [egg-mongoose] mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin connected successfully
+2020-05-02 19:11:42,500 INFO 22808 [egg-mongoose] instance[0] start successfully
+2020-05-02 19:11:42,513 INFO 22808 [egg:core] dump config after ready, 11ms
+2020-05-02 19:11:46,627 INFO 22484 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\logs\\example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-05-02 19:11:46,751 INFO 22484 [egg-multipart] stream mode enable
+2020-05-02 19:11:47,943 INFO 22484 [egg-mongoose] connecting mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin
+2020-05-02 19:11:48,327 INFO 22484 [egg-static] starting static serve /public/ -> C:\Users\FS\Desktop\egg\bs\bishe\app\public
+2020-05-02 19:11:48,334 INFO 22484 [egg-security] use methodnoallow middleware
+2020-05-02 19:11:48,336 INFO 22484 [egg-security] use noopen middleware
+2020-05-02 19:11:48,342 INFO 22484 [egg-security] use nosniff middleware
+2020-05-02 19:11:48,343 INFO 22484 [egg-security] use xssProtection middleware
+2020-05-02 19:11:48,345 INFO 22484 [egg-security] use xframe middleware
+2020-05-02 19:11:48,347 INFO 22484 [egg-security] use dta middleware
+2020-05-02 19:11:48,347 INFO 22484 [egg-security] compose 6 middlewares into one security middleware
+2020-05-02 19:11:48,396 INFO 22484 [egg:core] dump config after load, 8ms
+2020-05-02 19:11:48,402 INFO 22484 [egg-mongoose] starting...
+2020-05-02 19:11:48,546 INFO 22484 [egg-watcher:application] watcher start success
+2020-05-02 19:11:48,743 INFO 22484 [egg-mongoose] mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin connected successfully
+2020-05-02 19:11:48,753 INFO 22484 [egg-mongoose] instance[0] start successfully
+2020-05-02 19:11:48,767 INFO 22484 [egg:core] dump config after ready, 11ms
+2020-05-02 19:12:28,657 INFO 21656 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\logs\\example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-05-02 19:12:28,720 INFO 21656 [egg-multipart] stream mode enable
+2020-05-02 19:12:29,923 INFO 21656 [egg-mongoose] connecting mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin
+2020-05-02 19:12:30,333 INFO 21656 [egg-static] starting static serve /public/ -> C:\Users\FS\Desktop\egg\bs\bishe\app\public
+2020-05-02 19:12:30,341 INFO 21656 [egg-security] use methodnoallow middleware
+2020-05-02 19:12:30,343 INFO 21656 [egg-security] use noopen middleware
+2020-05-02 19:12:30,350 INFO 21656 [egg-security] use nosniff middleware
+2020-05-02 19:12:30,352 INFO 21656 [egg-security] use xssProtection middleware
+2020-05-02 19:12:30,353 INFO 21656 [egg-security] use xframe middleware
+2020-05-02 19:12:30,355 INFO 21656 [egg-security] use dta middleware
+2020-05-02 19:12:30,355 INFO 21656 [egg-security] compose 6 middlewares into one security middleware
+2020-05-02 19:12:30,453 INFO 21656 [egg:core] dump config after load, 60ms
+2020-05-02 19:12:30,458 INFO 21656 [egg-mongoose] starting...
+2020-05-02 19:12:30,612 INFO 21656 [egg-watcher:application] watcher start success
+2020-05-02 19:12:30,808 INFO 21656 [egg-mongoose] mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin connected successfully
+2020-05-02 19:12:30,819 INFO 21656 [egg-mongoose] instance[0] start successfully
+2020-05-02 19:12:30,834 INFO 21656 [egg:core] dump config after ready, 13ms
+2020-05-02 19:12:57,038 INFO 21592 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\logs\\example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-05-02 19:12:57,102 INFO 21592 [egg-multipart] stream mode enable
+2020-05-02 19:12:58,400 INFO 21592 [egg-mongoose] connecting mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin
+2020-05-02 19:12:58,753 INFO 21592 [egg-static] starting static serve /public/ -> C:\Users\FS\Desktop\egg\bs\bishe\app\public
+2020-05-02 19:12:58,761 INFO 21592 [egg-security] use methodnoallow middleware
+2020-05-02 19:12:58,763 INFO 21592 [egg-security] use noopen middleware
+2020-05-02 19:12:58,770 INFO 21592 [egg-security] use nosniff middleware
+2020-05-02 19:12:58,771 INFO 21592 [egg-security] use xssProtection middleware
+2020-05-02 19:12:58,773 INFO 21592 [egg-security] use xframe middleware
+2020-05-02 19:12:58,774 INFO 21592 [egg-security] use dta middleware
+2020-05-02 19:12:58,774 INFO 21592 [egg-security] compose 6 middlewares into one security middleware
+2020-05-02 19:12:58,820 INFO 21592 [egg:core] dump config after load, 12ms
+2020-05-02 19:12:58,825 INFO 21592 [egg-mongoose] starting...
+2020-05-02 19:12:58,935 INFO 21592 [egg-watcher:application] watcher start success
+2020-05-02 19:12:59,263 INFO 21592 [egg-mongoose] mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin connected successfully
+2020-05-02 19:12:59,273 INFO 21592 [egg-mongoose] instance[0] start successfully
+2020-05-02 19:12:59,285 INFO 21592 [egg:core] dump config after ready, 10ms
+2020-05-02 19:14:58,326 INFO 16376 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\logs\\example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-05-02 19:14:58,388 INFO 16376 [egg-multipart] stream mode enable
+2020-05-02 19:14:59,670 INFO 16376 [egg-mongoose] connecting mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin
+2020-05-02 19:15:00,082 INFO 16376 [egg-static] starting static serve /public/ -> C:\Users\FS\Desktop\egg\bs\bishe\app\public
+2020-05-02 19:15:00,089 INFO 16376 [egg-security] use methodnoallow middleware
+2020-05-02 19:15:00,091 INFO 16376 [egg-security] use noopen middleware
+2020-05-02 19:15:00,097 INFO 16376 [egg-security] use nosniff middleware
+2020-05-02 19:15:00,098 INFO 16376 [egg-security] use xssProtection middleware
+2020-05-02 19:15:00,100 INFO 16376 [egg-security] use xframe middleware
+2020-05-02 19:15:00,101 INFO 16376 [egg-security] use dta middleware
+2020-05-02 19:15:00,101 INFO 16376 [egg-security] compose 6 middlewares into one security middleware
+2020-05-02 19:15:00,148 INFO 16376 [egg:core] dump config after load, 14ms
+2020-05-02 19:15:00,153 INFO 16376 [egg-mongoose] starting...
+2020-05-02 19:15:00,272 INFO 16376 [egg-watcher:application] watcher start success
+2020-05-02 19:15:00,505 INFO 16376 [egg-mongoose] mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin connected successfully
+2020-05-02 19:15:00,516 INFO 16376 [egg-mongoose] instance[0] start successfully
+2020-05-02 19:15:00,571 INFO 16376 [egg:core] dump config after ready, 53ms
+2020-05-02 19:15:43,920 INFO 4284 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\logs\\example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-05-02 19:15:43,984 INFO 4284 [egg-multipart] stream mode enable
+2020-05-02 19:15:45,132 INFO 4284 [egg-mongoose] connecting mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin
+2020-05-02 19:15:45,489 INFO 4284 [egg-static] starting static serve /public/ -> C:\Users\FS\Desktop\egg\bs\bishe\app\public
+2020-05-02 19:15:45,495 INFO 4284 [egg-security] use methodnoallow middleware
+2020-05-02 19:15:45,498 INFO 4284 [egg-security] use noopen middleware
+2020-05-02 19:15:45,502 INFO 4284 [egg-security] use nosniff middleware
+2020-05-02 19:15:45,504 INFO 4284 [egg-security] use xssProtection middleware
+2020-05-02 19:15:45,505 INFO 4284 [egg-security] use xframe middleware
+2020-05-02 19:15:45,506 INFO 4284 [egg-security] use dta middleware
+2020-05-02 19:15:45,506 INFO 4284 [egg-security] compose 6 middlewares into one security middleware
+2020-05-02 19:15:45,598 INFO 4284 [egg:core] dump config after load, 57ms
+2020-05-02 19:15:45,603 INFO 4284 [egg-mongoose] starting...
+2020-05-02 19:15:45,714 INFO 4284 [egg-watcher:application] watcher start success
+2020-05-02 19:15:45,988 INFO 4284 [egg-mongoose] mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin connected successfully
+2020-05-02 19:15:45,997 INFO 4284 [egg-mongoose] instance[0] start successfully
+2020-05-02 19:15:46,011 INFO 4284 [egg:core] dump config after ready, 12ms
+2020-05-02 19:15:52,689 INFO 21172 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\logs\\example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-05-02 19:15:52,755 INFO 21172 [egg-multipart] stream mode enable
+2020-05-02 19:15:54,296 INFO 21172 [egg-mongoose] connecting mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin
+2020-05-02 19:15:54,639 INFO 21172 [egg-static] starting static serve /public/ -> C:\Users\FS\Desktop\egg\bs\bishe\app\public
+2020-05-02 19:15:54,646 INFO 21172 [egg-security] use methodnoallow middleware
+2020-05-02 19:15:54,648 INFO 21172 [egg-security] use noopen middleware
+2020-05-02 19:15:54,652 INFO 21172 [egg-security] use nosniff middleware
+2020-05-02 19:15:54,653 INFO 21172 [egg-security] use xssProtection middleware
+2020-05-02 19:15:54,654 INFO 21172 [egg-security] use xframe middleware
+2020-05-02 19:15:54,656 INFO 21172 [egg-security] use dta middleware
+2020-05-02 19:15:54,656 INFO 21172 [egg-security] compose 6 middlewares into one security middleware
+2020-05-02 19:15:54,699 INFO 21172 [egg:core] dump config after load, 12ms
+2020-05-02 19:15:54,704 INFO 21172 [egg-mongoose] starting...
+2020-05-02 19:15:54,815 INFO 21172 [egg-watcher:application] watcher start success
+2020-05-02 19:15:55,002 INFO 21172 [egg-mongoose] mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin connected successfully
+2020-05-02 19:15:55,011 INFO 21172 [egg-mongoose] instance[0] start successfully
+2020-05-02 19:15:55,022 INFO 21172 [egg:core] dump config after ready, 9ms
+2020-05-02 19:17:10,856 INFO 5912 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\logs\\example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-05-02 19:17:10,918 INFO 5912 [egg-multipart] stream mode enable
+2020-05-02 19:17:12,136 INFO 5912 [egg-mongoose] connecting mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin
+2020-05-02 19:17:12,497 INFO 5912 [egg-static] starting static serve /public/ -> C:\Users\FS\Desktop\egg\bs\bishe\app\public
+2020-05-02 19:17:12,504 INFO 5912 [egg-security] use methodnoallow middleware
+2020-05-02 19:17:12,506 INFO 5912 [egg-security] use noopen middleware
+2020-05-02 19:17:12,511 INFO 5912 [egg-security] use nosniff middleware
+2020-05-02 19:17:12,512 INFO 5912 [egg-security] use xssProtection middleware
+2020-05-02 19:17:12,514 INFO 5912 [egg-security] use xframe middleware
+2020-05-02 19:17:12,515 INFO 5912 [egg-security] use dta middleware
+2020-05-02 19:17:12,515 INFO 5912 [egg-security] compose 6 middlewares into one security middleware
+2020-05-02 19:17:12,559 INFO 5912 [egg:core] dump config after load, 12ms
+2020-05-02 19:17:12,564 INFO 5912 [egg-mongoose] starting...
+2020-05-02 19:17:12,667 INFO 5912 [egg-watcher:application] watcher start success
+2020-05-02 19:17:12,916 INFO 5912 [egg-mongoose] mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin connected successfully
+2020-05-02 19:17:12,925 INFO 5912 [egg-mongoose] instance[0] start successfully
+2020-05-02 19:17:12,935 INFO 5912 [egg:core] dump config after ready, 8ms
+2020-05-02 19:18:50,344 INFO 22580 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\logs\\example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-05-02 19:18:50,408 INFO 22580 [egg-multipart] stream mode enable
+2020-05-02 19:18:51,534 INFO 22580 [egg-mongoose] connecting mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin
+2020-05-02 19:18:51,898 INFO 22580 [egg-static] starting static serve /public/ -> C:\Users\FS\Desktop\egg\bs\bishe\app\public
+2020-05-02 19:18:51,905 INFO 22580 [egg-security] use methodnoallow middleware
+2020-05-02 19:18:51,906 INFO 22580 [egg-security] use noopen middleware
+2020-05-02 19:18:51,911 INFO 22580 [egg-security] use nosniff middleware
+2020-05-02 19:18:51,912 INFO 22580 [egg-security] use xssProtection middleware
+2020-05-02 19:18:51,913 INFO 22580 [egg-security] use xframe middleware
+2020-05-02 19:18:51,915 INFO 22580 [egg-security] use dta middleware
+2020-05-02 19:18:51,915 INFO 22580 [egg-security] compose 6 middlewares into one security middleware
+2020-05-02 19:18:52,010 INFO 22580 [egg:core] dump config after load, 61ms
+2020-05-02 19:18:52,015 INFO 22580 [egg-mongoose] starting...
+2020-05-02 19:18:52,129 INFO 22580 [egg-watcher:application] watcher start success
+2020-05-02 19:18:52,456 INFO 22580 [egg-mongoose] mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin connected successfully
+2020-05-02 19:18:52,465 INFO 22580 [egg-mongoose] instance[0] start successfully
+2020-05-02 19:18:52,531 INFO 22580 [egg:core] dump config after ready, 64ms
+2020-05-02 19:22:56,712 INFO 8776 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\logs\\example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-05-02 19:22:56,773 INFO 8776 [egg-multipart] stream mode enable
+2020-05-02 19:22:57,894 INFO 8776 [egg-mongoose] connecting mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin
+2020-05-02 19:22:58,294 INFO 8776 [egg-static] starting static serve /public/ -> C:\Users\FS\Desktop\egg\bs\bishe\app\public
+2020-05-02 19:22:58,301 INFO 8776 [egg-security] use methodnoallow middleware
+2020-05-02 19:22:58,303 INFO 8776 [egg-security] use noopen middleware
+2020-05-02 19:22:58,308 INFO 8776 [egg-security] use nosniff middleware
+2020-05-02 19:22:58,309 INFO 8776 [egg-security] use xssProtection middleware
+2020-05-02 19:22:58,311 INFO 8776 [egg-security] use xframe middleware
+2020-05-02 19:22:58,312 INFO 8776 [egg-security] use dta middleware
+2020-05-02 19:22:58,312 INFO 8776 [egg-security] compose 6 middlewares into one security middleware
+2020-05-02 19:22:58,355 INFO 8776 [egg:core] dump config after load, 12ms
+2020-05-02 19:22:58,360 INFO 8776 [egg-mongoose] starting...
+2020-05-02 19:22:58,470 INFO 8776 [egg-watcher:application] watcher start success
+2020-05-02 19:22:58,675 INFO 8776 [egg-mongoose] mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin connected successfully
+2020-05-02 19:22:58,687 INFO 8776 [egg-mongoose] instance[0] start successfully
+2020-05-02 19:22:58,699 INFO 8776 [egg:core] dump config after ready, 10ms
+2020-05-02 19:26:44,820 INFO 656 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\logs\\example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-05-02 19:26:44,888 INFO 656 [egg-multipart] stream mode enable
+2020-05-02 19:26:46,175 INFO 656 [egg-mongoose] connecting mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin
+2020-05-02 19:26:46,535 INFO 656 [egg-static] starting static serve /public/ -> C:\Users\FS\Desktop\egg\bs\bishe\app\public
+2020-05-02 19:26:46,542 INFO 656 [egg-security] use methodnoallow middleware
+2020-05-02 19:26:46,544 INFO 656 [egg-security] use noopen middleware
+2020-05-02 19:26:46,549 INFO 656 [egg-security] use nosniff middleware
+2020-05-02 19:26:46,551 INFO 656 [egg-security] use xssProtection middleware
+2020-05-02 19:26:46,552 INFO 656 [egg-security] use xframe middleware
+2020-05-02 19:26:46,554 INFO 656 [egg-security] use dta middleware
+2020-05-02 19:26:46,554 INFO 656 [egg-security] compose 6 middlewares into one security middleware
+2020-05-02 19:26:46,600 INFO 656 [egg:core] dump config after load, 14ms
+2020-05-02 19:26:46,605 INFO 656 [egg-mongoose] starting...
+2020-05-02 19:26:46,717 INFO 656 [egg-watcher:application] watcher start success
+2020-05-02 19:26:46,912 INFO 656 [egg-mongoose] mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin connected successfully
+2020-05-02 19:26:46,919 INFO 656 [egg-mongoose] instance[0] start successfully
+2020-05-02 19:26:46,930 INFO 656 [egg:core] dump config after ready, 9ms
+2020-05-02 19:27:14,302 INFO 15056 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\logs\\example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-05-02 19:27:14,366 INFO 15056 [egg-multipart] stream mode enable
+2020-05-02 19:27:15,493 INFO 15056 [egg-mongoose] connecting mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin
+2020-05-02 19:27:15,841 INFO 15056 [egg-static] starting static serve /public/ -> C:\Users\FS\Desktop\egg\bs\bishe\app\public
+2020-05-02 19:27:15,848 INFO 15056 [egg-security] use methodnoallow middleware
+2020-05-02 19:27:15,850 INFO 15056 [egg-security] use noopen middleware
+2020-05-02 19:27:15,855 INFO 15056 [egg-security] use nosniff middleware
+2020-05-02 19:27:15,856 INFO 15056 [egg-security] use xssProtection middleware
+2020-05-02 19:27:15,857 INFO 15056 [egg-security] use xframe middleware
+2020-05-02 19:27:15,859 INFO 15056 [egg-security] use dta middleware
+2020-05-02 19:27:15,859 INFO 15056 [egg-security] compose 6 middlewares into one security middleware
+2020-05-02 19:27:15,898 INFO 15056 [egg:core] dump config after load, 8ms
+2020-05-02 19:27:15,903 INFO 15056 [egg-mongoose] starting...

@@ -35,9 +35,9 @@ class CustomerService extends Service {
       return {status : 0, msg : "该账号已存在，请重新输入账号"};
     }else if(data.password == data.password1){
       //生成客户ID
-      const cnum = await ctx .model.Customer.count();
-      const customerId =( "000000" + (cnum +1)).slice(-6);
-      data.customerId = customerId;
+      // const cnum = await ctx .model.Customer.count();
+      // const customerId =( "000000" + (cnum +1)).slice(-6);
+      // data.customerId = customerId;
       //添加注册时间
       const time = sillyTime.format(new Date(), "YYYY-MM-DD HH:mm:ss");
       data.customerRegistrationDate = time;
@@ -51,7 +51,6 @@ class CustomerService extends Service {
     }catch(err){
       return err;
     }
-
   }
 
   // 登录
@@ -63,7 +62,7 @@ class CustomerService extends Service {
       return {
         status:1,
         msg:"登录成功", 
-        token: await this.ctx.service.actionToken.apply( query[0].customerId )
+        token: await this.ctx.service.actionToken.apply( query[0]._id )
       };
     }else{
       return {status:0, msg:"账号不存在或密码不正确"};

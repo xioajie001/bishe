@@ -6,6 +6,8 @@ const sillyTime = require('silly-datetime');
 const mkdirp = require('mz-modules/mkdirp');
 const path = require('path');
 
+    
+
 class ToolsService extends Service {
   
   async captcha() {
@@ -27,6 +29,15 @@ class ToolsService extends Service {
   async getTime() {
     const date = new Date();
     return date.getTime();
+  }
+
+  async getObjectId( id ){
+    console.log("id",id);
+    const mongoose = require('mongoose');
+    let ObjectId = mongoose.Types.ObjectId;
+    console.log(new ObjectId(id));
+    return new ObjectId(id);
+     
   }
 
   async getUploadFile(filename) {

@@ -1,0 +1,1230 @@
+2020-03-08 15:16:18,284 WARN 12156 [-/127.0.0.1/-/42ms POST /customer/add] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-03-08 15:16:18,288 WARN 12156 [-/127.0.0.1/-/46ms POST /customer/add] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\app\extend\context.js:162:19)
+    at csrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-bodyparser\index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "invalid csrf token"
+pid: 12156
+hostname: FS
+
+2020-03-08 15:45:01,445 WARN 12156 [-/127.0.0.1/-/7ms POST /customer/add] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-03-08 15:45:01,451 WARN 12156 [-/127.0.0.1/-/13ms POST /customer/add] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\app\extend\context.js:162:19)
+    at csrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-bodyparser\index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "invalid csrf token"
+pid: 12156
+hostname: FS
+
+2020-03-08 15:45:13,198 WARN 12156 [-/127.0.0.1/-/1ms POST /customer/add] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-03-08 15:45:13,199 WARN 12156 [-/127.0.0.1/-/2ms POST /customer/add] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\app\extend\context.js:162:19)
+    at csrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-bodyparser\index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "invalid csrf token"
+pid: 12156
+hostname: FS
+
+2020-03-08 16:09:18,327 WARN 22668 [-/127.0.0.1/-/42ms POST /customer/add] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-03-08 16:09:18,330 WARN 22668 [-/127.0.0.1/-/45ms POST /customer/add] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\app\extend\context.js:162:19)
+    at csrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-bodyparser\index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "invalid csrf token"
+pid: 22668
+hostname: FS
+
+2020-03-08 16:20:15,138 WARN 20308 [-/127.0.0.1/-/1ms POST /shoppingbar/doAdd] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-03-08 16:20:15,143 WARN 20308 [-/127.0.0.1/-/5ms POST /shoppingbar/doAdd] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\app\extend\context.js:162:19)
+    at csrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-bodyparser\index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "invalid csrf token"
+pid: 20308
+hostname: FS
+
+2020-03-10 14:18:35,639 WARN 12608 [-/127.0.0.1/-/8ms POST /customer/edit] missing csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-03-10 14:18:35,643 WARN 12608 [-/127.0.0.1/-/12ms POST /customer/edit] nodejs.ForbiddenError: missing csrf token
+    at Object.throw (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\app\extend\context.js:153:19)
+    at csrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-bodyparser\index.js:86:11)
+message: "missing csrf token"
+pid: 12608
+hostname: FS
+
+2020-03-10 14:18:56,334 WARN 12608 [-/127.0.0.1/-/4ms POST /customer/doEdit] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-03-10 14:18:56,335 WARN 12608 [-/127.0.0.1/-/5ms POST /customer/doEdit] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\app\extend\context.js:162:19)
+    at csrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-bodyparser\index.js:86:11)
+message: "invalid csrf token"
+pid: 12608
+hostname: FS
+
+2020-03-10 14:52:55,999 ERROR 9744 [-/127.0.0.1/-/93ms GET /customer/personal] nodejs.ReferenceError: data is not defined
+    at CustomerService.personal (C:\Users\FS\Desktop\egg\bs\bishe\app\service\customer.js:104:12)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 9744
+hostname: FS
+
+2020-03-11 15:47:51,022 WARN 24164 [-/127.0.0.1/-/44ms POST /customer/add] missing csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-03-11 15:47:51,026 WARN 24164 [-/127.0.0.1/-/47ms POST /customer/add] nodejs.ForbiddenError: missing csrf token
+    at Object.throw (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\app\extend\context.js:153:19)
+    at csrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-bodyparser\index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "missing csrf token"
+pid: 24164
+hostname: FS
+
+2020-03-11 15:49:14,006 WARN 24164 [-/127.0.0.1/-/3ms POST /customer/doAdd?_csrf=hUVFQIhe-Lg7XNaU-zojLSghXIy2twxZZjoE] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-03-11 15:49:14,007 WARN 24164 [-/127.0.0.1/-/4ms POST /customer/doAdd?_csrf=hUVFQIhe-Lg7XNaU-zojLSghXIy2twxZZjoE] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\app\extend\context.js:162:19)
+    at csrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-bodyparser\index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "invalid csrf token"
+pid: 24164
+hostname: FS
+
+2020-03-11 15:52:43,321 ERROR 24164 [-/127.0.0.1/-/55ms POST /customer/doAdd?_csrf=knJ6ut5i-JfKn3vBV41IUe1jkttCRWisbrik] nodejs.ReferenceError: Data is not defined
+    at CustomerService.doAdd (C:\Users\FS\Desktop\egg\bs\bishe\app\service\customer.js:42:41)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 24164
+hostname: FS
+
+2020-03-11 15:53:05,729 ERROR 24164 [-/127.0.0.1/-/53ms POST /customer/doAdd?_csrf=QAz94ZIO-oKg5h_kcFMLQZQTfML-Kac3B5HA] nodejs.ReferenceError: Data is not defined
+    at CustomerService.doAdd (C:\Users\FS\Desktop\egg\bs\bishe\app\service\customer.js:42:41)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 24164
+hostname: FS
+
+2020-03-11 15:53:47,859 ERROR 13272 [-/127.0.0.1/-/116ms POST /customer/doAdd?_csrf=QAz94ZIO-oKg5h_kcFMLQZQTfML-Kac3B5HA] nodejs.ReferenceError: Console is not defined
+    at CustomerService.doAdd (C:\Users\FS\Desktop\egg\bs\bishe\app\service\customer.js:43:7)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 13272
+hostname: FS
+
+2020-03-11 16:35:11,911 ERROR 24824 [-/127.0.0.1/-/90ms GET /item/getItemDetail] nodejs.ObjectParameterError: Parameter "filter" to findOne() must be an object, got 5e624f170f80593d5c7032b4
+    at new ObjectParameterError (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\mongoose\lib\error\objectParameter.js:25:11)
+    at model.Query.Query.findOne (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\mongoose\lib\query.js:2206:16)
+    at Function.findOne (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\mongoose\lib\model.js:2194:13)
+    at ItemService.getItemDetail (C:\Users\FS\Desktop\egg\bs\bishe\app\service\item.js:17:47)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "Parameter \"filter\" to findOne() must be an object, got 5e624f170f80593d5c7032b4"
+name: "ObjectParameterError"
+pid: 24824
+hostname: FS
+
+2020-03-12 16:07:21,256 WARN 13056 [-/127.0.0.1/-/94ms POST /order/doAdd?_csrf=QAz94ZIO-oKg5h_kcFMLQZQTfML-Kac3B5HA] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-03-12 16:07:21,261 WARN 13056 [-/127.0.0.1/-/98ms POST /order/doAdd?_csrf=QAz94ZIO-oKg5h_kcFMLQZQTfML-Kac3B5HA] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\app\extend\context.js:162:19)
+    at csrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-bodyparser\index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "invalid csrf token"
+pid: 13056
+hostname: FS
+
+2020-03-31 15:35:28,583 WARN 22320 [-/127.0.0.1/-/37ms POST /customer/doAdd?_csrf=QS7kMVq8-J1Z-2boyKdqeXjMrwirsG6tsmjA] missing csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-03-31 15:35:28,586 WARN 22320 [-/127.0.0.1/-/40ms POST /customer/doAdd?_csrf=QS7kMVq8-J1Z-2boyKdqeXjMrwirsG6tsmjA] nodejs.ForbiddenError: missing csrf token
+    at Object.throw (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\app\extend\context.js:153:19)
+    at csrf (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-bodyparser\index.js:86:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "missing csrf token"
+pid: 22320
+hostname: FS
+
+2020-04-07 13:27:19,842 ERROR 21664 [-/127.0.0.1/-/180ms POST /customer/login] nodejs.ReferenceError: ctx is not defined
+    at CustomerService.login (C:\Users\FS\Desktop\egg\bs\bishe\app\service\customer.js:69:50)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 21664
+hostname: FS
+
+2020-04-07 13:47:42,325 ERROR 7712 [-/127.0.0.1/-/5ms POST /order/doAdd] nodejs.TypeError: Cannot read property 'data' of undefined
+    at OrderService.doAdd (C:\Users\FS\Desktop\egg\bs\bishe\app\service\order.js:24:35)
+    at OrderController.doAdd (C:\Users\FS\Desktop\egg\bs\bishe\app\controller\order.js:16:40)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at fn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\middleware.js:111:29)
+
+pid: 7712
+hostname: FS
+
+2020-04-07 13:48:39,644 ERROR 7712 [-/127.0.0.1/-/50ms POST /order/doAdd] nodejs.TypeError: Cannot read property 'data' of undefined
+    at OrderService.doAdd (C:\Users\FS\Desktop\egg\bs\bishe\app\service\order.js:24:35)
+    at OrderController.doAdd (C:\Users\FS\Desktop\egg\bs\bishe\app\controller\order.js:16:40)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at fn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\middleware.js:111:29)
+
+pid: 7712
+hostname: FS
+
+2020-04-07 13:48:45,228 ERROR 22432 [-/127.0.0.1/-/42ms POST /order/doAdd] nodejs.TypeError: Cannot read property 'data' of undefined
+    at OrderService.doAdd (C:\Users\FS\Desktop\egg\bs\bishe\app\service\order.js:24:35)
+    at OrderController.doAdd (C:\Users\FS\Desktop\egg\bs\bishe\app\controller\order.js:16:40)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at fn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\middleware.js:111:29)
+
+pid: 22432
+hostname: FS
+
+2020-04-07 13:49:02,071 ERROR 22432 [-/127.0.0.1/-/2ms POST /order/doAdd] nodejs.TypeError: Cannot read property 'data' of undefined
+    at OrderService.doAdd (C:\Users\FS\Desktop\egg\bs\bishe\app\service\order.js:24:35)
+    at OrderController.doAdd (C:\Users\FS\Desktop\egg\bs\bishe\app\controller\order.js:16:40)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at fn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\middleware.js:111:29)
+
+pid: 22432
+hostname: FS
+
+2020-04-07 13:57:02,455 WARN 8612 [-/127.0.0.1/-/38ms POST /order/doAdd] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:89:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at fn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\middleware.js:111:29)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 8612
+hostname: FS
+
+2020-04-07 14:03:17,216 WARN 8612 [-/127.0.0.1/-/1ms POST /order/doAdd] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:89:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at fn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\middleware.js:111:29)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 8612
+hostname: FS
+
+2020-04-07 14:03:28,811 WARN 8612 [-/127.0.0.1/-/2ms POST /order/doAdd] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:89:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at fn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\middleware.js:111:29)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 8612
+hostname: FS
+
+2020-04-07 14:04:14,866 WARN 8612 [-/127.0.0.1/-/1ms POST /order/doAdd] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:89:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at fn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\middleware.js:111:29)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 8612
+hostname: FS
+
+2020-04-07 14:15:37,160 WARN 6888 [-/127.0.0.1/-/2ms POST /order/doAdd] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:89:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at fn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\middleware.js:111:29)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 6888
+hostname: FS
+
+2020-04-07 14:16:21,250 WARN 6888 [-/127.0.0.1/-/1ms POST /order/doAdd] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:89:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at fn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\middleware.js:111:29)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 6888
+hostname: FS
+
+2020-04-07 14:17:28,583 WARN 17720 [-/127.0.0.1/-/37ms POST /order/doAdd] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:89:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 17720
+hostname: FS
+
+2020-04-07 14:17:34,536 WARN 17720 [-/127.0.0.1/-/2ms POST /order/doAdd] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:89:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 17720
+hostname: FS
+
+2020-04-07 14:18:10,039 WARN 17720 [-/127.0.0.1/-/1ms POST /order/doAdd] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:89:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 17720
+hostname: FS
+
+2020-04-07 14:28:52,945 WARN 17720 [-/127.0.0.1/-/1ms POST /order/doAdd] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:89:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 17720
+hostname: FS
+
+2020-04-07 14:29:59,918 WARN 17720 [-/127.0.0.1/-/0ms POST /order/doAdd?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiMDAwMDAxIn0sImV4cCI6MTU4Njg0NTY3MiwiaWF0IjoxNTg2MjQwODcyfQ.6iaiDYQP3hnPC3TUmTS-SEoyYwsDIgSsIXk-_PycQPU] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:89:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 17720
+hostname: FS
+
+2020-04-07 14:30:47,199 WARN 17720 [-/127.0.0.1/-/0ms POST /order/doAdd?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiMDAwMDAxIn0sImV4cCI6MTU4Njg0NTg0MCwiaWF0IjoxNTg2MjQxMDQwfQ.ZnPPScQvJzFm19GhbcbvYPm7pV8UC1hy0ChT6rwAecA] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:89:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 17720
+hostname: FS
+
+2020-04-07 14:36:39,752 WARN 17720 [-/127.0.0.1/-/1ms POST /order/doAdd?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiMDAwMDAxIn0sImV4cCI6MTU4Njg0NTg0MCwiaWF0IjoxNTg2MjQxMDQwfQ.ZnPPScQvJzFm19GhbcbvYPm7pV8UC1hy0ChT6rwAecA] nodejs.UnauthorizedError: Format is Authorization: Bearer [token]
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:81:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+name: "UnauthorizedError"
+message: "Format is Authorization: Bearer [token]"
+code: "credentials_bad_format"
+status: 401
+inner: {"message":"Format is Authorization: Bearer [token]"}
+pid: 17720
+hostname: FS
+
+2020-04-07 14:36:59,043 WARN 17720 [-/127.0.0.1/-/1ms POST /order/doAdd] nodejs.UnauthorizedError: Format is Authorization: Bearer [token]
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:81:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+name: "UnauthorizedError"
+message: "Format is Authorization: Bearer [token]"
+code: "credentials_bad_format"
+status: 401
+inner: {"message":"Format is Authorization: Bearer [token]"}
+pid: 17720
+hostname: FS
+
+2020-04-10 17:08:56,294 WARN 11080 [-/127.0.0.1/-/48ms POST /order/doAdd] nodejs.UnauthorizedError: Format is Authorization: Bearer [token]
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:81:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+name: "UnauthorizedError"
+message: "Format is Authorization: Bearer [token]"
+code: "credentials_bad_format"
+status: 401
+inner: {"message":"Format is Authorization: Bearer [token]"}
+pid: 11080
+hostname: FS
+
+2020-04-10 17:09:22,151 WARN 11080 [-/127.0.0.1/-/1ms POST /order/doAdd] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:89:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 11080
+hostname: FS
+
+2020-04-10 17:32:18,907 WARN 21468 [-/127.0.0.1/-/36ms POST /order/doAdd] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:89:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at fn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\middleware.js:111:29)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 21468
+hostname: FS
+
+2020-04-10 17:35:01,636 WARN 21468 [-/127.0.0.1/-/1ms POST /order/doAdd] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:89:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at fn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\middleware.js:111:29)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 21468
+hostname: FS
+
+2020-04-10 17:37:21,770 WARN 21468 [-/127.0.0.1/-/1ms POST /order/doAdd] nodejs.UnauthorizedError: Format is Authorization: Bearer [token]
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:81:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at fn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\middleware.js:111:29)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+name: "UnauthorizedError"
+message: "Format is Authorization: Bearer [token]"
+code: "credentials_bad_format"
+status: 401
+inner: {"message":"Format is Authorization: Bearer [token]"}
+pid: 21468
+hostname: FS
+
+2020-04-10 17:39:01,173 WARN 10336 [-/127.0.0.1/-/37ms POST /order/doAdd] nodejs.UnauthorizedError: Format is Authorization: Bearer [token]
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:81:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at noopen (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+name: "UnauthorizedError"
+message: "Format is Authorization: Bearer [token]"
+code: "credentials_bad_format"
+status: 401
+inner: {"message":"Format is Authorization: Bearer [token]"}
+pid: 10336
+hostname: FS
+
+2020-04-10 17:39:09,674 WARN 10336 [-/127.0.0.1/-/1ms POST /order/doAdd] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:89:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at noopen (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 10336
+hostname: FS
+
+2020-04-26 15:14:52,934 WARN 5344 [-/127.0.0.1/-/44ms POST /customer/login] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:89:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at noopen (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 5344
+hostname: FS
+
+2020-04-26 15:17:42,998 WARN 5344 [-/127.0.0.1/-/48ms POST /customer/login] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:89:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at noopen (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 5344
+hostname: FS
+
+2020-04-26 15:24:44,464 WARN 14852 [-/127.0.0.1/-/37ms POST /customer/login] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:89:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at noopen (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 14852
+hostname: FS
+
+2020-04-26 15:25:02,698 WARN 14852 [-/127.0.0.1/-/1ms POST /customer/login] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:89:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at noopen (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 14852
+hostname: FS
+
+2020-04-26 15:27:36,671 WARN 4172 [-/127.0.0.1/-/38ms POST /customer/login] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:89:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at noopen (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 4172
+hostname: FS
+
+2020-04-26 15:44:55,533 WARN 14544 [-/127.0.0.1/-/35ms POST /customer/login] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:89:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at noopen (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 14544
+hostname: FS
+
+2020-04-26 15:47:54,559 WARN 2632 [-/127.0.0.1/-/38ms POST /customer/login] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:89:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at noopen (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 2632
+hostname: FS
+
+2020-04-26 15:52:54,642 ERROR 5620 [-/127.0.0.1/-/54ms POST /order/doAdd] nodejs.TypeError: Cannot read property 'data' of undefined
+    at OrderService.doAdd (C:\Users\FS\Desktop\egg\bs\bishe\app\service\order.js:25:36)
+    at OrderController.doAdd (C:\Users\FS\Desktop\egg\bs\bishe\app\controller\order.js:16:40)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at fn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\middleware.js:111:29)
+
+pid: 5620
+hostname: FS
+
+2020-04-26 15:53:47,006 ERROR 5620 [-/127.0.0.1/-/6ms POST /order/doAdd] nodejs.TypeError: Cannot read property 'data' of undefined
+    at OrderService.doAdd (C:\Users\FS\Desktop\egg\bs\bishe\app\service\order.js:25:36)
+    at OrderController.doAdd (C:\Users\FS\Desktop\egg\bs\bishe\app\controller\order.js:16:40)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at fn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\middleware.js:111:29)
+
+pid: 5620
+hostname: FS
+
+2020-04-28 10:31:59,940 ERROR 10436 [-/127.0.0.1/-/3ms POST /servicer/setMaxWorkeOrder] nodejs.TypeError: Cannot read property 'data' of undefined
+    at ServicerService.setMaxWorkeOrder (C:\Users\FS\Desktop\egg\bs\bishe\app\service\servicer.js:126:37)
+    at CustomerController.setMaxWorkeOrder (C:\Users\FS\Desktop\egg\bs\bishe\app\controller\servicer.js:42:53)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at fn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\middleware.js:111:29)
+
+pid: 10436
+hostname: FS
+
+2020-04-28 15:17:44,792 ERROR 15292 [-/127.0.0.1/-/60ms GET /servicerApply/getServicerApplyItem] nodejs.TypeError: ctx.service.shoppingBar.getServicerApplyItem is not a function
+    at ServicerApplyController.getServicerApplyItem (C:\Users\FS\Desktop\egg\bs\bishe\app\controller\servicerApply.js:10:46)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at fn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\middleware.js:111:29)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+
+pid: 15292
+hostname: FS
+
+2020-04-28 17:20:13,595 WARN 8632 [-/127.0.0.1/-/14ms GET /servicerApply/servicerApply] nodejs.BadRequestError: Content-Type must be multipart/*
+    at Object.throw (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\lib\context.js:97:11)
+    at Object.multipart (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\extend\context.js:166:17)
+    at ServicerApplyService.servicerApply (C:\Users\FS\Desktop\egg\bs\bishe\app\service\servicerApply.js:32:21)
+    at ServicerApplyController.servicerApply (C:\Users\FS\Desktop\egg\bs\bishe\app\controller\servicerApply.js:16:48)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+message: "Content-Type must be multipart/*"
+pid: 8632
+hostname: FS
+
+2020-04-28 18:00:49,671 WARN 8632 [-/127.0.0.1/-/85ms GET /servicerApply/servicerApply] nodejs.BadRequestError: Content-Type must be multipart/*
+    at Object.throw (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\lib\context.js:97:11)
+    at Object.multipart (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\extend\context.js:166:17)
+    at ServicerApplyService.servicerApply (C:\Users\FS\Desktop\egg\bs\bishe\app\service\servicerApply.js:32:21)
+    at ServicerApplyController.servicerApply (C:\Users\FS\Desktop\egg\bs\bishe\app\controller\servicerApply.js:16:48)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+message: "Content-Type must be multipart/*"
+pid: 8632
+hostname: FS
+
+2020-04-28 18:08:18,133 WARN 19720 [-/127.0.0.1/-/31ms GET /servicerApply/servicerApply] nodejs.BadRequestError: Content-Type must be multipart/*
+    at Object.throw (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\lib\context.js:97:11)
+    at Object.multipart (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-multipart\app\extend\context.js:166:17)
+    at ServicerApplyService.servicerApply (C:\Users\FS\Desktop\egg\bs\bishe\app\service\servicerApply.js:32:21)
+    at ServicerApplyController.servicerApply (C:\Users\FS\Desktop\egg\bs\bishe\app\controller\servicerApply.js:16:48)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+message: "Content-Type must be multipart/*"
+pid: 19720
+hostname: FS
+
+2020-04-28 18:43:34,022 ERROR 21228 [-/127.0.0.1/-/4ms GET /servicerApply/servicerApply] nodejs.ReferenceError: 表单的名字 is not defined
+    at ServicerApplyService.servicerApply (C:\Users\FS\Desktop\egg\bs\bishe\app\service\servicerApply.js:39:9)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 21228
+hostname: FS
+
+2020-04-29 15:02:36,751 ERROR 15344 [-/127.0.0.1/-/24ms POST /customer/upload] nodejs.TypeError: Cannot read property 'data' of undefined
+    at CustomerService.upload (C:\Users\FS\Desktop\egg\bs\bishe\app\service\customer.js:97:46)
+
+pid: 15344
+hostname: FS
+
+2020-04-29 15:03:11,707 ERROR 15344 [-/127.0.0.1/-/3ms POST /customer/upload] nodejs.TypeError: Cannot read property 'data' of undefined
+    at CustomerService.upload (C:\Users\FS\Desktop\egg\bs\bishe\app\service\customer.js:97:46)
+
+pid: 15344
+hostname: FS
+
+2020-04-29 15:03:59,727 ERROR 15344 [-/127.0.0.1/-/4ms POST /customer/upload] nodejs.TypeError: Cannot read property 'data' of undefined
+    at CustomerService.upload (C:\Users\FS\Desktop\egg\bs\bishe\app\service\customer.js:97:46)
+
+pid: 15344
+hostname: FS
+
+2020-04-29 15:04:26,063 ERROR 15344 [-/127.0.0.1/-/4ms POST /customer/upload] nodejs.TypeError: Cannot read property 'data' of undefined
+    at CustomerService.upload (C:\Users\FS\Desktop\egg\bs\bishe\app\service\customer.js:97:46)
+
+pid: 15344
+hostname: FS
+
+2020-04-29 15:04:32,213 ERROR 15344 [-/127.0.0.1/-/4ms POST /customer/upload] nodejs.TypeError: Cannot read property 'data' of undefined
+    at CustomerService.upload (C:\Users\FS\Desktop\egg\bs\bishe\app\service\customer.js:97:46)
+
+pid: 15344
+hostname: FS
+
+2020-04-29 15:05:27,030 ERROR 15344 [-/127.0.0.1/-/3ms POST /customer/upload] nodejs.TypeError: Cannot read property 'data' of undefined
+    at CustomerService.upload (C:\Users\FS\Desktop\egg\bs\bishe\app\service\customer.js:97:46)
+
+pid: 15344
+hostname: FS
+
+2020-04-30 19:57:35,727 ERROR 20048 [-/127.0.0.1/-/145ms GET /shoppingbar/getShoppingBar] nodejs.TypeError: Cannot read property '0' of undefined
+    at ShoppingBarService.getShoppingBar (C:\Users\FS\Desktop\egg\bs\bishe\app\service\shoppingBar.js:19:38)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 20048
+hostname: FS
+
+2020-04-30 19:57:38,620 ERROR 20048 [-/127.0.0.1/-/197ms GET /shoppingbar/getShoppingBar] nodejs.TypeError: Cannot read property '0' of undefined
+    at ShoppingBarService.getShoppingBar (C:\Users\FS\Desktop\egg\bs\bishe\app\service\shoppingBar.js:19:38)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 20048
+hostname: FS
+

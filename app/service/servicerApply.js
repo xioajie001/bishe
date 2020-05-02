@@ -51,6 +51,8 @@ class ServicerApplyService extends Service {
     files = Object.assign(files, parts.field);
     files.servicerId = ctx.state.user.data.id;
     files.state = "0";
+    const time = Date.now();
+    files.applyTime = time;
     try{
         await ctx.model.ServicerApply.create(files);
         return{status : 1,msg : "项目申请成功"}

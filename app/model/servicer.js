@@ -16,7 +16,9 @@ module.exports = app => {
       servicerIDNo: {type: String, required: false}, // 专才身份证号码
       servicerPhone: {type: String, required: false}, // 专才手机电话
       servicerStatus: {type: String, required: false}, // 接单状态
-      maxWorkeOrder: {type: String, required: false}, // 最大接单数
+      maxWorkOrder: {type: String, required : false, trim : true}, // 最大接单数
+      workeordering: {type: Number, required: false,default:0}, // 在接项目数量
+      servicerItem: {type: Array, required : false}, // 可接项目
   })
     return mongoose.model('Servicer', servicerSchema);
   };

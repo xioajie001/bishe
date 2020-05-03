@@ -32,12 +32,8 @@ class ToolsService extends Service {
   }
 
   async getObjectId( id ){
-    console.log("id",id);
-    const mongoose = require('mongoose');
-    let ObjectId = mongoose.Types.ObjectId;
-    console.log(new ObjectId(id));
-    return new ObjectId(id);
-     
+    let ObjectId = this.app.mongoose.Types.ObjectId;
+    return new ObjectId(id);  
   }
 
   async getUploadFile(filename) {

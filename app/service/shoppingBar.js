@@ -8,27 +8,37 @@ class ShoppingBarService extends Service {
   //获取购物车信息
   async getShoppingBar(){
     const{ ctx } = this;
+
     const customerId =await ctx.state.user.data.id;
-    console.log(customerId);
-    const data = await ctx.model.ShoppingBar.find({customerId : customerId});
-    for(let i = 0; i < data.length; i++){
-      let itemData = await ctx.model.Item.findOne({_id : data[i].itemId});
-      for(let j = 0; j < itemData.partition.length; j++){
-        if(itemData.partition[j].id === data[i].partitionId){
-          console.log(itemData.partition[j]);
+
+    const data = await ctx.model.ShoppingBar.aggregate([
+      {
+        $lookup : {
+          from : 'partitions',
+          localField : "partitionId",
+          foreignField : '_id',
+          as : 'partition',
         }
+      },
+      {
+        $match : { "customerId" : await ctx.service.tools.getObjectId(customerId) }
       }
-     
-    }
+    ]);
     
-    return 1;
+    //根据单品分区中的itemID获取item数据
+    for(let i = 0; i < data.length; i++){
+      const itemID = data[i].partition[0].itemID;
+      let item = await ctx.model.Item.findOne({_id : itemID});
+      data[i].item = item;
+    }
+    return data;
   }
 
   // 添加购物车
   async doAdd() {   
     const { ctx,} = this;
     const id =await ctx.state.user.data.id;
-    const data = await ctx.request.body;
+    let data = await ctx.request.body;
 
     //获取客户id
     data.customerId = id;
@@ -47,6 +57,9 @@ class ShoppingBarService extends Service {
       return {status : 0,msg : err};
     }
   }
+
+  //由购物车进入商品详情页
+  
 
 }
 module.exports = ShoppingBarService;

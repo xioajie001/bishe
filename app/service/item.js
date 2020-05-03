@@ -41,8 +41,6 @@ class ItemService extends Service {
 
   //获取商品详情
   async getItemDetail() {
-    const mongoose = require('mongoose')
-    var ObjectId = mongoose.Types.ObjectId;
     const{ ctx } = this;
     const query = await ctx.query;
     if(query._id){
@@ -55,7 +53,7 @@ class ItemService extends Service {
             as : 'partitions',
           },
         },{
-          $match : { "_id" : new ObjectId(query._id) }
+          $match : { "_id" : await ctx.service.tools.getObjectId(query._id) }
         }]);
 
         //取出单品分区价格中的最小值和最大值保存在itemMinMaxPrice中

@@ -194,3 +194,44 @@ hostname: FS
 pid: 20844
 hostname: FS
 
+2020-05-03 16:42:44,303 WARN 11332 [-/127.0.0.1/-/9ms POST /shoppingbar/doAdd] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:89:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at fn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\middleware.js:111:29)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 11332
+hostname: FS
+
+2020-05-03 19:24:46,852 ERROR 21820 [-/127.0.0.1/-/35ms GET /shoppingbar/getShoppingBar] nodejs.ReferenceError: mongoose is not defined
+    at ToolsService.getObjectId (C:\Users\FS\Desktop\egg\bs\bishe\app\service\tools.js:37:20)
+    at ShoppingBarService.getShoppingBar (C:\Users\FS\Desktop\egg\bs\bishe\app\service\shoppingBar.js:35:59)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 21820
+hostname: FS
+
+2020-05-03 19:25:42,931 ERROR 19396 [-/127.0.0.1/-/19ms GET /shoppingbar/getShoppingBar] nodejs.ReferenceError: app is not defined
+    at ToolsService.getObjectId (C:\Users\FS\Desktop\egg\bs\bishe\app\service\tools.js:37:20)
+    at ShoppingBarService.getShoppingBar (C:\Users\FS\Desktop\egg\bs\bishe\app\service\shoppingBar.js:35:59)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 19396
+hostname: FS
+

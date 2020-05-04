@@ -7,10 +7,9 @@ module.exports = app => {
   const { router, controller } = app;
   router.get('/', controller.home.index);
   // 客户
-  router.get('/customer/personal',controller.customer.personal); //获取用户个人信息
+  router.get('/customer/personal',app.jwt,controller.customer.personal); //获取用户个人信息
   router.post('/customer/doAdd', controller.customer.doAdd); //客户注册
   router.post('/customer/login',controller.customer.login);  //客户登录
-  router.get('/customer/edit',app.jwt,controller.customer.edit);  //客户修改页面
   router.post('/customer/doEdit',app.jwt,controller.customer.doEdit);  //客户做修改
   router.post('/customer/upload',app.jwt,controller.customer.upload);  //客户上传头像
 

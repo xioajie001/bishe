@@ -20,7 +20,6 @@ class ItemService extends Service {
       for(let i =0; i < data.length; i++){
         let itemMinMaxPrice = {};
         let itemPrices = [];
-        console.log(data[i].partitions);
         for(let j = 0; j < data[i].partitions.length; j++){
           itemPrices.push(data[i].partitions[j].price);
         };
@@ -60,7 +59,6 @@ class ItemService extends Service {
         for(let i =0; i < data.length; i++){
           let itemMinMaxPrice = {};
           let itemPrices = [];
-          console.log(data[i].partitions);
           for(let j = 0; j < data[i].partitions.length; j++){
             itemPrices.push(data[i].partitions[j].price);
           };

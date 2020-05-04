@@ -14,7 +14,7 @@ class CustomerService extends Service {
     const{ ctx } = this;
     const id =await ctx.state.user.data.id;
     if(id){
-      const data = await ctx.model.Customer.findOne({id});
+      const data = await ctx.model.Customer.findOne({ _id : id });
       // data.csrf = ctx.csrf;
       console.log(data);
       return data;
@@ -57,7 +57,6 @@ class CustomerService extends Service {
   async login(){
     const{customerZhanghao,password} = this.ctx.request.body;
     const query = await this.ctx.model.Customer.find({customerZhanghao,password});
-    // console.log(query)
     if(query.length > 0){
       return {
         status:1,
@@ -71,10 +70,10 @@ class CustomerService extends Service {
 
   //客户信息完善
   async doEdit(){
-    const id =await ctx.state.user.data.id;
+    const id =await this.ctx.state.user.data.id;
     const data = this.ctx.request.body;
     try{
-      await this.ctx.model.Customer.updateOne({id},data);
+      await this.ctx.model.Customer.updateOne({ _id : id },data);
       return {status : 1, msg : "更新成功"};
     }catch(err){
       return err;

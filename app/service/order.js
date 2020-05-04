@@ -12,7 +12,7 @@ class OrderService extends Service {
     if(id){
       const customerId = id;
       const data = await ctx.model.Order.find({customerId : id});
-      return data;
+      return {status : 1, msg : data};
     }else{
       return {status : 0, msg : "请登录"}
     }
@@ -52,7 +52,7 @@ class OrderService extends Service {
 
       try{
         const result = await ctx.model.Order.create(data);    
-        return result;
+        return {status : 1, msg : result};
       }catch(err){
         return err;
       }
@@ -114,7 +114,7 @@ class OrderService extends Service {
       const orderId = query[i].orderId
       //将订单状态变为2（订单开始）
       try{
-        await ctx.model.Order.updateOne(query[i],{orderState : "2"});
+        await ctx.model.Order.updateOne(query[i],{orderState : "2", orderStartState : "0"});
       }catch(err){
         console.log(err);
       }

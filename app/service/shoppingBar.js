@@ -58,8 +58,10 @@ class ShoppingBarService extends Service {
     }
   }
 
-  //由购物车进入商品详情页
-  
+  //删除购物车
+  // async doDel(){
+    
+  // }
 
 }
 module.exports = ShoppingBarService;

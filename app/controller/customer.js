@@ -20,9 +20,6 @@ class CustomerController extends Controller {
     this.ctx.body = await this.ctx.service.customer.login();
   }
 
-  async edit() {
-    this.ctx.body = this.ctx.csrf;
-  }
 
   //做修改
   async doEdit() {

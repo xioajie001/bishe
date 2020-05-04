@@ -22,6 +22,7 @@
     "path": "/customer/personal",
     "regexp": "/^\\/customer\\/personal(?:\\/(?=$))?$/",
     "stack": [
+      "middleware",
       "wrappedController"
     ]
   },
@@ -46,20 +47,6 @@
     "path": "/customer/login",
     "regexp": "/^\\/customer\\/login(?:\\/(?=$))?$/",
     "stack": [
-      "wrappedController"
-    ]
-  },
-  {
-    "name": null,
-    "methods": [
-      "HEAD",
-      "GET"
-    ],
-    "paramNames": [],
-    "path": "/customer/edit",
-    "regexp": "/^\\/customer\\/edit(?:\\/(?=$))?$/",
-    "stack": [
-      "middleware",
       "wrappedController"
     ]
   },

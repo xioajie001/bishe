@@ -235,3 +235,148 @@ hostname: FS
 pid: 19396
 hostname: FS
 
+2020-05-03 22:29:58,072 ERROR 2852 [-/127.0.0.1/-/9ms GET /customer/personal] nodejs.TypeError: Cannot read property 'data' of undefined
+    at CustomerService.personal (C:\Users\FS\Desktop\egg\bs\bishe\app\service\customer.js:15:36)
+    at CustomerController.personal (C:\Users\FS\Desktop\egg\bs\bishe\app\controller\customer.js:9:53)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at fn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\middleware.js:111:29)
+
+pid: 2852
+hostname: FS
+
+2020-05-03 22:30:40,066 ERROR 2852 [-/127.0.0.1/-/50ms GET /customer/personal] nodejs.TypeError: Cannot read property 'data' of undefined
+    at CustomerService.personal (C:\Users\FS\Desktop\egg\bs\bishe\app\service\customer.js:15:36)
+    at CustomerController.personal (C:\Users\FS\Desktop\egg\bs\bishe\app\controller\customer.js:9:53)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at fn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\middleware.js:111:29)
+
+pid: 2852
+hostname: FS
+
+2020-05-03 22:31:20,025 ERROR 2852 [-/127.0.0.1/-/1ms GET /customer/personal] nodejs.TypeError: Cannot read property 'data' of undefined
+    at CustomerService.personal (C:\Users\FS\Desktop\egg\bs\bishe\app\service\customer.js:15:36)
+    at CustomerController.personal (C:\Users\FS\Desktop\egg\bs\bishe\app\controller\customer.js:9:53)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at fn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\middleware.js:111:29)
+
+pid: 2852
+hostname: FS
+
+2020-05-03 22:45:06,801 ERROR 22512 [-/127.0.0.1/-/40ms POST /customer/doEdit] nodejs.ReferenceError: ctx is not defined
+    at CustomerService.doEdit (C:\Users\FS\Desktop\egg\bs\bishe\app\service\customer.js:74:15)
+    at CustomerController.doEdit (C:\Users\FS\Desktop\egg\bs\bishe\app\controller\customer.js:26:53)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:145:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 22512
+hostname: FS
+
+2020-05-04 10:15:57,178 WARN 15956 [-/127.0.0.1/-/54ms GET /order/getOrder] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:89:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at fn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\middleware.js:111:29)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 15956
+hostname: FS
+
+2020-05-04 13:14:42,842 ERROR 1900 [-/127.0.0.1/-/832ms GET /shoppingbar/getShoppingBar] nodejs.TypeError: Cannot read property 'itemID' of undefined
+    at ShoppingBarService.getShoppingBar (C:\Users\FS\Desktop\egg\bs\bishe\app\service\shoppingBar.js:30:43)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 1900
+hostname: FS
+
+2020-05-04 13:16:00,122 ERROR 1900 [-/127.0.0.1/-/805ms GET /shoppingbar/getShoppingBar] nodejs.TypeError: Cannot read property 'itemID' of undefined
+    at ShoppingBarService.getShoppingBar (C:\Users\FS\Desktop\egg\bs\bishe\app\service\shoppingBar.js:30:43)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 1900
+hostname: FS
+
+2020-05-04 13:16:22,618 ERROR 16516 [-/127.0.0.1/-/897ms GET /shoppingbar/getShoppingBar] nodejs.TypeError: Cannot read property 'itemID' of undefined
+    at ShoppingBarService.getShoppingBar (C:\Users\FS\Desktop\egg\bs\bishe\app\service\shoppingBar.js:31:43)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 16516
+hostname: FS
+
+2020-05-04 13:17:35,259 ERROR 17476 [-/127.0.0.1/-/1666ms GET /shoppingbar/getShoppingBar] nodejs.TypeError: Cannot read property 'itemID' of undefined
+    at ShoppingBarService.getShoppingBar (C:\Users\FS\Desktop\egg\bs\bishe\app\service\shoppingBar.js:31:43)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 17476
+hostname: FS
+
+2020-05-04 13:19:21,244 ERROR 20284 [-/127.0.0.1/-/2431ms GET /shoppingbar/getShoppingBar] nodejs.TypeError: Cannot read property 'itemID' of undefined
+    at ShoppingBarService.getShoppingBar (C:\Users\FS\Desktop\egg\bs\bishe\app\service\shoppingBar.js:32:43)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 20284
+hostname: FS
+
+2020-05-04 13:20:58,591 ERROR 18272 [-/127.0.0.1/-/2936ms GET /shoppingbar/getShoppingBar] nodejs.TypeError: Cannot read property 'itemID' of undefined
+    at ShoppingBarService.getShoppingBar (C:\Users\FS\Desktop\egg\bs\bishe\app\service\shoppingBar.js:31:40)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 18272
+hostname: FS
+

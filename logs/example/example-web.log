@@ -380,3 +380,17 @@ hostname: FS
 pid: 18272
 hostname: FS
 
+2020-05-04 15:51:47,912 ERROR 608 [-/127.0.0.1/-/116ms POST /shoppingbar/doAdd] nodejs.ReferenceError: query is not defined
+    at ShoppingBarService.doAdd (C:\Users\FS\Desktop\egg\bs\bishe\app\service\shoppingBar.js:54:17)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 608
+hostname: FS
+
+2020-05-04 15:52:22,994 ERROR 9880 [-/127.0.0.1/-/149ms POST /shoppingbar/doAdd] nodejs.ReferenceError: query is not defined
+    at ShoppingBarService.doAdd (C:\Users\FS\Desktop\egg\bs\bishe\app\service\shoppingBar.js:54:17)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 9880
+hostname: FS
+

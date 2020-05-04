@@ -42,7 +42,26 @@ class ShoppingBarService extends Service {
 
     //获取客户id
     data.customerId = id;
+    let query;
+    //查询数据库中是否已有该单品信息，返回单品的数量
+    try{
+      query =await ctx.model.ShoppingBar.findOne( data );
+    }catch(err){
+      console.log(err);
+      return {status : 0,msg : err};
+    }
 
+    if(query){
+      //如果已有该单品已存在在购物车中，则将购物车中该单品的数量+1
+      try{
+        const result =await ctx.model.ShoppingBar.update( data , {quantity : query.quantity+1});
+        return {status : 1, msg : "添加购物车成功"};
+      }catch(err){
+        console.log(err);
+        return {status : 0,msg : err};
+      }
+    }
+    console.log(query);
     // 添加加入购物车时间
     const Time = sillyTime.format(new Date(), 'YYYY-MM-DD HH:mm');
     data.addTime = Time;

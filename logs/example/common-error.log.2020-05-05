@@ -1,0 +1,346 @@
+2020-05-02 11:51:00,288 ERROR 2228 [-/127.0.0.1/-/11ms GET /item/getItem] nodejs.MongooseError: Mongoose 5.x disallows passing a spread of operators to `Model.aggregate()`. Instead of `Model.aggregate({ $match }, { $skip })`, do `Model.aggregate([{ $match }, { $skip }])`
+    at new MongooseError (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\mongoose\lib\error\mongooseError.js:10:11)
+    at Function.aggregate (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\mongoose\lib\model.js:3903:11)
+    at ItemService.getItem (C:\Users\FS\Desktop\egg\bs\bishe\app\service\item.js:9:38)
+    at HomeController.getItem (C:\Users\FS\Desktop\egg\bs\bishe\app\controller\item.js:8:39)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+message: "Mongoose 5.x disallows passing a spread of operators to `Model.aggregate()`. Instead of `Model.aggregate({ $match }, { $skip })`, do `Model.aggregate([{ $match }, { $skip }])`"
+name: "MongooseError"
+pid: 2228
+hostname: FS
+
+2020-05-02 13:09:35,415 ERROR 2228 [-/127.0.0.1/-/1ms GET /item/getItem] nodejs.MongooseError: Mongoose 5.x disallows passing a spread of operators to `Model.aggregate()`. Instead of `Model.aggregate({ $match }, { $skip })`, do `Model.aggregate([{ $match }, { $skip }])`
+    at new MongooseError (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\mongoose\lib\error\mongooseError.js:10:11)
+    at Function.aggregate (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\mongoose\lib\model.js:3903:11)
+    at ItemService.getItem (C:\Users\FS\Desktop\egg\bs\bishe\app\service\item.js:9:38)
+    at HomeController.getItem (C:\Users\FS\Desktop\egg\bs\bishe\app\controller\item.js:8:39)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+message: "Mongoose 5.x disallows passing a spread of operators to `Model.aggregate()`. Instead of `Model.aggregate({ $match }, { $skip })`, do `Model.aggregate([{ $match }, { $skip }])`"
+name: "MongooseError"
+pid: 2228
+hostname: FS
+
+2020-05-02 14:34:42,246 ERROR 2228 [-/127.0.0.1/-/2ms GET /item/getItem] nodejs.MongooseError: Mongoose 5.x disallows passing a spread of operators to `Model.aggregate()`. Instead of `Model.aggregate({ $match }, { $skip })`, do `Model.aggregate([{ $match }, { $skip }])`
+    at new MongooseError (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\mongoose\lib\error\mongooseError.js:10:11)
+    at Function.aggregate (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\mongoose\lib\model.js:3903:11)
+    at ItemService.getItem (C:\Users\FS\Desktop\egg\bs\bishe\app\service\item.js:9:38)
+    at HomeController.getItem (C:\Users\FS\Desktop\egg\bs\bishe\app\controller\item.js:8:39)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+message: "Mongoose 5.x disallows passing a spread of operators to `Model.aggregate()`. Instead of `Model.aggregate({ $match }, { $skip })`, do `Model.aggregate([{ $match }, { $skip }])`"
+name: "MongooseError"
+pid: 2228
+hostname: FS
+
+2020-05-02 14:38:48,202 ERROR 2228 [-/127.0.0.1/-/56ms GET /item/getItem] nodejs.MongoError: unknown argument to $lookup: form
+    at Connection.<anonymous> (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\mongodb\lib\core\connection\pool.js:466:61)
+    at Connection.emit (events.js:198:13)
+    at processMessage (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\mongodb\lib\core\connection\connection.js:384:10)
+    at Socket.<anonymous> (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\mongodb\lib\core\connection\connection.js:553:15)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+ok: 0
+errmsg: "unknown argument to $lookup: form"
+code: 4571
+name: "MongoError"
+pid: 2228
+hostname: FS
+
+2020-05-02 14:57:50,165 ERROR 13156 [-/127.0.0.1/-/50ms GET /item/getItem] nodejs.MongoError: unknown argument to $lookup: form
+    at Connection.<anonymous> (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\mongodb\lib\core\connection\pool.js:466:61)
+    at Connection.emit (events.js:198:13)
+    at processMessage (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\mongodb\lib\core\connection\connection.js:384:10)
+    at Socket.<anonymous> (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\mongodb\lib\core\connection\connection.js:553:15)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+ok: 0
+errmsg: "unknown argument to $lookup: form"
+code: 4571
+name: "MongoError"
+pid: 13156
+hostname: FS
+
+2020-05-02 15:00:07,047 ERROR 16140 [-/127.0.0.1/-/59ms GET /item/getItem] nodejs.MongoError: unknown argument to $lookup: form
+    at Connection.<anonymous> (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\mongodb\lib\core\connection\pool.js:466:61)
+    at Connection.emit (events.js:198:13)
+    at processMessage (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\mongodb\lib\core\connection\connection.js:384:10)
+    at Socket.<anonymous> (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\mongodb\lib\core\connection\connection.js:553:15)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+ok: 0
+errmsg: "unknown argument to $lookup: form"
+code: 4571
+name: "MongoError"
+pid: 16140
+hostname: FS
+
+2020-05-02 15:00:07,548 ERROR 16140 [-/127.0.0.1/-/48ms GET /item/getItem] nodejs.MongoError: unknown argument to $lookup: form
+    at Connection.<anonymous> (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\mongodb\lib\core\connection\pool.js:466:61)
+    at Connection.emit (events.js:198:13)
+    at processMessage (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\mongodb\lib\core\connection\connection.js:384:10)
+    at Socket.<anonymous> (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\mongodb\lib\core\connection\connection.js:553:15)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+ok: 0
+errmsg: "unknown argument to $lookup: form"
+code: 4571
+name: "MongoError"
+pid: 16140
+hostname: FS
+
+2020-05-02 15:00:09,202 ERROR 16140 [-/127.0.0.1/-/48ms GET /item/getItem] nodejs.MongoError: unknown argument to $lookup: form
+    at Connection.<anonymous> (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\mongodb\lib\core\connection\pool.js:466:61)
+    at Connection.emit (events.js:198:13)
+    at processMessage (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\mongodb\lib\core\connection\connection.js:384:10)
+    at Socket.<anonymous> (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\mongodb\lib\core\connection\connection.js:553:15)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+ok: 0
+errmsg: "unknown argument to $lookup: form"
+code: 4571
+name: "MongoError"
+pid: 16140
+hostname: FS
+
+2020-05-02 15:00:47,146 ERROR 20488 [-/127.0.0.1/-/97ms GET /item/getItem] nodejs.MongoError: unknown argument to $lookup: form
+    at Connection.<anonymous> (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\mongodb\lib\core\connection\pool.js:466:61)
+    at Connection.emit (events.js:198:13)
+    at processMessage (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\mongodb\lib\core\connection\connection.js:384:10)
+    at Socket.<anonymous> (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\mongodb\lib\core\connection\connection.js:553:15)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+ok: 0
+errmsg: "unknown argument to $lookup: form"
+code: 4571
+name: "MongoError"
+pid: 20488
+hostname: FS
+
+2020-05-02 15:41:26,445 ERROR 8644 [-/127.0.0.1/-/12ms GET /item/getItemDetail?_id=5eabd78531ef781fb04f376e] nodejs.ReferenceError: ObjectId is not defined
+    at ItemService.getItemDetail (C:\Users\FS\Desktop\egg\bs\bishe\app\service\item.js:28:28)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 8644
+hostname: FS
+
+2020-05-02 15:59:57,223 ERROR 22352 [-/127.0.0.1/-/9ms GET /item/getItemDetail?_id=5eabd78531ef781fb04f376e] nodejs.ReferenceError: mongoose is not defined
+    at ItemService.getItemDetail (C:\Users\FS\Desktop\egg\bs\bishe\app\service\item.js:25:22)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 22352
+hostname: FS
+
+2020-05-02 16:00:21,883 ERROR 20844 [-/127.0.0.1/-/14ms GET /item/getItemDetail?_id=5eabd78531ef781fb04f376e] nodejs.ReferenceError: mongoose is not defined
+    at ItemService.getItemDetail (C:\Users\FS\Desktop\egg\bs\bishe\app\service\item.js:25:22)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 20844
+hostname: FS
+
+2020-05-02 16:00:24,871 ERROR 20844 [-/127.0.0.1/-/2ms GET /item/getItemDetail?_id=5eabd78531ef781fb04f376e] nodejs.ReferenceError: mongoose is not defined
+    at ItemService.getItemDetail (C:\Users\FS\Desktop\egg\bs\bishe\app\service\item.js:25:22)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 20844
+hostname: FS
+
+2020-05-03 19:24:46,851 ERROR 21820 [-/127.0.0.1/-/35ms GET /shoppingbar/getShoppingBar] nodejs.ReferenceError: mongoose is not defined
+    at ToolsService.getObjectId (C:\Users\FS\Desktop\egg\bs\bishe\app\service\tools.js:37:20)
+    at ShoppingBarService.getShoppingBar (C:\Users\FS\Desktop\egg\bs\bishe\app\service\shoppingBar.js:35:59)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 21820
+hostname: FS
+
+2020-05-03 19:25:42,899 ERROR 19396 [-/127.0.0.1/-/19ms GET /shoppingbar/getShoppingBar] nodejs.ReferenceError: app is not defined
+    at ToolsService.getObjectId (C:\Users\FS\Desktop\egg\bs\bishe\app\service\tools.js:37:20)
+    at ShoppingBarService.getShoppingBar (C:\Users\FS\Desktop\egg\bs\bishe\app\service\shoppingBar.js:35:59)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 19396
+hostname: FS
+
+2020-05-03 22:29:58,029 ERROR 2852 [-/127.0.0.1/-/9ms GET /customer/personal] nodejs.TypeError: Cannot read property 'data' of undefined
+    at CustomerService.personal (C:\Users\FS\Desktop\egg\bs\bishe\app\service\customer.js:15:36)
+    at CustomerController.personal (C:\Users\FS\Desktop\egg\bs\bishe\app\controller\customer.js:9:53)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at fn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\middleware.js:111:29)
+
+pid: 2852
+hostname: FS
+
+2020-05-03 22:30:39,994 ERROR 2852 [-/127.0.0.1/-/50ms GET /customer/personal] nodejs.TypeError: Cannot read property 'data' of undefined
+    at CustomerService.personal (C:\Users\FS\Desktop\egg\bs\bishe\app\service\customer.js:15:36)
+    at CustomerController.personal (C:\Users\FS\Desktop\egg\bs\bishe\app\controller\customer.js:9:53)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at fn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\middleware.js:111:29)
+
+pid: 2852
+hostname: FS
+
+2020-05-03 22:31:19,515 ERROR 2852 [-/127.0.0.1/-/1ms GET /customer/personal] nodejs.TypeError: Cannot read property 'data' of undefined
+    at CustomerService.personal (C:\Users\FS\Desktop\egg\bs\bishe\app\service\customer.js:15:36)
+    at CustomerController.personal (C:\Users\FS\Desktop\egg\bs\bishe\app\controller\customer.js:9:53)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at csrfAuth (C:\Users\FS\Desktop\egg\bs\bishe\app\middleware\csrfAuth.js:4:15)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at fn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\middleware.js:111:29)
+
+pid: 2852
+hostname: FS
+
+2020-05-03 22:45:06,758 ERROR 22512 [-/127.0.0.1/-/40ms POST /customer/doEdit] nodejs.ReferenceError: ctx is not defined
+    at CustomerService.doEdit (C:\Users\FS\Desktop\egg\bs\bishe\app\service\customer.js:74:15)
+    at CustomerController.doEdit (C:\Users\FS\Desktop\egg\bs\bishe\app\controller\customer.js:26:53)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-compose\index.js:45:18)
+    at middleware (C:\Users\FS\Desktop\egg\bs\bishe\node_modules\koa-jwt2\lib\index.js:145:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 22512
+hostname: FS
+
+2020-05-04 13:14:42,681 ERROR 1900 [-/127.0.0.1/-/832ms GET /shoppingbar/getShoppingBar] nodejs.TypeError: Cannot read property 'itemID' of undefined
+    at ShoppingBarService.getShoppingBar (C:\Users\FS\Desktop\egg\bs\bishe\app\service\shoppingBar.js:30:43)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 1900
+hostname: FS
+
+2020-05-04 13:16:00,118 ERROR 1900 [-/127.0.0.1/-/805ms GET /shoppingbar/getShoppingBar] nodejs.TypeError: Cannot read property 'itemID' of undefined
+    at ShoppingBarService.getShoppingBar (C:\Users\FS\Desktop\egg\bs\bishe\app\service\shoppingBar.js:30:43)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 1900
+hostname: FS
+
+2020-05-04 13:16:22,590 ERROR 16516 [-/127.0.0.1/-/897ms GET /shoppingbar/getShoppingBar] nodejs.TypeError: Cannot read property 'itemID' of undefined
+    at ShoppingBarService.getShoppingBar (C:\Users\FS\Desktop\egg\bs\bishe\app\service\shoppingBar.js:31:43)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 16516
+hostname: FS
+
+2020-05-04 13:17:35,255 ERROR 17476 [-/127.0.0.1/-/1666ms GET /shoppingbar/getShoppingBar] nodejs.TypeError: Cannot read property 'itemID' of undefined
+    at ShoppingBarService.getShoppingBar (C:\Users\FS\Desktop\egg\bs\bishe\app\service\shoppingBar.js:31:43)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 17476
+hostname: FS
+
+2020-05-04 13:19:21,159 ERROR 20284 [-/127.0.0.1/-/2431ms GET /shoppingbar/getShoppingBar] nodejs.TypeError: Cannot read property 'itemID' of undefined
+    at ShoppingBarService.getShoppingBar (C:\Users\FS\Desktop\egg\bs\bishe\app\service\shoppingBar.js:32:43)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 20284
+hostname: FS
+
+2020-05-04 13:20:58,479 ERROR 18272 [-/127.0.0.1/-/2936ms GET /shoppingbar/getShoppingBar] nodejs.TypeError: Cannot read property 'itemID' of undefined
+    at ShoppingBarService.getShoppingBar (C:\Users\FS\Desktop\egg\bs\bishe\app\service\shoppingBar.js:31:40)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 18272
+hostname: FS
+
+2020-05-04 15:51:47,899 ERROR 608 [-/127.0.0.1/-/116ms POST /shoppingbar/doAdd] nodejs.ReferenceError: query is not defined
+    at ShoppingBarService.doAdd (C:\Users\FS\Desktop\egg\bs\bishe\app\service\shoppingBar.js:54:17)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 608
+hostname: FS
+
+2020-05-04 15:52:22,990 ERROR 9880 [-/127.0.0.1/-/149ms POST /shoppingbar/doAdd] nodejs.ReferenceError: query is not defined
+    at ShoppingBarService.doAdd (C:\Users\FS\Desktop\egg\bs\bishe\app\service\shoppingBar.js:54:17)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 9880
+hostname: FS
+

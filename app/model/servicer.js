@@ -5,9 +5,10 @@ module.exports = app => {
     const Schema = mongoose.Schema;
   
     const servicerSchema = new Schema({
+      // _id : Schema.Types.ObjectId, // 专才id
       servicerZhanghao: {type: String, required: true}, // 专才账号
       password: {type: String, required: true}, // 专才密码
-      servicerId: {type: String, required: true}, //专才ID
+      // servicerId: {type: String, required: true}, //专才ID
       servicerName: {type: String, required: false}, //专才姓名
       servicerEmail: {type: String, required: false}, // 专才邮箱
       servicerProfilePhoto: {type: String, required: false}, // 专才头像

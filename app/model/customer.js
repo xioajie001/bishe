@@ -5,7 +5,7 @@ module.exports = app => {
     const Schema = mongoose.Schema;
   
     const customerSchema = new Schema({
-      _id: Schema.Types.ObjectId, // 客户ID
+      // _id: Schema.Types.ObjectId, // 客户ID
       customerZhanghao: {type: String, required: true}, // 客户账号
       password: {type: String, required: true}, // 客户密码
       customerName: {type: String, required: false}, // 客户名

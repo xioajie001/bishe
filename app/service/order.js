@@ -54,6 +54,7 @@ class OrderService extends Service {
         const result = await ctx.model.Order.create(data);    
         return {status : 1, msg : result};
       }catch(err){
+        console.log(err);
         return err;
       }
     }else{

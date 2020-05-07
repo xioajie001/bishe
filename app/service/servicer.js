@@ -15,10 +15,9 @@ class ServicerService extends Service {
     const id =await ctx.state.user.data.id;
     if(id){
       const servicerId = id;
-      const data = await ctx.model.Servicer.findOne({servicerId});
-      // data.csrf = ctx.csrf;
+      const data = await ctx.model.Servicer.findOne({_id :servicerId});
       console.log(data);
-      return data;
+      return  {status : 1, msg : data};
     }else{
       return {status : 0, msg : "请登录"};
     }  
@@ -36,10 +35,6 @@ class ServicerService extends Service {
     if( query.length > 0 ){
       return {status : 0, msg : "该账号已存在，请重新输入账号"};
     }else if(data.password == data.password1){
-      //生成专才ID
-      const cnum = await ctx .model.Servicer.count();
-      const servicerId =( "000000" + (cnum +1)).slice(-6);
-      data.servicerId = servicerId;
       //添加注册时间
       const time = sillyTime.format(new Date(), "YYYY-MM-DD HH:mm:ss");
       data.servicerRegistrationDate = time;
@@ -51,7 +46,8 @@ class ServicerService extends Service {
       const result = await ctx.model.Servicer.create(data);
       return {status : 1, msg : "注册成功"};
     }catch(err){
-      return err;
+      console.log(err)
+      return {status : 0, msg : err};
     }
     
   }
@@ -64,7 +60,7 @@ class ServicerService extends Service {
       console.log(query[0].servicerId)
       return {status:1,
          msg:"登录成功",
-         token: await this.ctx.service.actionToken.apply( query[0].servicerId ) //设置
+         token: await this.ctx.service.actionToken.apply( query[0]._id ) //设置
         };
     }else{
       return {status:0, msg:"账号不存在或密码不正确"};

@@ -14,7 +14,7 @@ module.exports = app =>{
         orderTime : {type : Date, required : true }, //下单时间
         partitionId : { type: Schema.Types.ObjectId, ref: 'Partition', required: true },    //单品分区id
         remark : {type : String, required : false},  //备注
-        purchaseQuantity : {type : String, required : false},    //购买数量
+        // purchaseQuantity : {type : String, required : false},    //购买数量
         customerId : { type : String, required : true }, //买家id
         phone : {type : String, required : false},   //联系电话
         orderStartTime : {type : Date, required : false} //订单开始时间

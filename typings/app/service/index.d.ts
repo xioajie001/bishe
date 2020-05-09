@@ -5,7 +5,6 @@ import 'egg';
 import ExportActionToken = require('../../../app/service/actionToken');
 import ExportComment = require('../../../app/service/comment');
 import ExportComplain = require('../../../app/service/complain');
-import ExportCourse = require('../../../app/service/course');
 import ExportCustomer = require('../../../app/service/customer');
 import ExportItem = require('../../../app/service/item');
 import ExportOrder = require('../../../app/service/order');
@@ -13,13 +12,13 @@ import ExportServicer = require('../../../app/service/servicer');
 import ExportServicerApply = require('../../../app/service/servicerApply');
 import ExportShoppingBar = require('../../../app/service/shoppingBar');
 import ExportTools = require('../../../app/service/tools');
+import ExportWorkorder = require('../../../app/service/workorder');
 
 declare module 'egg' {
   interface IService {
     actionToken: ExportActionToken;
     comment: ExportComment;
     complain: ExportComplain;
-    course: ExportCourse;
     customer: ExportCustomer;
     item: ExportItem;
     order: ExportOrder;
@@ -27,5 +26,6 @@ declare module 'egg' {
     servicerApply: ExportServicerApply;
     shoppingBar: ExportShoppingBar;
     tools: ExportTools;
+    workorder: ExportWorkorder;
   }
 }

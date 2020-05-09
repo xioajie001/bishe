@@ -329,6 +329,33 @@
       "GET"
     ],
     "paramNames": [],
+    "path": "/workorder/comfirm",
+    "regexp": "/^\\/workorder\\/comfirm(?:\\/(?=$))?$/",
+    "stack": [
+      "middleware",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/workorder/doComfirm",
+    "regexp": "/^\\/workorder\\/doComfirm(?:\\/(?=$))?$/",
+    "stack": [
+      "middleware",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
     "path": "/focus",
     "regexp": "/^\\/focus(?:\\/(?=$))?$/",
     "stack": [

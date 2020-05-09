@@ -46,6 +46,10 @@ module.exports = app => {
   router.get('/servicerApply/getServicerApplyItem', controller.servicerApply.getServicerApplyItem); //专才申请时获取可选单品
   router.post('/servicerApply/servicerApply', app.jwt, controller.servicerApply.servicerApply); //专才申请时获取可选单品
 
+  //专才工单管理模块
+  router.get('/workorder/comfirm', app.jwt, controller.workorder.comfirm); //确认接收工单页面
+  router.post('/workorder/doComfirm', app.jwt, controller.workorder.doComfirm); //确认接收工单
+
   // 图片上传尝试
   router.get('/focus', controller.focus.index);
   router.get('/focus/add', controller.focus.add);

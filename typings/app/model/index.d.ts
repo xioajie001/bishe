@@ -2,6 +2,7 @@
 // Do not modify this file!!!!!!!!!
 
 import 'egg';
+import ExportAssign = require('../../../app/model/assign');
 import ExportCategory = require('../../../app/model/category');
 import ExportCategoryAdjust = require('../../../app/model/categoryAdjust');
 import ExportCategoryJudge = require('../../../app/model/categoryJudge');
@@ -27,9 +28,11 @@ import ExportServicerApply = require('../../../app/model/servicerApply');
 import ExportShoppingBar = require('../../../app/model/shoppingBar');
 import ExportShoppinglist = require('../../../app/model/shoppinglist');
 import ExportWorkorder = require('../../../app/model/workorder');
+import ExportWorkorderlog = require('../../../app/model/workorderlog');
 
 declare module 'egg' {
   interface IModel {
+    Assign: ReturnType<typeof ExportAssign>;
     Category: ReturnType<typeof ExportCategory>;
     CategoryAdjust: ReturnType<typeof ExportCategoryAdjust>;
     CategoryJudge: ReturnType<typeof ExportCategoryJudge>;
@@ -55,5 +58,6 @@ declare module 'egg' {
     ShoppingBar: ReturnType<typeof ExportShoppingBar>;
     Shoppinglist: ReturnType<typeof ExportShoppinglist>;
     Workorder: ReturnType<typeof ExportWorkorder>;
+    Workorderlog: ReturnType<typeof ExportWorkorderlog>;
   }
 }

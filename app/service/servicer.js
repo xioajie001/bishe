@@ -57,7 +57,6 @@ class ServicerService extends Service {
     const{servicerZhanghao,password} = this.ctx.request.body;
     const query = await this.ctx.model.Servicer.find({servicerZhanghao,password});
     if(query.length > 0){
-      console.log(query[0].servicerId)
       return {status:1,
          msg:"登录成功",
          token: await this.ctx.service.actionToken.apply( query[0]._id ) //设置

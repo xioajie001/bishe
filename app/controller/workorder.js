@@ -40,6 +40,18 @@ class WorkorderController extends Controller {
     ctx.body = await ctx.service.workorder.work();
   }
 
+  //任务详情页面
+  async workDetail() {
+    const { ctx } = this;
+    ctx.body = await ctx.service.workorder.workDetail();
+  }
+
+  //任务提交
+  async taskSubmit() {
+    const { ctx } = this;
+    ctx.body = await ctx.service.workorder.taskSubmit();
+  }
+
 }
 
 module.exports = WorkorderController;

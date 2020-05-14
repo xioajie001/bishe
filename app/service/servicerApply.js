@@ -39,7 +39,7 @@ class ServicerApplyService extends Service {
         }
         // 表单的名字
         let { filename } = stream;
-        // console.log(stream);
+        console.log(filename);
         // 上传图片的目录
         const dir = await this.service.tools.getUploadFile(filename);
         const target = dir.uploadDir;
@@ -58,8 +58,8 @@ class ServicerApplyService extends Service {
         return{status : 1,msg : "项目申请成功"}
     }catch(err){
         return {status : 0, msg : err};
-    }
-    return files;
+    
+      }
   }
 
 }

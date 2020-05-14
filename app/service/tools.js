@@ -67,6 +67,16 @@ class ToolsService extends Service {
     }); 
     return arr[arr.length - 1 ];
   }
+
+  //根据数组中的对象的一个值排序
+  async compare(property){
+    return function(a,b){
+        var value1 = a[property];
+        var value2 = b[property];
+        return value1 - value2;
+    }
+  }
+
 }
 
 module.exports = ToolsService;

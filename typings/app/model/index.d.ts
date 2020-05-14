@@ -18,6 +18,7 @@ import ExportInterruptRequest = require('../../../app/model/interruptRequest');
 import ExportItem = require('../../../app/model/item');
 import ExportItemjudge = require('../../../app/model/itemjudge');
 import ExportItemStateOnline = require('../../../app/model/itemStateOnline');
+import ExportNews = require('../../../app/model/news');
 import ExportOperatorJudge = require('../../../app/model/operatorJudge');
 import ExportOperatorJudgeStandard = require('../../../app/model/operatorJudgeStandard');
 import ExportOperatorRP = require('../../../app/model/operatorRP');
@@ -49,6 +50,7 @@ declare module 'egg' {
     Item: ReturnType<typeof ExportItem>;
     Itemjudge: ReturnType<typeof ExportItemjudge>;
     ItemStateOnline: ReturnType<typeof ExportItemStateOnline>;
+    News: ReturnType<typeof ExportNews>;
     OperatorJudge: ReturnType<typeof ExportOperatorJudge>;
     OperatorJudgeStandard: ReturnType<typeof ExportOperatorJudgeStandard>;
     OperatorRP: ReturnType<typeof ExportOperatorRP>;

@@ -53,6 +53,8 @@ module.exports = app => {
   router.get('/workorder/working', app.jwt, controller.workorder.working); //正在进行的任务页面
   router.get('/workorder/waitWork', app.jwt, controller.workorder.waitWork); //等待开始的任务页面
   router.get('/workorder/work', app.jwt, controller.workorder.work); //任务页面
+  router.post('/workorder/workDetail', app.jwt, controller.workorder.workDetail); //任务详情页面
+  router.post('/workorder/taskSubmit', app.jwt, controller.workorder.taskSubmit); //任务提交
 
   // 图片上传尝试
   router.get('/focus', controller.focus.index);

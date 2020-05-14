@@ -23,6 +23,7 @@ class WorkorderService extends Service {
                 $match : {"state" : "1", servicerID : await ctx.service.tools.getObjectId(id)}
             }
         ]);
+        console.log(data)
 
         //循环已经查询出来的信息，根据其中的单品分区id
         for(let i = 0; i < data.length; i++){
@@ -45,6 +46,7 @@ class WorkorderService extends Service {
 
         const { ctx } = this;
         const data = await ctx.request.body;
+
         const id = await ctx.state.user.data.id;
         let updata = {};
         updata.servicerID = id;
@@ -74,10 +76,32 @@ class WorkorderService extends Service {
             updata.state = 4;
         }
 
-        //更新数据库
+        //获取专才基础信息
+        const servicer = await ctx.model.Servicer.findOne({_id : id});
+
+        //判断是否达到最大接单数
+        if(servicer.workordering >= servicer.maxWorkOrder){
+            return {status : 0, msg : "已达到最大接单数，不可接单" }
+        }
+
+        //创建消息
+        const news = { 
+            reason : "接单成功", 
+            object : "z", 
+            action : "j", 
+            result : "1",
+            verifiedData : { object : "g"}
+        }
+        news.auditorName = servicer.servicerName;
+        news.verifiedData.id = data._id;
+        console.log(news);
+
+        //更新数据库并添加消息数据库
         try{
             const result = await ctx.model.Workorder.updateOne(data, updata);
-            const resultAssign = await ctx.model.Assign.updateOne({ workorderID : data._id}, {state : 2, endTime : newTime})
+            const resultAssign = await ctx.model.Assign.updateOne({ workorderID : data._id}, {state : 2, endTime : newTime});
+            await ctx.model.Servicer.updateOne({_id : id}, { workordering : servicer.workordering + 1 });
+            await ctx.model.News.create(news);
             return { status : 1, msg : "确认订单成功" };
         }catch(err){
             console.log(err);
@@ -98,6 +122,21 @@ class WorkorderService extends Service {
         const newTime = sillyTime.format(new Date(), "YYYY-MM-DD HH:mm:s")
         upData.endTime = newTime;
         let query = await ctx.model.Assign.find(data);
+        console.log(query);
+        //添加消息数据
+        const servicer = await ctx.model.Servicer.findOne({_id : id})
+        const news = { 
+            reason : "被拒单", 
+            object : "z", 
+            action : "j", 
+            result : "2",
+            verifiedData : { object : "g"}
+        }
+        news.auditorName = servicer.servicerName;
+        news.verifiedData.id = query[0].workorderID;
+        news.verifiedData.relatedId = data._id;
+        news.verifiedData.servicerId = id;
+        console.log(news);
 
         //获取元数据中的log数据
         let log = query[0].log;
@@ -105,6 +144,7 @@ class WorkorderService extends Service {
         
         try{
             await ctx.model.Assign.updateOne(data, {log : log, state : 0});
+            await ctx.model.News.create(news);
             return { status : 1, msg : "拒单成功" }
         }catch(err){
             console.log(err);
@@ -160,7 +200,63 @@ class WorkorderService extends Service {
         return { status : 1, msg : data }
     }
 
-    //正在进行的任务详情页面
+    //任务详情页面 前端传来单品分区id和工单id
+    async workDetail(){
+
+        const { ctx } = this;
+        const data = ctx.request.body;
+        console.log(data);
+        const id = ctx.state.user.data.id;
+
+        let partitionTaskData = await ctx.model.Partition.aggregate([
+            {
+                $lookup : {
+                    from : "tasks",
+                    localField : "_id",
+                    foreignField : "partitionId",
+                    as : "tasks"
+                }
+            },{
+                $match : { _id : await ctx.service.tools.getObjectId(data.partitionId) }
+            }
+        ]);
+        //根据tasks数据中的order进行排序
+        partitionTaskData[0].tasks.sort(await ctx.service.tools.compare("order"));
+
+        //获取工单日志表的数据
+        const logData = await ctx.model.Workorderlog.find({workorderId : data.workorderId});
+        partitionTaskData[0].working = logData.length + 1;
+        partitionTaskData[0].workorderId = data.workorderId;
+
+        return { status : 1, msg : partitionTaskData };
+    }
+
+    //任务提交
+    async taskSubmit(){
+        const { ctx } = this;
+        const id = await ctx.state.user.data.id;
+        const data = ctx.request.body;
+        let parts = ctx.multipart({ autoFields: true });
+        let files = {};
+        let stream;
+        let certificates = [];
+        while ((stream = await parts()) !== null) {
+            if (!stream || !stream.filename) {
+            break;
+            }
+            // 表单的名字
+            let { filename } = stream;
+            console.log(filename);
+            // 上传图片的目录
+            const dir = await this.service.tools.getUploadFile(filename);
+            const target = dir.uploadDir;
+            const writeStream = fs.createWriteStream(target);
+            await pump(stream, writeStream);
+            certificates.push({certificate: dir.saveDir})
+        }
+        files.certificates = certificates;  
+    }
+   
 
 
 }

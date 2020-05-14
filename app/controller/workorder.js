@@ -15,6 +15,30 @@ class WorkorderController extends Controller {
     const { ctx } = this;
     ctx.body = await ctx.service.workorder.doComfirm();
   }
+  
+  //拒单(前端传来派单表（Assign）的id)
+  async refuse() {
+    const { ctx } = this;
+    ctx.body = await ctx.service.workorder.refuse();
+  }
+
+  //正在进行的任务页面
+  async working() {
+    const { ctx } = this;
+    ctx.body = await ctx.service.workorder.working();
+  }
+
+  //等待开始的任务页面
+  async waitWork() {
+    const { ctx } = this;
+    ctx.body = await ctx.service.workorder.waitWork();
+  }
+
+  //任务页面
+  async work() {
+    const { ctx } = this;
+    ctx.body = await ctx.service.workorder.work();
+  }
 
 }
 

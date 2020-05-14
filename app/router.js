@@ -49,6 +49,10 @@ module.exports = app => {
   //专才工单管理模块
   router.get('/workorder/comfirm', app.jwt, controller.workorder.comfirm); //确认接收工单页面
   router.post('/workorder/doComfirm', app.jwt, controller.workorder.doComfirm); //确认接收工单
+  router.post('/workorder/refuse', app.jwt, controller.workorder.refuse); //拒单
+  router.get('/workorder/working', app.jwt, controller.workorder.working); //正在进行的任务页面
+  router.get('/workorder/waitWork', app.jwt, controller.workorder.waitWork); //等待开始的任务页面
+  router.get('/workorder/work', app.jwt, controller.workorder.work); //任务页面
 
   // 图片上传尝试
   router.get('/focus', controller.focus.index);

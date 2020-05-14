@@ -42,14 +42,10 @@ class ShoppingBarService extends Service {
 
     //获取客户id
     data.customerId = id;
-    let query;
+    
     //查询数据库中是否已有该单品信息，返回单品的数量
-    try{
-      query =await ctx.model.ShoppingBar.findOne( data );
-    }catch(err){
-      console.log(err);
-      return {status : 0,msg : err};
-    }
+    let query;
+    query =await ctx.model.ShoppingBar.findOne( data );
 
     if(query){
       //如果已有该单品已存在在购物车中，则将购物车中该单品的数量+1

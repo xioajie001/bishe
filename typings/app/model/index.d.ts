@@ -27,6 +27,7 @@ import ExportServicer = require('../../../app/model/servicer');
 import ExportServicerApply = require('../../../app/model/servicerApply');
 import ExportShoppingBar = require('../../../app/model/shoppingBar');
 import ExportShoppinglist = require('../../../app/model/shoppinglist');
+import ExportTask = require('../../../app/model/task');
 import ExportWorkorder = require('../../../app/model/workorder');
 import ExportWorkorderlog = require('../../../app/model/workorderlog');
 
@@ -57,6 +58,7 @@ declare module 'egg' {
     ServicerApply: ReturnType<typeof ExportServicerApply>;
     ShoppingBar: ReturnType<typeof ExportShoppingBar>;
     Shoppinglist: ReturnType<typeof ExportShoppinglist>;
+    Task: ReturnType<typeof ExportTask>;
     Workorder: ReturnType<typeof ExportWorkorder>;
     Workorderlog: ReturnType<typeof ExportWorkorderlog>;
   }

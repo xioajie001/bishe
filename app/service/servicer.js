@@ -74,7 +74,7 @@ class ServicerService extends Service {
       const data = this.ctx.request.body;
       try{
         const servicerId = id;
-        await this.ctx.model.Servicer.updateOne({servicerId},data);
+        await this.ctx.model.Servicer.updateOne({_id : servicerId},data);
         return {status : 1, msg : "更新成功"};
       }catch(err){
         return err;
@@ -104,7 +104,8 @@ class ServicerService extends Service {
       try {
         // 把读取到的表单信息流写入创建的可写流
         await stream.pipe(writeStream);
-        await this.ctx.model.Servicer.updateOne({servicerId},{servicerProfilePhoto : saveDir});
+        const result = await this.ctx.model.Servicer.updateOne({_id : servicerId},{servicerProfilePhoto : saveDir});
+        console.log(result);
         return {status : 1, msg : "头像上传成功"};
       } catch (err) {
           // 上传失败销毁流
@@ -123,9 +124,9 @@ class ServicerService extends Service {
     console.log(id);
     //从前端接收接单数数量参数
     const data = await ctx.request.body;
-    console.log(data);
+    console.log("data:",data);
     try{
-      await ctx.model.Servicer.updateOne({servicerId : id }, data);
+      const result = await ctx.model.Servicer.updateOne({_id : id }, data);
       return {status : 1, msg : "最大接单数设置成功"};
     }catch(err){
       console.log(err);
@@ -140,7 +141,7 @@ class ServicerService extends Service {
     //从前端获取servicerStatus参数
     const data = ctx.request.body;
     try{
-      await ctx.model.Servicer.updateOne({servicerId : id}, data);
+      await ctx.model.Servicer.updateOne({_id : id}, data);
       return {status : 1, msg : "接单状态调整成功"};
     }catch(err){
       console.log(err);

@@ -7,10 +7,10 @@ class ShoppingBarService extends Service {
 
   //获取购物车信息
   async getShoppingBar(){
+    
     const{ ctx } = this;
-
     const customerId =await ctx.state.user.data.id;
-
+    
     const data = await ctx.model.ShoppingBar.aggregate([
       {
         $lookup : {

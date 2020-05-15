@@ -35,6 +35,7 @@ class OrderService extends Service {
           "$gte": day2
         }
       });
+      console.log("id_number:",id_number);
       const orderId = day1 + ("0000" + (id_number+1)).slice(-4);
       data.orderId = orderId;
 

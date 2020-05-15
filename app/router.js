@@ -52,6 +52,8 @@ module.exports = app => {
   router.post('/workorder/refuse', app.jwt, controller.workorder.refuse); //拒单
   router.get('/workorder/working', app.jwt, controller.workorder.working); //正在进行的任务页面
   router.get('/workorder/waitWork', app.jwt, controller.workorder.waitWork); //等待开始的任务页面
+  router.get('/workorder/worked', app.jwt, controller.workorder.worked); //已完成工单
+  router.get('/workorder/allWork', app.jwt, controller.workorder.allWork); //全部工单页面
   router.get('/workorder/work', app.jwt, controller.workorder.work); //任务页面
   router.post('/workorder/workDetail', app.jwt, controller.workorder.workDetail); //任务详情页面
   router.post('/workorder/taskSubmit', app.jwt, controller.workorder.taskSubmit); //任务提交

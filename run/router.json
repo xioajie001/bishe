@@ -397,6 +397,34 @@
       "GET"
     ],
     "paramNames": [],
+    "path": "/workorder/worked",
+    "regexp": "/^\\/workorder\\/worked(?:\\/(?=$))?$/",
+    "stack": [
+      "middleware",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/workorder/allWork",
+    "regexp": "/^\\/workorder\\/allWork(?:\\/(?=$))?$/",
+    "stack": [
+      "middleware",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
     "path": "/workorder/work",
     "regexp": "/^\\/workorder\\/work(?:\\/(?=$))?$/",
     "stack": [

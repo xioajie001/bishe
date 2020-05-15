@@ -19,7 +19,8 @@ module.exports = app => {
       servicerStatus: {type: Boolean, required: false}, // 接单状态
       maxWorkOrder: {type: Number, required : false, trim : true}, // 最大接单数
       workordering: {type: Number, required: false,default:0}, // 在接项目数量
-      servicerItem: {type: Array, required : false}, // 可接项目
+      servicerItem: { type: Array, required : false }, // 可接项目
+      operatorId : { type: String, required : false, default : "5ead80ee74243c4bc453abfd" }
   })
     return mongoose.model('Servicer', servicerSchema);
   };

@@ -2,6 +2,9 @@
 
 const Service = require('egg').Service;
 const sillyTime = require("silly-datetime");
+const path = require('path');
+const fs = require('fs');
+const pump = require('pump');
 
 class WorkorderService extends Service {
 
@@ -102,6 +105,7 @@ class WorkorderService extends Service {
             const resultAssign = await ctx.model.Assign.updateOne({ workorderID : data._id}, {state : 2, endTime : newTime});
             await ctx.model.Servicer.updateOne({_id : id}, { workordering : servicer.workordering + 1 });
             await ctx.model.News.create(news);
+            console.log(resultAssign);
             return { status : 1, msg : "确认订单成功" };
         }catch(err){
             console.log(err);
@@ -190,6 +194,37 @@ class WorkorderService extends Service {
         return { status : 1, msg : data }
     }
 
+    //已完成工单
+    async worked(){
+        const { ctx } = this;
+        const id = await ctx.state.user.data.id;
+        let data = await ctx.model.Workorder.aggregate([
+            {
+                $lookup : {
+                    from : "partitions",
+                    localField : "itemPartition",
+                    foreignField : "_id",
+                    as : "itemPartition"
+                }
+            },{
+                $match : { state : "3", servicer : await ctx.service.tools.getObjectId(id)}
+            }
+        ]);
+        return { status : 1, msg : data }
+    }
+
+    //全部工单页面
+    async allWork(){
+        let data = {};
+        const working = await this.working();
+        const waitWork = await this.waitWork();
+        const worked = await this.worked();
+        data.working = working.msg;
+        data.waitWork = waitWork.msg;
+        data.worked = worked.msg;
+        return { status : 1, msg : data }
+    }
+
     //任务页面
     async work(){
         let data = {};
@@ -235,7 +270,6 @@ class WorkorderService extends Service {
     async taskSubmit(){
         const { ctx } = this;
         const id = await ctx.state.user.data.id;
-        const data = ctx.request.body;
         let parts = ctx.multipart({ autoFields: true });
         let files = {};
         let stream;
@@ -254,7 +288,17 @@ class WorkorderService extends Service {
             await pump(stream, writeStream);
             certificates.push({certificate: dir.saveDir})
         }
-        files.certificates = certificates;  
+        files.certificates = certificates;
+        files = Object.assign(files, parts.field);
+        files.state = 2;
+        try{
+            await ctx.model.Workorderlog.create(files);
+            return { status : 1, msg : "任务提交成功" };
+        }catch(err){
+            console.log(err)
+            return { status : 1, msg : err };
+        }
+        console.log(files);  
     }
    
 

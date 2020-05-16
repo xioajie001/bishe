@@ -41,7 +41,7 @@ class CustomerService extends Service {
       //添加注册时间
       const time = sillyTime.format(new Date(), "YYYY-MM-DD HH:mm:ss");
       data.customerRegistrationDate = time;
-      
+
     }else{
       return {status : 0, msg : "密码1和密码1不一样，请确认后输入"};
     }
@@ -56,7 +56,8 @@ class CustomerService extends Service {
 
   // 登录
   async login(){
-    const{customerZhanghao,password} = this.ctx.request.body;
+    let{customerZhanghao,password} = this.ctx.request.body;
+    password = await this.ctx.service.tools.md5(password);
     const query = await this.ctx.model.Customer.find({customerZhanghao,password});
     if(query.length > 0){
       return {

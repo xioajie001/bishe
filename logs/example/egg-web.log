@@ -696,3 +696,20 @@
 2020-05-15 15:55:52,852 INFO 21232 [egg-mongoose] mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin connected successfully
 2020-05-15 15:55:52,865 INFO 21232 [egg-mongoose] instance[0] start successfully
 2020-05-15 15:55:52,884 INFO 21232 [egg:core] dump config after ready, 15ms
+2020-05-16 10:36:34,656 INFO 12028 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\FS\\Desktop\\egg\\bs\\bishe\\logs\\example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-05-16 10:36:34,717 INFO 12028 [egg-multipart] stream mode enable
+2020-05-16 10:36:36,060 INFO 12028 [egg-mongoose] connecting mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin
+2020-05-16 10:36:36,402 INFO 12028 [egg-static] starting static serve /public/ -> C:\Users\FS\Desktop\egg\bs\bishe\app\public
+2020-05-16 10:36:36,408 INFO 12028 [egg-security] use methodnoallow middleware
+2020-05-16 10:36:36,410 INFO 12028 [egg-security] use noopen middleware
+2020-05-16 10:36:36,415 INFO 12028 [egg-security] use nosniff middleware
+2020-05-16 10:36:36,416 INFO 12028 [egg-security] use xssProtection middleware
+2020-05-16 10:36:36,417 INFO 12028 [egg-security] use xframe middleware
+2020-05-16 10:36:36,418 INFO 12028 [egg-security] use dta middleware
+2020-05-16 10:36:36,418 INFO 12028 [egg-security] compose 6 middlewares into one security middleware
+2020-05-16 10:36:36,462 INFO 12028 [egg:core] dump config after load, 13ms
+2020-05-16 10:36:36,467 INFO 12028 [egg-mongoose] starting...
+2020-05-16 10:36:36,584 INFO 12028 [egg-watcher:application] watcher start success
+2020-05-16 10:36:37,097 INFO 12028 [egg-mongoose] mongodb://admin:******@59.110.162.236:27017:27017/SharedService?authSource=admin connected successfully
+2020-05-16 10:36:37,117 INFO 12028 [egg-mongoose] instance[0] start successfully
+2020-05-16 10:36:37,143 INFO 12028 [egg:core] dump config after ready, 20ms

@@ -34,13 +34,14 @@ class CustomerService extends Service {
     if( query.length > 0 ){
       return {status : 0, msg : "该账号已存在，请重新输入账号"};
     }else if(data.password == data.password1){
-      //生成客户ID
-      // const cnum = await ctx .model.Customer.count();
-      // const customerId =( "000000" + (cnum +1)).slice(-6);
-      // data.customerId = customerId;
+
+      //给密码进行md5加密
+      data.password = await ctx.service.tools.md5(data.password);
+
       //添加注册时间
       const time = sillyTime.format(new Date(), "YYYY-MM-DD HH:mm:ss");
       data.customerRegistrationDate = time;
+      
     }else{
       return {status : 0, msg : "密码1和密码1不一样，请确认后输入"};
     }

@@ -1,6 +1,7 @@
 'use strict';
 
 const Service = require('egg').Service;
+
 class ItemService extends Service {
   // 获取所有商品信息
   async getItem() {
@@ -8,14 +9,19 @@ class ItemService extends Service {
 
     try{
       //单品表关联单品分区表
-      const data =await ctx.model.Item.aggregate([{
-        $lookup : {
-          from : 'partitions',
-          localField : "_id",
-          foreignField : 'itemID',
-          as : 'partitions',
-        },
-      }]);
+      const data =await ctx.model.Item.aggregate([
+        {
+          $lookup : {
+            from : 'partitions',
+            localField : "_id",
+            foreignField : 'itemID',
+            as : 'partitions',
+          },
+        },{
+          $match : { itemState : "1"}
+        }
+    
+      ]);
       
       for(let i =0; i < data.length; i++){
         let itemMinMaxPrice = {};
@@ -23,6 +29,7 @@ class ItemService extends Service {
         for(let j = 0; j < data[i].partitions.length; j++){
           itemPrices.push(data[i].partitions[j].price);
         };
+
         let minPrice = await ctx.service.tools.getMin(itemPrices);
         let maxPrice = await ctx.service.tools.getMax(itemPrices);
         itemMinMaxPrice.minPrice = minPrice;
@@ -62,6 +69,7 @@ class ItemService extends Service {
           for(let j = 0; j < data[i].partitions.length; j++){
             itemPrices.push(data[i].partitions[j].price);
           };
+          
           let minPrice = await ctx.service.tools.getMin(itemPrices);
           let maxPrice = await ctx.service.tools.getMax(itemPrices);
           itemMinMaxPrice.minPrice = minPrice;

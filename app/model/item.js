@@ -1,8 +1,10 @@
 'use strict';
 
 module.exports = app => {
+
   const mongoose = app.mongoose;
   const Schema = mongoose.Schema;
+  
   const itemSchema = new Schema({
     _id: Schema.Types.ObjectId,    //ID
     itemName: { type: String, required: true },   //名称

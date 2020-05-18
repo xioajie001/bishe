@@ -78,6 +78,7 @@ class CustomerService extends Service {
       await this.ctx.model.Customer.updateOne({ _id : id },data);
       return {status : 1, msg : "更新成功"};
     }catch(err){
+      console.log(err);
       return err;
     }      
   }

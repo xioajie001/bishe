@@ -9,7 +9,7 @@ module.exports = app => {
   const Schema = mongoose.Schema;
 
   const partitionSchema = new Schema({
-    _id: Schema.Types.ObjectId,   //ID
+    // _id: Schema.Types.ObjectId,   //ID
     itemID: { type: Schema.Types.ObjectId, ref: 'Item', required: true },  //单品ID
     name: { type: String, required: true },   //单品分区名称
     introduction: { type: String, required: true },  //单品分区简介

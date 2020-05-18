@@ -113,7 +113,7 @@ class WorkorderService extends Service {
         }
     }
 
-    //拒单(前端传来派单表（Assign）的id)
+    //拒单(前端传来派单表（Assign）的id：_id; 和工单id：workorderId)
     async refuse(){
         const { ctx }  = this;
         const id =await ctx.state.user.data.id;
@@ -148,6 +148,7 @@ class WorkorderService extends Service {
         
         try{
             await ctx.model.Assign.updateOne(data, {log : log, state : 0});
+            await ctx.model.Workorder.updateOne({ _id : query[0].workorderID }, { state : 2 });
             await ctx.model.News.create(news);
             return { status : 1, msg : "拒单成功" }
         }catch(err){

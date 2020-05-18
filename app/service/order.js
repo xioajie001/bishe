@@ -65,19 +65,17 @@ class OrderService extends Service {
 
   //验收服务
   async confirm(){
+
     const { ctx } = this;
     const id =await ctx.state.user.data.id;
-    if(id){
-      const data = ctx.request.body;
-      try{
-        await ctx.model.Order.updateOne(data,{orderState : "4"});
-        await ctx.model.Workorder.updateOne(data,{W_state : "0"});
-        return {status : 1, msg : "确认订单成功"};
-      }catch(err){
-        return {status : 0, msg : "确认订单失败"};
-      }
-    }else{
-      return {status: 0, msg : "请登录"};
+    const data = ctx.request.body;
+
+    try{
+      await ctx.model.Order.updateOne(data,{orderState : "5"});
+      await ctx.model.Workorder.updateOne(data,{state : "0"});
+      return {status : 1, msg : "确认订单成功"};
+    }catch(err){
+      return {status : 0, msg : "确认订单失败"};
     }
   }
 
@@ -85,17 +83,15 @@ class OrderService extends Service {
   async cancel(){
     const { ctx } = this;
     const id =await ctx.state.user.data.id;
-    if(id){
-      const data = ctx.request.body;
-      try{
-        await ctx.model.Order.updateOne(data,{orderState : "3"});
-        await ctx.model.Workorder.updateOne(data,{W_state : "3"});
-        return {status : 1, msg : "取消订单成功"};
-      }catch(err){
-        return {status : 0, msg : "取消订单失败"};
-      }
-    }else{
-      return {status: 0, msg : "请登录"};
+    const data = ctx.request.body;
+
+    try{
+      await ctx.model.Order.updateOne(data,{orderState : "4"});
+      await ctx.model.Workorder.updateOne(data,{state : "3"});
+      return {status : 1, msg : "取消订单成功"};
+    }catch(err){
+      console.log(err);
+      return {status : 0, msg : "取消订单失败"};
     }
   }
 
@@ -114,16 +110,11 @@ class OrderService extends Service {
     
     for(const i in query){
       const orderId = query[i].orderId
-      //将订单状态变为2（订单开始）
       try{
-        await ctx.model.Order.updateOne(query[i],{orderState : "2", orderStartState : "0"});
-      }catch(err){
-        console.log(err);
-      }
-
-      //将工单状态变为2（订单进行）
-      try{
-        await ctx.model.Workorder.updateOne({orderId}, {W_state : "2"})
+         //将订单状态变为3（订单开始）
+        await ctx.model.Order.updateOne(query[i],{orderState : "3", orderStartState : "0"});
+        //将工单状态变为1（订单进行）
+        await ctx.model.Workorder.updateOne({orderId}, {state : "1"});
       }catch(err){
         console.log(err);
       }

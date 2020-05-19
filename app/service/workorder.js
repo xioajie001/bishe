@@ -264,7 +264,7 @@ class WorkorderService extends Service {
 
         //获取工单日志表的数据
         const logData = await ctx.model.Workorderlog.find({workorderId : data.workorderId});
-        partitionTaskData[0].working = logData.length + 1;
+        partitionTaskData[0].working = logData.length;
         partitionTaskData[0].workorderId = data.workorderId;
 
         return { status : 1, msg : partitionTaskData };
@@ -290,9 +290,10 @@ class WorkorderService extends Service {
             const target = dir.uploadDir;
             const writeStream = fs.createWriteStream(target);
             await pump(stream, writeStream);
-            certificates.push({certificate: dir.saveDir})
+            certificates.push({serverFeedbackImg: dir.saveDir})
         }
-        files.certificates = certificates;
+        files.serverFeedbackImg = certificates;
+        console.log(files);
         files = Object.assign(files, parts.field);
         files.state = 2;
         try{

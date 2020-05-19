@@ -68,6 +68,7 @@ class WorkorderService extends Service {
                 $match : { _id : await ctx.service.tools.getObjectId(data._id)}
             }
         ]);
+        console.log(orderData);
 
         //判断订单的orderStartState（订单开始状态)为0则把工单状态变为开始，为1变为等待开始
         if(orderData[0].order[0].orderStartState == 0){
@@ -76,6 +77,7 @@ class WorkorderService extends Service {
             updata.state = 1;
         }else{
             updata.startTime = newTime;
+            updata.serverTime = orderData[0].order[0].orderStartTime;
             updata.state = 4;
         }
 

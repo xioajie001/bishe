@@ -15,7 +15,7 @@ module.exports = app => {
     itemPartition: { type: Schema.Types.ObjectId, required: true }, // 分区id
     orderID: { type: Schema.Types.ObjectId, ref: 'Order' }, // 对应的订单
     operatorID: { type: Schema.Types.ObjectId, ref: 'Operator' }, // 运营商id
-    state: { type: String, required: true }, // 工单状态工单状态（0 – 结束 / 1 – 进行中 / 2 – 待分配 / 3 – 用户终止 / 4 – 等待启动）
+    state: { type: String, required: true }, // 工单状态工单状态（0 – 结束 / 1 – 进行中 / 2 – 待分配 / 3 – 用户终止 / 4 – 等待启动 / 5 - 已派单但未进行）
     startTime: { type: Date }, // 工单产生时间
     endTime: { type: Date }, // 工单结束时间或者中止时间
     serverTime: { type: Date }, // 服务启动时间

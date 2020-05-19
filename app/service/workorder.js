@@ -52,7 +52,7 @@ class WorkorderService extends Service {
 
         const id = await ctx.state.user.data.id;
         let updata = {};
-        updata.servicerID = id;
+        updata.servicer = id;
         const newTime = sillyTime.format(new Date(), "YYYY-MM-DD HH:mm:s")
 
         //根据工单id，联立查询工单和订单数据
@@ -79,6 +79,7 @@ class WorkorderService extends Service {
             updata.state = 4;
         }
 
+        console.log(updata);
         //获取专才基础信息
         const servicer = await ctx.model.Servicer.findOne({_id : id});
 

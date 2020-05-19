@@ -12,7 +12,8 @@ module.exports = app => {
       skillDescribe: {type: String, required: true}, // 能力描述
       state: {type: String, required: true},// 申请状态(0 : 申请中，1 ：审核通过，2 ：审核不通过)
       reason: {type: String, required: false}, // 审核不通过，发送修改理由或者其他信息
-      applyTime : {type: Number, required: true} //提交申请的时间 
+      timestamp : {type: Number, required: true}, //提交申请的时间戳
+      applyTime : {type: Date, required: true, default : Date.now()} //提交申请的时间
   })
     return mongoose.model('ServicerApply', servicerApplySchema);
   };

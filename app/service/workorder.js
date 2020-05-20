@@ -309,7 +309,10 @@ class WorkorderService extends Service {
             await pump(stream, writeStream);
             certificates.push({serverFeedbackImg: dir.saveDir})
         }
-        const worklogdata = await ctx.model.Workorderlog.find({ taskId : parts.field.taskId });
+        const worklogdata = await ctx.model.Workorderlog.find({ 
+            taskId : parts.field.taskId, 
+            workorderId : parts.field.workorderId 
+        });
         console.log("worklogdata:",worklogdata);
         if(worklogdata[0]){
 
@@ -324,7 +327,11 @@ class WorkorderService extends Service {
             }
 
             try{
-                await ctx.model.Workorderlog.updateOne({ taskId : parts.field.taskId },worklogdata[0]);
+                await ctx.model.Workorderlog.updateOne(
+                    { 
+                        taskId : parts.field.taskId, 
+                        workorderId : parts.field.workorderId 
+                    },worklogdata[0]);
                 return { status : 1, msg : "任务提交成功" };
             }catch(err){
                 console.log(err)

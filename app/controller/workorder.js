@@ -58,10 +58,16 @@ class WorkorderController extends Controller {
     ctx.body = await ctx.service.workorder.workDetail();
   }
 
-  //任务提交
+  //任务图片提交 前端传来工单id和taskId
   async taskSubmit() {
     const { ctx } = this;
     ctx.body = await ctx.service.workorder.taskSubmit();
+  }
+
+  //任务文字反馈提交  前端传来workorderId和taskId
+  async taskWordSubmit() {
+    const { ctx } = this;
+    ctx.body = await ctx.service.workorder.taskWordSubmit();
   }
 
 }

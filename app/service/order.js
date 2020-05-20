@@ -21,46 +21,44 @@ class OrderService extends Service {
   // 添加订单
   async doAdd() {   
     const { ctx,} = this;
-
     const id =await ctx.state.user.data.id;
+    const data = await ctx.request.body;
 
-    if(id){
-      const data = await ctx.request.body;
+    let cashflowdata = {};
+    cashflowdata.userPayable = data.cost;
 
-      //  添加订单id
-      const day1 = sillyTime.format(new Date(), 'YYYYMMDD');
-      const day2 = sillyTime.format(new Date(), 'YYYY-MM-DD');
-      const id_number = await ctx.model.Order.count({
-        orderTime:{
-          "$gte": day2
-        }
-      });
-      console.log("id_number:",id_number);
-      const orderId = day1 + ("0000" + (id_number+1)).slice(-4);
-      data.orderId = orderId;
-
-      //添加下单人
-      const customerId = id;
-      data.customerId = customerId;
-
-      // 添加下单时间
-      const Time = sillyTime.format(new Date(), 'YYYY-MM-DD HH:mm:ss');
-      const orderTime = new Date(Time);
-      data.orderTime = orderTime;
-
-      // 添加订单状态
-      data.orderState = "0";
-
-      try{
-        const result = await ctx.model.Order.create(data);    
-        return {status : 1, msg : result};
-      }catch(err){
-        console.log(err);
-        return err;
+    //  添加订单id
+    const day1 = sillyTime.format(new Date(), 'YYYYMMDD');
+    const day2 = sillyTime.format(new Date(), 'YYYY-MM-DD');
+    const id_number = await ctx.model.Order.count({
+      orderTime:{
+        "$gte": day2
       }
-    }else{
-      return {status : 0, msg : "请登录"};
-    }   
+    });
+    const orderId = day1 + ("0000" + (id_number+1)).slice(-4);
+    data.orderId = orderId;
+
+    //添加下单人
+    const customerId = id;
+    data.customerId = customerId;
+
+    // 添加下单时间
+    const Time = sillyTime.format(new Date(), 'YYYY-MM-DD HH:mm:ss');
+    const orderTime = new Date(Time);
+    data.orderTime = orderTime;
+
+    // 添加订单状态
+    data.orderState = "0";
+
+    try{
+      const result = await ctx.model.Order.create(data);
+      cashflowdata.orderId = result._id;
+      await ctx.model.Cashflow.create(cashflowdata);
+      return {status : 1, msg : result};
+    }catch(err){
+      console.log(err);
+      return err;
+    }
   }
 
   //验收服务

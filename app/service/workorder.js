@@ -44,7 +44,7 @@ class WorkorderService extends Service {
        
     }
 
-    //订单确认
+    //订单确认  传来工单id
     async doComfirm(){
 
         const { ctx } = this;
@@ -90,6 +90,8 @@ class WorkorderService extends Service {
             return { status : 0, msg : "已达到最大接单数，不可接单" }
         }
 
+        const assigndata = await ctx.model.Assign.findOne({workorderID : data._id});
+
         //添加消息数据
         console.log("servicer:",servicer);
         const news = { 
@@ -97,26 +99,36 @@ class WorkorderService extends Service {
             object : "z", 
             action : "j", 
             detailObject : "g",
-            result : "2",
+            result : "1",
         }
         news.receiveId = servicer.operatorId;
         news.auditorName = servicer.servicerName;
-        news.senderId = servicer._id;
-        news.detailObjectId = query[0].workorderID;
-        news.verifiedData = { id : query[0]._id };
-        news.verifiedData.startTime = query[0].startTime;
-        news.verifiedData.log = query[0].log;
-        news.verifiedData.state = query[0].state;
-        news.verifiedData.workorderID = query[0].workorderID;
-        news.verifiedData.servicerID = query[0].servicerID;
+        news.senderId = id;
+        news.detailObjectId = data._id;
+        news.verifiedData = assigndata;
         console.log(news);
 
         //更新数据库并添加消息数据库
         try{
-            // const result = await ctx.model.Workorder.updateOne(data, updata);
-            // const resultAssign = await ctx.model.Assign.updateOne({ workorderID : data._id}, {state : 2, endTime : newTime});
-            // await ctx.model.Servicer.updateOne({_id : id}, { workordering : servicer.workordering + 1 });
-            // await ctx.model.News.create(news);
+            const result = await ctx.model.Workorder.updateOne(data, updata);
+
+            const resultAssign = await ctx.model.Assign.updateOne(
+                { workorderID : data._id}, 
+                {state : 2, endTime : newTime}
+            );
+
+            await ctx.model.Servicer.updateOne(
+                {_id : id}, 
+                { workordering : servicer.workordering + 1 }
+            );
+
+            await ctx.model.Cashflow.updateOne(
+                {workOrderId : data._id}, 
+                { servicerId : id, operatorId : servicer.operatorId }
+            );
+
+            await ctx.model.News.create(news);
+
             // console.log(resultAssign);
             return { status : 1, msg : "确认订单成功" };
         }catch(err){
@@ -286,7 +298,7 @@ class WorkorderService extends Service {
         return { status : 1, msg : partitionTaskData };
     }
 
-    //任务提交
+    //任务图片提交 前端传来工单id和taskId
     async taskSubmit(){
         const { ctx } = this;
         const id = await ctx.state.user.data.id;
@@ -338,9 +350,7 @@ class WorkorderService extends Service {
                 return { status : 1, msg : err };
             }
         }else{
-            console.log("parts.field_1:",parts.field);
             files.serverFeedbackImg = certificates;
-            console.log(files);
             files = Object.assign(files, parts.field);
             files.state = 2;
             try{
@@ -353,8 +363,27 @@ class WorkorderService extends Service {
         }
         
     }
-   
 
+    //任务文字反馈提交  前端传来workorderId和taskId
+    async taskWordSubmit(){
+        const { ctx } = this;
+        const id = ctx.state.user.data.id;
+        const data = ctx.request.body;
+        try{
+            await ctx.model.Workorderlog.updateOne(
+                {
+                    taskId : data.taskId, 
+                    workorderId : data.workorderId 
+                },{
+                    serverFeedbackText : data.serverFeedbackText
+                }
+            )
+            return {status : 1, msg : "提交成功"};
+        }catch(err){
+            console.log(err);
+            return {status : 0, msg : err}
+        }
+    }
 
 }
 module.exports = WorkorderService;

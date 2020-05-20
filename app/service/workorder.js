@@ -68,7 +68,7 @@ class WorkorderService extends Service {
                 $match : { _id : await ctx.service.tools.getObjectId(data._id)}
             }
         ]);
-        console.log(orderData);
+        console.log("orderData:",orderData);
 
         //判断订单的orderStartState（订单开始状态)为0则把工单状态变为开始，为1变为等待开始
         if(orderData[0].order[0].orderStartState == 0){
@@ -81,34 +81,43 @@ class WorkorderService extends Service {
             updata.state = 4;
         }
 
-        console.log(updata);
+        console.log("updata:",updata);
         //获取专才基础信息
-        const servicer = await ctx.model.Servicer.findOne({_id : id});
+        const servicer = await ctx.model.Servicer.findOne({ _id : id });
 
         //判断是否达到最大接单数
         if(servicer.workordering >= servicer.maxWorkOrder){
-            return {status : 0, msg : "已达到最大接单数，不可接单" }
+            return { status : 0, msg : "已达到最大接单数，不可接单" }
         }
 
-        //创建消息
+        //添加消息数据
+        console.log("servicer:",servicer);
         const news = { 
             reason : "接单成功", 
             object : "z", 
             action : "j", 
-            result : "1",
-            verifiedData : { object : "g"}
+            detailObject : "g",
+            result : "2",
         }
+        news.receiveId = servicer.operatorId;
         news.auditorName = servicer.servicerName;
-        news.verifiedData.id = data._id;
+        news.senderId = servicer._id;
+        news.detailObjectId = query[0].workorderID;
+        news.verifiedData = { id : query[0]._id };
+        news.verifiedData.startTime = query[0].startTime;
+        news.verifiedData.log = query[0].log;
+        news.verifiedData.state = query[0].state;
+        news.verifiedData.workorderID = query[0].workorderID;
+        news.verifiedData.servicerID = query[0].servicerID;
         console.log(news);
 
         //更新数据库并添加消息数据库
         try{
-            const result = await ctx.model.Workorder.updateOne(data, updata);
-            const resultAssign = await ctx.model.Assign.updateOne({ workorderID : data._id}, {state : 2, endTime : newTime});
-            await ctx.model.Servicer.updateOne({_id : id}, { workordering : servicer.workordering + 1 });
-            await ctx.model.News.create(news);
-            console.log(resultAssign);
+            // const result = await ctx.model.Workorder.updateOne(data, updata);
+            // const resultAssign = await ctx.model.Assign.updateOne({ workorderID : data._id}, {state : 2, endTime : newTime});
+            // await ctx.model.Servicer.updateOne({_id : id}, { workordering : servicer.workordering + 1 });
+            // await ctx.model.News.create(news);
+            // console.log(resultAssign);
             return { status : 1, msg : "确认订单成功" };
         }catch(err){
             console.log(err);
@@ -116,12 +125,12 @@ class WorkorderService extends Service {
         }
     }
 
-    //拒单(前端传来派单表（Assign）的id：_id; 和工单id：workorderId)
+    //拒单(前端传来派单表（Assign）的id：_id;
     async refuse(){
         const { ctx }  = this;
         const id =await ctx.state.user.data.id;
         const data = await ctx.request.body;
-        console.log(data);
+        // console.log(data);
 
         //定义一个upData存放要更新的log数据
         let upData = {};
@@ -129,21 +138,28 @@ class WorkorderService extends Service {
         const newTime = sillyTime.format(new Date(), "YYYY-MM-DD HH:mm:s")
         upData.endTime = newTime;
         let query = await ctx.model.Assign.find(data);
-        console.log(query);
+        // console.log("query:",query);
+
         //添加消息数据
-        const servicer = await ctx.model.Servicer.findOne({_id : id})
+        const servicer = await ctx.model.Servicer.findOne({_id : id});
+        console.log("servicer:",servicer);
         const news = { 
             reason : "被拒单", 
             object : "z", 
             action : "j", 
+            detailObject : "g",
             result : "2",
-            verifiedData : { object : "g"}
         }
+        news.receiveId = servicer.operatorId;
         news.auditorName = servicer.servicerName;
-        news.verifiedData.id = query[0].workorderID;
-        news.verifiedData.relatedId = data._id;
-        news.verifiedData.servicerId = id;
-        console.log(news);
+        news.senderId = servicer._id;
+        news.detailObjectId = query[0].workorderID;
+        news.verifiedData = { id : query[0]._id };
+        news.verifiedData.startTime = query[0].startTime;
+        news.verifiedData.log = query[0].log;
+        news.verifiedData.state = query[0].state;
+        news.verifiedData.workorderID = query[0].workorderID;
+        news.verifiedData.servicerID = query[0].servicerID;
 
         //获取元数据中的log数据
         let log = query[0].log;
@@ -278,6 +294,7 @@ class WorkorderService extends Service {
         let files = {};
         let stream;
         let certificates = [];
+        console.log("parts.field:",parts.field);
         while ((stream = await parts()) !== null) {
             if (!stream || !stream.filename) {
             break;
@@ -292,18 +309,42 @@ class WorkorderService extends Service {
             await pump(stream, writeStream);
             certificates.push({serverFeedbackImg: dir.saveDir})
         }
-        files.serverFeedbackImg = certificates;
-        console.log(files);
-        files = Object.assign(files, parts.field);
-        files.state = 2;
-        try{
-            await ctx.model.Workorderlog.create(files);
-            return { status : 1, msg : "任务提交成功" };
-        }catch(err){
-            console.log(err)
-            return { status : 1, msg : err };
+        const worklogdata = await ctx.model.Workorderlog.find({ taskId : parts.field.taskId });
+        console.log("worklogdata:",worklogdata);
+        if(worklogdata[0]){
+
+            //判断是否有图片，有图片就更新数据，没有就不更新
+            if(certificates[0]){
+                worklogdata[0].serverFeedbackImg.push(certificates[0]);
+            }
+
+             //判断是否有文字反馈，有文字反馈就更新数据，没有就不更新
+            if(parts.field.serverFeedbackText){
+                worklogdata[0].serverFeedbackText = parts.field.serverFeedbackText;
+            }
+
+            try{
+                await ctx.model.Workorderlog.updateOne({ taskId : parts.field.taskId },worklogdata[0]);
+                return { status : 1, msg : "任务提交成功" };
+            }catch(err){
+                console.log(err)
+                return { status : 1, msg : err };
+            }
+        }else{
+            console.log("parts.field_1:",parts.field);
+            files.serverFeedbackImg = certificates;
+            console.log(files);
+            files = Object.assign(files, parts.field);
+            files.state = 2;
+            try{
+                await ctx.model.Workorderlog.create(files);
+                return { status : 1, msg : "任务提交成功" };
+            }catch(err){
+                console.log(err)
+                return { status : 1, msg : err };
+            }
         }
-        console.log(files);  
+        
     }
    
 

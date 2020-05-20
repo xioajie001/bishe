@@ -49,10 +49,13 @@ class ServicerApplyService extends Service {
       }
     files.certificates = certificates;  
     files = Object.assign(files, parts.field);
-    files.servicerId = ctx.state.user.data.id;
+    const servicerId = ctx.state.user.data.id;
+    files.servicerId = servicerId;
     files.state = "0";
     const time = Date.now();
-    files.applyTime = time;
+    files.timestamp = time;
+    const sercicer = ctx.model.Servicer.findOne({ _id : servicerId });
+    files.operatorId = sercicer.operatorId;
     try{
         await ctx.model.ServicerApply.create(files);
         return{status : 1,msg : "项目申请成功"}

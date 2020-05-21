@@ -14,7 +14,7 @@ class ContractService extends Service {
         const data = ctx.request.body;
         
         const result = await ctx.model.Contract.find({servicerID : id})
-        return { status : 0, msg : result }
+        return { status : 1, msg : result }
             
     }
 }

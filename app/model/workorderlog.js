@@ -12,7 +12,7 @@ module.exports = app => {
   const workOrderlogSchema = new Schema({
     workorderId: { type: Schema.Types.ObjectId, ref: 'Workorder' }, // 所属工单
     taskId: { type: Schema.Types.ObjectId, ref: 'Task' },
-    start: { type: Date }, // 开始时间
+    start: { type: Number, default : Date.now() }, // 开始时间
     end: { type: Date }, // 结束时间
     customerfeedback: { type: String }, // 顾客点评内容(反馈)
     deadline: { type: Date }, // 任务最迟完成时间点

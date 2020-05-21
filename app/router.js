@@ -59,6 +59,14 @@ module.exports = app => {
   router.post('/workorder/taskSubmit', app.jwt, controller.workorder.taskSubmit); //任务图片提交 前端传来工单id和taskId
   router.post('/workorder/taskWordSubmit', app.jwt, controller.workorder.taskWordSubmit); //任务文字反馈提交  前端传来workorderId和taskId
 
+
+  //合约表
+  router.get('/contract/getContract', app.jwt, controller.contract.getContract); //消息接收
+
+  //消息管理模块
+  router.get('/news/getNews', app.jwt, controller.news.getNews); //消息接收
+  router.get('/news/setRead', app.jwt, controller.news.setRead); //消息设为已读
+
   // 图片上传尝试
   router.get('/focus', controller.focus.index);
   router.get('/focus/add', controller.focus.add);

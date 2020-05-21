@@ -54,10 +54,28 @@ class ServicerApplyService extends Service {
     files.state = "0";
     const time = Date.now();
     files.timestamp = time;
-    const sercicer = ctx.model.Servicer.findOne({ _id : servicerId });
-    files.operatorId = sercicer.operatorId;
+    const servicer =await ctx.model.Servicer.findOne({ _id : servicerId });
+    console.log("servicer:",servicer);
+    files.operatorId = servicer.operatorId;
+
+     //添加消息数据
+     const news = { 
+         reason : "项目申请", 
+         object : "z", 
+         action : "q", 
+         detailObject : "z",
+         result : "0",
+     }
+     news.receiveId = servicer.operatorId;
+     news.auditorName = servicer.servicerName;
+     news.senderId = servicer._id;
+     news.detailObjectId = servicer._id;
+
     try{
-        await ctx.model.ServicerApply.create(files);
+        const result = await ctx.model.ServicerApply.create(files);
+        news.verifiedData = result;
+        console.log("news:",news);
+        await ctx.model.News.create(news);
         return{status : 1,msg : "项目申请成功"}
     }catch(err){
         return {status : 0, msg : err};

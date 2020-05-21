@@ -2,7 +2,7 @@
 
 const Controller = require('egg').Controller;
 
-class HomeController extends Controller {
+class ItemController extends Controller {
   async getItem() {
     const { ctx } = this;
     ctx.body = await ctx.service.item.getItem();
@@ -14,4 +14,4 @@ class HomeController extends Controller {
   }
 }
 
-module.exports = HomeController;
+module.exports = ItemController;

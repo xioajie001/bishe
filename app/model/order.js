@@ -10,7 +10,7 @@ module.exports = app =>{
         orderId : {type : String, required : true, unique : true},   //订单ID
         orderState : {type : String, required : false},  //订单进度状态（0：已接单尚未分配专才；1：已接单且已分配专才；2：订单确认开始；3:订单取消）
         orderStartState : {type : String, required : false}, //订单开始状态（0：专才接单后默认服务开始；1：要客户确认后订服务才开始）
-        cost : {type : String, required : false},    //应付款
+        cost : {type : Number, required : false},    //应付款
         orderTime : {type : Date, required : true }, //下单时间
         partitionId : { type: Schema.Types.ObjectId, ref: 'Partition', required: true },    //单品分区id
         remark : {type : String, required : false},  //备注

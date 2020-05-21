@@ -19,6 +19,7 @@ module.exports = app => {
     detailObjectId: Schema.Types.ObjectId, // 具体处理对象id
     timeOptions: Date, // 时间，备选
     result: { type: String }, // 处理结果 0 – 未处理 / 1 – 成功 / 2 – 不成功
+    content: { type: String }, // 用于向专才发送消息的内容
     addTime: { type: Date, default: new Date() }, // 消息产生时间(新增)
     timestamp: { type: Number, default: Date.now() }, // 时间戳，表明消息的产生时间
     verifiedData: Schema.Types.Mixed, // 存放相关中间表字段

@@ -271,7 +271,7 @@ class WorkorderService extends Service {
     async workDetail(){
 
         const { ctx } = this;
-        const data = ctx.request.query;
+        const data = ctx.query;
         console.log(data);
         const id = ctx.state.user.data.id;
 

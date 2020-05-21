@@ -9,13 +9,11 @@ class OrderService extends Service {
   async getOrder(){
     const{ ctx } = this;
     const id =await ctx.state.user.data.id;
-    if(id){
-      const customerId = id;
-      const data = await ctx.model.Order.find({customerId : id});
-      return {status : 1, msg : data};
-    }else{
-      return {status : 0, msg : "请登录"}
-    }
+
+    const customerId = id;
+    const data = await ctx.model.Order.find({customerId : id});
+    return {status : 1, msg : data};
+
   }
 
   // 添加订单
@@ -116,9 +114,11 @@ class OrderService extends Service {
       }catch(err){
         console.log(err);
       }
-    }
-    
+    }   
   }
+
+  //监控服务
+  // async 
 
 }
 module.exports = OrderService;

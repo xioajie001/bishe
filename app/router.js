@@ -64,7 +64,8 @@ module.exports = app => {
   router.get('/contract/getContract', app.jwt, controller.contract.getContract); //消息接收
 
   //消息管理模块
-  router.get('/news/getNews', app.jwt, controller.news.getNews); //消息接收
+  router.get('/news/getNewsing', app.jwt, controller.news.getNewsing); //未读消息接收
+  router.get('/news/getNewsed', app.jwt, controller.news.getNewsed); //已读消息接收
   router.get('/news/setRead', app.jwt, controller.news.setRead); //消息设为已读
 
   // 图片上传尝试

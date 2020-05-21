@@ -36,16 +36,49 @@ class NewsService extends Service {
   // }
 
   /**
-   * 返回发给平台的所有消息，前端至少要发送平台员工id
+   * 已读消息查询
    */
-  async getNews() {
+  async getNewsing() {
     const { ctx } = this;
     const News = ctx.model.News;
     const id = ctx.state.user.data.id;
     // const query = ctx.query;
     // console.log(query);
     try {
-      const findresult = await News.find({receiveId : id}).sort({ timestamp: -1 });
+      const findresult = await News.find({receiveId : id, read : 0}).sort({ timestamp: -1 });
+
+      if (findresult.length !== 0) {
+        return {
+          msg: findresult,
+          status: '1',
+        };
+      }
+
+      // 查询为空
+      return {
+        msg: '查询为空',
+        status: '0',
+      };
+    } catch (err) {
+      console.log('getNews: ' + err);
+      return {
+        msg: err.message,
+        status: '0',
+      };
+    }
+  }
+
+  /**
+   * 已读消息查询
+   */
+  async getNewsed() {
+    const { ctx } = this;
+    const News = ctx.model.News;
+    const id = ctx.state.user.data.id;
+    // const query = ctx.query;
+    // console.log(query);
+    try {
+      const findresult = await News.find({receiveId : id, read : 1}).sort({ timestamp: -1 });
 
       if (findresult.length !== 0) {
         return {

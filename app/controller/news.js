@@ -4,9 +4,14 @@ const Controller = require('egg').Controller;
 
 class NewsController extends Controller {
 
-    async getNews() {
+    async getNewsing() {
         const { ctx } = this;
-        ctx.body = await ctx.service.news.getNews();
+        ctx.body = await ctx.service.news.getNewsing();
+    }
+
+    async getNewsed() {
+        const { ctx } = this;
+        ctx.body = await ctx.service.news.getNewsed();
     }
 
     async setRead() {

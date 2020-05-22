@@ -304,7 +304,7 @@ class WorkorderService extends Service {
         partitionTaskData[0].tasks.sort(await ctx.service.tools.compare("order"));
 
         //获取工单日志表的数据
-        const logData = await ctx.model.Workorderlog.find({workorderId : data.workorderId});
+        const logData = await ctx.model.Workorderlog.find({workorderId : data.workorderId, state : 2});
         partitionTaskData[0].working = logData.length;
         partitionTaskData[0].workorderId = data.workorderId;
 
@@ -365,13 +365,13 @@ class WorkorderService extends Service {
         }else{
             files.serverFeedbackImg = certificates;
             files = Object.assign(files, parts.field);
-            files.state = 2;
+            files.state = 1;
             try{
                 await ctx.model.Workorderlog.create(files);
                 return { status : 1, msg : "任务提交成功" };
             }catch(err){
                 console.log(err)
-                return { status : 1, msg : err };
+                return { status : 0, msg : err };
             }
         }
         

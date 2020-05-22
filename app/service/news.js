@@ -134,6 +134,14 @@ class NewsService extends Service {
       };
     }
   }
+
+  //消息创建
+  async newsCreate(parameter){
+    let news = {};
+    news.object = "z";
+    news.object = "z";
+  }
+
 }
 
 module.exports = NewsService;

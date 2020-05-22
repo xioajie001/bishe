@@ -67,7 +67,7 @@ class OrderService extends Service {
           orderState : "3"
         }
       }
-    ]);
+    ])
     
     // 根据单品分区中的itemID获取item数据
     for(let i = 0; i < data.length; i++){
@@ -75,6 +75,50 @@ class OrderService extends Service {
       let item = await ctx.model.Item.findOne({_id : itemID});
       data[i].item = item;
     }
+    return {status : 1, msg : data};
+  }
+
+  //查看正在进行的订单详情  前端传来订单id：_id 方式 URL传值
+  async getOrderingDetail(){
+    const { ctx } = this;
+    const id = await ctx.state.user.data.id;
+    const query = ctx.query;
+
+    const data = await ctx.model.Order.aggregate([
+      {
+        $lookup : {
+          from : 'partitions',
+          localField : "partitionId",
+          foreignField : '_id',
+          as : 'partition',
+        }
+      },
+      {
+        $match : { 
+          _id : await ctx.service.tools.getObjectId(query._id)
+        }
+      }
+    ])
+    
+    // 根据单品分区中的itemID获取item数据
+    for(let i = 0; i < data.length; i++){
+      const itemID = data[i].partition[0].itemID;
+      let item = await ctx.model.Item.findOne({_id : itemID});
+      data[i].item = item;
+    }
+
+    //根据单品分区id获取taskid
+    const taskdata = await ctx.model.Task.find({partitionId : data[0].partitionId});
+    data[0].tasks = taskdata;
+
+    //获取订单数据
+    const workoredrData = await ctx.model.Workorder.findOne({orderID : query._id})
+    console.log("workoredrData:",workoredrData);
+
+    //当前正在进行的任务
+    const workorderlogData = await ctx.model.Workorderlog.find( {workorderId : workoredrData._id} );
+    const working = workorderlogData.length;
+    data.working = working;
     return {status : 1, msg : data};
   }
 

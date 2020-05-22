@@ -15,6 +15,8 @@ module.exports = app => {
 
   //订单
   router.get('/order/getOrder',app.jwt,controller.order.getOrder);  //获取订单信息
+  router.get('/order/getOrderWait',app.jwt,controller.order.getOrderWait);  //获取未开始订单信息
+  router.get('/order/getOrdering',app.jwt,controller.order.getOrdering);  //获取正在进行订单信息
   router.post('/order/doAdd',app.jwt,controller.order.doAdd);  //下单功能
   router.post('/order/confirm',app.jwt,controller.order.confirm);  //验收订单
   router.post('/order/cancel',app.jwt,controller.order.cancel);  //取消订单

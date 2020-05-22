@@ -10,10 +10,72 @@ class OrderService extends Service {
     const{ ctx } = this;
     const id =await ctx.state.user.data.id;
 
-    const customerId = id;
     const data = await ctx.model.Order.find({customerId : id});
     return {status : 1, msg : data};
 
+  }
+
+  //查看未开始订单
+  async getOrderWait(){
+    const { ctx } = this;
+    const id = await ctx.state.user.data.id;
+    // const data = await ctx.model.Order.find({ customerId : id, orderState : {$in : [0,1,2]} });
+
+    const data = await ctx.model.Order.aggregate([
+      {
+        $lookup : {
+          from : 'partitions',
+          localField : "partitionId",
+          foreignField : '_id',
+          as : 'partition',
+        }
+      },
+      {
+        $match : { 
+          customerId : await ctx.service.tools.getObjectId(id),
+          orderState : {$in : ["0","1","2"]}
+        }
+      }
+    ]);
+    
+    // 根据单品分区中的itemID获取item数据
+    for(let i = 0; i < data.length; i++){
+      const itemID = data[i].partition[0].itemID;
+      let item = await ctx.model.Item.findOne({_id : itemID});
+      data[i].item = item;
+    }
+    return {status : 1, msg : data};
+  }
+
+  //查看正在进行的订单
+  async getOrdering(){
+    const { ctx } = this;
+    const id = await ctx.state.user.data.id;
+
+    const data = await ctx.model.Order.aggregate([
+      {
+        $lookup : {
+          from : 'partitions',
+          localField : "partitionId",
+          foreignField : '_id',
+          as : 'partition',
+        }
+      },
+      {
+        $match : { 
+          customerId : await ctx.service.tools.getObjectId(id),
+          orderState : "3"
+        }
+      }
+    ]);
+    
+    // 根据单品分区中的itemID获取item数据
+    for(let i = 0; i < data.length; i++){
+      const itemID = data[i].partition[0].itemID;
+      let item = await ctx.model.Item.findOne({_id : itemID});
+      data[i].item = item;
+    }
+    return {status : 1, msg : data};
   }
 
   // 添加订单

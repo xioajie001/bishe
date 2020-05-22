@@ -10,6 +10,23 @@ class OrderController extends Controller {
     ctx.body = await ctx.service.order.getOrder();
   }
 
+  //查看未开始订单
+  async getOrderWait() {
+    const { ctx } = this;
+    ctx.body = await ctx.service.order.getOrderWait();
+  }
+
+  //查看正在进行的订单
+  async getOrdering() {
+    const { ctx } = this;
+    ctx.body = await ctx.service.order.getOrdering();
+  }
+
+  async getOrder() {
+    const { ctx } = this;
+    ctx.body = await ctx.service.order.getOrder();
+  }
+
   //增加订单
   async doAdd() {
     const { ctx } = this;

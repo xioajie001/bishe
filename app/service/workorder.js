@@ -52,6 +52,7 @@ class WorkorderService extends Service {
 
         const id = await ctx.state.user.data.id;
         let updata = {};
+        let orderStateUpdata = {};
         updata.servicer = id;
         const newTime = sillyTime.format(new Date(), "YYYY-MM-DD HH:mm:s")
 
@@ -72,13 +73,16 @@ class WorkorderService extends Service {
 
         //判断订单的orderStartState（订单开始状态)为0则把工单状态变为开始，为1变为等待开始
         if(orderData[0].order[0].orderStartState == 0){
+
             updata.startTime = newTime;
             updata.serverTime = newTime;
             updata.state = 1;
+            orderStateUpdata = {orderState : "3"};
         }else{
             updata.startTime = newTime;
             updata.serverTime = orderData[0].order[0].orderStartTime;
             updata.state = 4;
+            orderStateUpdata = {orderState : "2"};
         }
 
         console.log("updata:",updata);
@@ -90,6 +94,7 @@ class WorkorderService extends Service {
             return { status : 0, msg : "已达到最大接单数，不可接单" }
         }
 
+        //获取派单表数据
         const assigndata = await ctx.model.Assign.findOne({workorderID : data._id});
 
         //添加消息数据
@@ -110,23 +115,31 @@ class WorkorderService extends Service {
 
         //更新数据库并添加消息数据库
         try{
+            //更新工单信息
             const result = await ctx.model.Workorder.updateOne(data, updata);
 
+            //更新订单装状态信息
+            await ctx.model.Order.updateOne({_id : orderData[0].order[0]._id}, orderStateUpdata);
+
+            // 更新派单表数据
             const resultAssign = await ctx.model.Assign.updateOne(
                 { workorderID : data._id}, 
                 {state : 2, endTime : newTime}
             );
 
+            //更新专才信息
             await ctx.model.Servicer.updateOne(
                 {_id : id}, 
                 { workordering : servicer.workordering + 1 }
             );
 
+            //向现金流量表添加专才id和运营商id
             await ctx.model.Cashflow.updateOne(
                 {workOrderId : data._id}, 
                 { servicerId : id, operatorId : servicer.operatorId }
             );
 
+            //创建消息数据
             await ctx.model.News.create(news);
 
             // console.log(resultAssign);

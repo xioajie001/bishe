@@ -20,7 +20,7 @@ module.exports = app => {
       maxWorkOrder: {type: Number, required : false, trim : true}, // 最大接单数
       workordering: {type: Number, required: false,default:0}, // 在接项目数量
       servicerItem: { type: Array, required : false }, // 可接项目
-      operatorId: { type: Schema.Types.ObjectId, required: false, default: new mongoose.Types.ObjectId('5ead80ee74243c4bc453abfd') }, // 运营商id5ead80ee74243c4bc453abfd
+      operatorId: { type: Schema.Types.ObjectId, required: false, default: new mongoose.Types.ObjectId('5ec78ae2db7e224698a7a28c') }, // 运营商5ec78ae2db7e224698a7a28c
 
   })
     return mongoose.model('Servicer', servicerSchema);

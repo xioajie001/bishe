@@ -100,7 +100,7 @@ class CustomerService extends Service {
       try {
         // 把读取到的表单信息流写入创建的可写流
         await stream.pipe(writeStream);
-        await this.ctx.model.Customer.updateOne({customerId},{customerProfilePhoto : saveDir});
+        await this.ctx.model.Customer.updateOne({_id : customerId},{customerProfilePhoto : saveDir});
         return {status : 1, msg : "头像上传成功"};
       } catch (err) {
           // 上传失败销毁流

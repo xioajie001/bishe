@@ -25,9 +25,13 @@ class OrderController extends Controller {
   //查看正在进行的订单详情
   async getOrderingDetail() {
     const { ctx } = this;
-    const data = await ctx.service.order.getOrderingDetail();
-    console.log("data_c:",data);
-    ctx.body = data;
+    ctx.body = await ctx.service.order.getOrderingDetail();
+  }
+
+  //获取任务提交页面
+  async getLog() {
+    const { ctx } = this;
+    ctx.body = await ctx.service.order.getLog();
   }
 
   async getOrder() {

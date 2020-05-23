@@ -118,14 +118,23 @@ class OrderService extends Service {
     //当前正在进行的任务
     const workorderlogData = await ctx.model.Workorderlog.find( {workorderId : workoredrData._id} );
     const working = await workorderlogData.length;
-    data.working = working;
-    data.workoredrId = workoredrData._id;
-    console.log("data:",data);
-    console.log("******************************");
-    if(data.working){
-      return {status : 1, msg : data};
-    }
-    
+    data[0].working = working;
+    data[0].workoredrId = workoredrData._id;
+    return {status : 1, msg : data[0]};
+  }
+
+  /*
+  *获取任务提交页面
+  *前端提交工单id：workorderId和 任务id taskId
+  */
+  async getLog(){
+
+    const { ctx } = this;
+    const id = ctx.state.user.data.id;
+    const query = ctx.query;
+    const result = await ctx.model.Workorderlog.findOne(query);
+    return {status : 1, msg : result};
+
   }
 
   // 添加订单

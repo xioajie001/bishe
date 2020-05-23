@@ -84,7 +84,7 @@ class OrderService extends Service {
     const id = await ctx.state.user.data.id;
     const query = ctx.query;
 
-    const data = await ctx.model.Order.aggregate([
+    let data = await ctx.model.Order.aggregate([
       {
         $lookup : {
           from : 'partitions',
@@ -113,13 +113,19 @@ class OrderService extends Service {
 
     //获取订单数据
     const workoredrData = await ctx.model.Workorder.findOne({orderID : query._id})
-    console.log("workoredrData:",workoredrData);
+    // console.log("workoredrData:",workoredrData);
 
     //当前正在进行的任务
     const workorderlogData = await ctx.model.Workorderlog.find( {workorderId : workoredrData._id} );
-    const working = workorderlogData.length;
+    const working = await workorderlogData.length;
     data.working = working;
-    return {status : 1, msg : data};
+    data.workoredrId = workoredrData._id;
+    console.log("data:",data);
+    console.log("******************************");
+    if(data.working){
+      return {status : 1, msg : data};
+    }
+    
   }
 
   // 添加订单

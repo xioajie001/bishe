@@ -82,7 +82,7 @@ class OrderService extends Service {
   async getOrderingDetail(){
     const { ctx } = this;
     const id = await ctx.state.user.data.id;
-    const query = ctx.query;
+    const query = ctx.query;   
 
     let data = await ctx.model.Order.aggregate([
       {
@@ -116,7 +116,7 @@ class OrderService extends Service {
     // console.log("workoredrData:",workoredrData);
 
     //当前正在进行的任务
-    const workorderlogData = await ctx.model.Workorderlog.find( {workorderId : workoredrData._id, state: 1} );
+    const workorderlogData = await ctx.model.Workorderlog.find( {workorderId : workoredrData._id, state: 2} );
     const working = await workorderlogData.length;
     data[0].working = working;
     data[0].workoredrId = workoredrData._id;

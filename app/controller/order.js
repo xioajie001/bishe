@@ -34,6 +34,12 @@ class OrderController extends Controller {
     ctx.body = await ctx.service.order.getLog();
   }
 
+  //提交客户反馈
+  async updatalog() {
+    const { ctx } = this;
+    ctx.body = await ctx.service.order.updatalog();
+  }
+
   async getOrder() {
     const { ctx } = this;
     ctx.body = await ctx.service.order.getOrder();

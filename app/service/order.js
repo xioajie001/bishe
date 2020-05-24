@@ -116,7 +116,7 @@ class OrderService extends Service {
     // console.log("workoredrData:",workoredrData);
 
     //当前正在进行的任务
-    const workorderlogData = await ctx.model.Workorderlog.find( {workorderId : workoredrData._id} );
+    const workorderlogData = await ctx.model.Workorderlog.find( {workorderId : workoredrData._id, state: 1} );
     const working = await workorderlogData.length;
     data[0].working = working;
     data[0].workoredrId = workoredrData._id;
@@ -135,6 +135,37 @@ class OrderService extends Service {
     const result = await ctx.model.Workorderlog.findOne(query);
     return {status : 1, msg : result};
 
+  }
+
+  //提交客户反馈
+  async updatalog(){
+    const { ctx } = this;
+    const id = await ctx.state.user.data.id;
+    const data = await ctx.request.body;
+
+    //获取要更新的数据
+    const updata = {};
+    updata.customerfeedback = data.customerfeedback;
+    updata.state = "2";
+
+    try{
+      const result = await ctx.model.Workorderlog.updateOne(
+        {
+          workorderId : data.workorderId,
+          taskId : data.taskId
+        }, updata
+      )
+      console.log("result:",result);
+      if(result.nModified == 1){
+        return {status : 1, msg : "数据反馈成功"}
+      }
+      return {status : 0, msg : "数据已提交或未更新成功"}
+    }catch(err){
+      console.log(err);
+      return {status : 0, msg : err}
+    }
+    
+    
   }
 
   // 添加订单
@@ -180,7 +211,7 @@ class OrderService extends Service {
     }
   }
 
-  //验收服务
+  //验收服务  值：订单id
   async confirm(){
 
     const { ctx } = this;
@@ -188,8 +219,10 @@ class OrderService extends Service {
     const data = ctx.request.body;
 
     try{
-      await ctx.model.Order.updateOne(data,{orderState : "5"});
-      await ctx.model.Workorder.updateOne(data,{state : "0"});
+      const orserResult = await ctx.model.Order.updateOne(data, {orderState : "5"});
+      const workorserResult = await ctx.model.Workorder.updateOne({ orderID : data._id },{state : "0"});
+      console.log(orserResult);
+      console.log(workorserResult);
       return {status : 1, msg : "确认订单成功"};
     }catch(err){
       return {status : 0, msg : "确认订单失败"};
@@ -203,8 +236,10 @@ class OrderService extends Service {
     const data = ctx.request.body;
 
     try{
-      await ctx.model.Order.updateOne(data,{orderState : "4"});
-      await ctx.model.Workorder.updateOne(data,{state : "3"});
+      const orserResult = await ctx.model.Order.updateOne(data, {orderState : "4"});
+      const workorserResult = await ctx.model.Workorder.updateOne({ orderID : data._id }, {state : "3"});
+      console.log(orserResult);
+      console.log(workorserResult);
       return {status : 1, msg : "取消订单成功"};
     }catch(err){
       console.log(err);

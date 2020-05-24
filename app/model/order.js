@@ -16,6 +16,7 @@ module.exports = app =>{
         remark : {type : String, required : false},  //备注
         // purchaseQuantity : {type : String, required : false},    //购买数量
         customerId : { type: Schema.Types.ObjectId, required : true }, //买家id
+        timestamp: { type: Number, default: Date.now() }, // 时间戳，表明消息的订单产生的时间
         phone : {type : String, required : false},   //联系电话
         orderStartTime : {type : Date, required : false} //订单开始时间
     });

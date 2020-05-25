@@ -142,26 +142,58 @@ class OrderService extends Service {
     const { ctx } = this;
     const id = await ctx.state.user.data.id;
     const data = await ctx.request.body;
+    //获取工单数据
+    const workorderData = await ctx.model.Workorder.findOne({_id : data.workorderId});
+    console.log(workorderData);
+    
+    //获取客户数据
+    const customer = await ctx.model.Customer.findOne({_id : id});
 
     //获取要更新的数据
     const updata = {};
     updata.customerfeedback = data.customerfeedback;
     updata.state = "2";
 
+    // 添加消息数据
+    const news = { 
+        reason : "客户反馈成功", 
+        content : "客户给你提交了一条新的反馈，请注意查收",
+        object : "y", 
+        action : "f", 
+        detailObject : "g",
+        result : "1",
+    }
+    news.receiveId = workorderData.servicer;
+    news.auditorName = customer.customerName;
+    news.senderId = id;
+
     try{
+
       const result = await ctx.model.Workorderlog.updateOne(
         {
           workorderId : data.workorderId,
           taskId : data.taskId
         }, updata
       )
-      console.log("result:",result);
+
+      //获取log数据
+      const log = await ctx.model.Workorderlog.findOne(
+        {
+          workorderId : data.workorderId,
+          taskId : data.taskId
+        }
+      )
+      news.detailObjectId = log._id;
+      news.verifiedData = log; 
+      await ctx.model.News.create(news);
+      
       if(result.nModified == 1){
         return {status : 1, msg : "数据反馈成功"}
       }
+
       return {status : 0, msg : "数据已提交或未更新成功"}
     }catch(err){
-      console.log(err);
+      console.log("客户提交反馈出错：",err);
       return {status : 0, msg : err}
     }
     
@@ -173,7 +205,6 @@ class OrderService extends Service {
     const { ctx,} = this;
     const id =await ctx.state.user.data.id;
     const data = await ctx.request.body;
-
 
     let cashflowdata = {};
     cashflowdata.userPayable = data.cost;

@@ -74,9 +74,20 @@ class ShoppingBarService extends Service {
   }
 
   //删除购物车
-  // async doDel(){
-    
-  // }
+  async doDel(){
+    const { ctx,} = this;
+    const id =await ctx.state.user.data.id;
+    let query = await ctx.query;
+    try{
+      const result = await ctx.model.ShoppingBar.deleteOne(query);
+      console.log(result);
+      return {status : 1, msg : "删除购物车成功"};
+    }catch(err){
+      console.log("删除购物车错误：",err);
+      return {status : 0,msg : err};
+      
+    }
+  }
 
 }
 module.exports = ShoppingBarService;

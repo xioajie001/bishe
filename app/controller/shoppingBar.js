@@ -10,10 +10,16 @@ class ShoppingBarController extends Controller {
     ctx.body = await ctx.service.shoppingBar.getShoppingBar();
   }
 
-  // 添加订单
+  // 添加购物车
   async doAdd() {
     const { ctx } = this;
     ctx.body = await ctx.service.shoppingBar.doAdd();
+  }
+
+  // 删除购物车
+  async doDel() {
+    const { ctx } = this;
+    ctx.body = await ctx.service.shoppingBar.doDel();
   }
 }
 

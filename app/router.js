@@ -27,6 +27,8 @@ module.exports = app => {
   //购物车
   router.get('/shoppingbar/getShoppingBar',app.jwt,controller.shoppingBar.getShoppingBar);  //获取购物车信息
   router.post('/shoppingbar/doAdd',app.jwt,controller.shoppingBar.doAdd);//添加购物车
+  router.post('/shoppingbar/doDel',app.jwt,controller.shoppingBar.doDel);//删除购物车
+
 
   //商品
   router.get('/item/getItem',controller.item.getItem) //获取全部商品信息

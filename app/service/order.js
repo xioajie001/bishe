@@ -204,6 +204,7 @@ class OrderService extends Service {
     try{
       const result = await ctx.model.Order.create(data);
       cashflowdata.orderId = result._id;
+      cashflowdata.addTime = new Date();
       await ctx.model.Cashflow.create(cashflowdata);
       return {status : 1, msg : result};
     }catch(err){

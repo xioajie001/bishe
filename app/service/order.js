@@ -174,6 +174,7 @@ class OrderService extends Service {
     const id =await ctx.state.user.data.id;
     const data = await ctx.request.body;
 
+
     let cashflowdata = {};
     cashflowdata.userPayable = data.cost;
 
@@ -253,7 +254,7 @@ class OrderService extends Service {
     
     const nowTime = new Date();
     const query =await ctx.model.Order.find({
-      orderState : "1",
+      orderState : "2",
       orderStartState : "1",
       orderStartTime : {
         "$lte": nowTime

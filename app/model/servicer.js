@@ -16,7 +16,7 @@ module.exports = app => {
       servicerRegistrationDate: {type: Date, required: false}, // 专才注册时间
       servicerIDNo: {type: String, required: false}, // 专才身份证号码
       servicerPhone: {type: String, required: false}, // 专才手机电话
-      servicerStatus: {type: Boolean, required: false}, // 接单状态
+      servicerStatus: {type: Boolean, required: false, default : false}, // 接单状态
       maxWorkOrder: {type: Number, required : false, trim : true}, // 最大接单数
       workordering: {type: Number, required: false,default:0}, // 在接项目数量
       servicerItem: { type: Array, required : false }, // 可接项目

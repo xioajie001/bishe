@@ -7,8 +7,9 @@ module.exports = app =>{
     moment.locale('zh-cn');
 
     const orderSchema = new Schema({
-        orderId : {type : String, required : true, unique : true},   //订单ID
-        orderState : {type : String, required : false},  //订单进度状态（0：已接单尚未分配专才；1：已接单且已分配专才；2：订单确认开始；3:订单取消）
+        orderId : {type : String, required : true},   //订单ID
+        orderState : {type : String, required : false},  //订单进度状态（0：已接单尚未变为工单；1 ：已接单且已变为便为工单；2：已接单且已分配专才；3：订单确认开始；4:订单取消；
+                                                         //             5：订单完成；6：已结算）
         orderStartState : {type : String, required : false}, //订单开始状态（0：专才接单后默认服务开始；1：要客户确认后订服务才开始）
         cost : {type : Number, required : false},    //应付款
         orderTime : {type : Date, required : true }, //下单时间

@@ -31,8 +31,8 @@ module.exports = app => {
 
 
   //商品
-  router.get('/item/getItem',app.jwt,controller.item.getItem) //获取全部商品信息
-  router.get('/item/getItemDetail',app.jwt,controller.item.getItemDetail) //获取商品详情信息
+  router.get('/item/getItem',controller.item.getItem) //获取全部商品信息
+  router.get('/item/getItemDetail',controller.item.getItemDetail) //获取商品详情信息
 
   //投诉
   router.post('/complain/doAdd',app.jwt,controller.complain.doAdd) //投诉

@@ -419,7 +419,7 @@ class WorkorderService extends Service {
                 }
             ) 
             
-            news.detailObjectId = logdata._id;
+            news.detailObjectId = data.workorderId;
             news.verifiedData = logdata;
             // console.log(news);
             await ctx.model.News.create(news);

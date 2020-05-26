@@ -76,6 +76,9 @@ class ItemService extends Service {
           itemMinMaxPrice.maxPrice = maxPrice;
           data[i].itemMinMaxPrice = itemMinMaxPrice;
         }
+
+        const commentData = await ctx.model.Comment.find({ itemId : query._id })
+        data[0].comment = commentData;
         
         return {status : 1, msg : data};
       }catch(err){

@@ -303,6 +303,12 @@ class WorkorderService extends Service {
         //根据tasks数据中的order进行排序
         partitionTaskData[0].tasks.sort(await ctx.service.tools.compare("order"));
 
+        //获取工单数据
+        const workorder = await ctx.model.Workorder.findOne({ _id : data.workorderId });
+
+        const orderdata = await ctx.model.Order.findOne({ _id : workorder.orderID})
+        // console.log("orderdata.remark:",orderdata.remark);
+        partitionTaskData[0].remark = orderdata.remark;
         //获取工单日志表的数据
         const logData = await ctx.model.Workorderlog.find({workorderId : data.workorderId, state : 2});
         partitionTaskData[0].working = logData.length;

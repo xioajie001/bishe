@@ -31,14 +31,14 @@ module.exports = app => {
 
 
   //商品
-  router.get('/item/getItem',controller.item.getItem) //获取全部商品信息
-  router.get('/item/getItemDetail',controller.item.getItemDetail) //获取商品详情信息
+  router.get('/item/getItem',app.jwt,controller.item.getItem) //获取全部商品信息
+  router.get('/item/getItemDetail',app.jwt,controller.item.getItemDetail) //获取商品详情信息
 
   //投诉
-  router.post('/complain/doAdd',controller.complain.doAdd) //投诉
+  router.post('/complain/doAdd',app.jwt,controller.complain.doAdd) //投诉
 
   //评论
-  router.post('/comment/doAdd',controller.comment.doAdd) //评论
+  router.post('/comment/doAdd',app.jwt,controller.comment.doAdd) //评论
 
   // 专才
   router.get('/servicer/personal',app.jwt, controller.servicer.personal); //获取专才个人信息

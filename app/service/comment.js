@@ -8,8 +8,10 @@ class CommentService extends Service {
   // 用户评论
   async doAdd() {
 
-    const { ctx,} = this;
-    const id = await ctx.state.user.data.id;
+    const { ctx } = this;
+    const id =await ctx.state.user.data.id;
+    console.log(id);
+    
     const data = ctx.request.body;
 
     //添加客户id

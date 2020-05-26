@@ -22,6 +22,12 @@ class OrderController extends Controller {
     ctx.body = await ctx.service.order.getOrdering();
   }
 
+  //查看已完成的订单
+  async getOrdered() {
+    const { ctx } = this;
+    ctx.body = await ctx.service.order.getOrdered();
+  }
+
   //查看正在进行的订单详情
   async getOrderingDetail() {
     const { ctx } = this;
@@ -40,6 +46,7 @@ class OrderController extends Controller {
     ctx.body = await ctx.service.order.updatalog();
   }
 
+  //获取全部订单
   async getOrder() {
     const { ctx } = this;
     ctx.body = await ctx.service.order.getOrder();

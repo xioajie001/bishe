@@ -8,6 +8,12 @@ class ItemController extends Controller {
     ctx.body = await ctx.service.item.getItem();
   }
 
+  //按品类获取商品
+  async getItemSome() {
+    const { ctx } = this;
+    ctx.body = await ctx.service.item.getItemSome();
+  }
+
   async getItemDetail() {
     const { ctx } = this;
     ctx.body = await ctx.service.item.getItemDetail();

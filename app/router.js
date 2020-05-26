@@ -17,6 +17,7 @@ module.exports = app => {
   router.get('/order/getOrder',app.jwt,controller.order.getOrder);  //获取订单信息
   router.get('/order/getOrderWait',app.jwt,controller.order.getOrderWait);  //获取未开始订单信息
   router.get('/order/getOrdering',app.jwt,controller.order.getOrdering);  //获取正在进行订单信息
+  router.get('/order/getOrdered',app.jwt,controller.order.getOrdered);  //获取已完成的订单信息
   router.get('/order/getOrderingDetail',app.jwt,controller.order.getOrderingDetail);  //查看正在进行的订单详情
   router.get('/order/getLog',app.jwt,controller.order.getLog);  //获取任务提交页面
   router.post('/order/updatalog',app.jwt,controller.order.updatalog);  //提交客户反馈
@@ -32,6 +33,7 @@ module.exports = app => {
 
   //商品
   router.get('/item/getItem',controller.item.getItem) //获取全部商品信息
+  router.get('/item/getItemSome',controller.item.getItemSome) //根据品类获取商品信息
   router.get('/item/getItemDetail',controller.item.getItemDetail) //获取商品详情信息
 
   //投诉

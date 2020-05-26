@@ -8,6 +8,7 @@ module.exports = app =>{
         // id : {type : String, required : true},   //评论id
         itemId : {type : String, required : true},  //单品ID
         customerId : {type : String, required : true},  //评论客户的ID
+        customerName : {type : String, required : true}, //评论客户的姓名
         commentContent : {type : String, required : true}, //评价内容
         commentDate : {type : Date, required : true},    //评价时间
         // servicerScore : {type : Number, required : true}, //专才得分

@@ -14,8 +14,12 @@ class CommentService extends Service {
     
     const data = ctx.request.body;
 
+    const customer = await ctx.model.Customer.findOne({_id:id});
     //添加客户id
-    data.customerId = id
+    data.customerId = id;
+
+    //添加客户姓名
+    data.customerName = customer.customerName;
 
     //添加评论时间
     const time = sillyTime.format(new Date(), "YYYY-MM-DD, HH:mm:ss")

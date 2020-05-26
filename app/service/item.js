@@ -102,14 +102,32 @@ class ItemService extends Service {
           $match : { "_id" : await ctx.service.tools.getObjectId(query._id) }
         }]);
 
+        // console.log("data:",data);
+        
+
         //取出单品分区价格中的最小值和最大值保存在itemMinMaxPrice中
+        let xiaoshouliang = 0;
+        let shouchangliang = 0
         for(let i =0; i < data.length; i++){
           let itemMinMaxPrice = {};
           let itemPrices = [];
           for(let j = 0; j < data[i].partitions.length; j++){
             itemPrices.push(data[i].partitions[j].price);
+            const partitionId = data[i].partitions[j]._id;
+            
+            // 计算销售量
+            const xsnum = await ctx.model.Order.count({ partitionId : partitionId });
+            xiaoshouliang += xsnum;
+
+            // 计算收藏量
+            let scnum = await ctx.model.ShoppingBar.count({partitionId : partitionId})
+            shouchangliang += scnum;  
+            
           };
           
+          console.log("xiaoshouliang:",xiaoshouliang);
+          console.log("shouchangliang:",shouchangliang);
+
           let minPrice = await ctx.service.tools.getMin(itemPrices);
           let maxPrice = await ctx.service.tools.getMax(itemPrices);
           itemMinMaxPrice.minPrice = minPrice;
@@ -118,16 +136,17 @@ class ItemService extends Service {
         }
 
         commentData = await ctx.model.Comment.find({ itemId : query._id });
-        for(let i =0; i < commentData.length; i++){
-          let customer = await ctx.model.Customer.findOne({_id : commentData[i].customerId })
-          const name = customer.customerName;
-          commentData[i].name = name;
+        // for(let i =0; i < commentData.length; i++){
+        //   let customer = await ctx.model.Customer.findOne({_id : commentData[i].customerId })
+        //   const name = customer.customerName;
+        //   commentData[i].name = name;
 
-        }
-        console.log(commentData);
+        // }
+        // console.log(commentData);
         
         data[0].comment = commentData;
-        
+        data[0].xiaoshouliang = xiaoshouliang;
+        data[0].shouchangliang = shouchangliang;
         return {status : 1, msg : data};
       }catch(err){
         console.log(err);

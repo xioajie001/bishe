@@ -14,6 +14,7 @@ module.exports = app => {
     customerAdress: {type: String, required: false}, // 客户地址
     customerRegistrationDate: {type: Date, required: false}, // 客户注册时间
     customerIDNo: {type: String, required: false}, // 客户身份证号
+    jianjie: {type: String, required: false, default : "请输入简介"},// 简介
     customerProfilePhoto: {type: String, required: false, default : "/public/admin/upload/customer/20200514/1589440775032.jpg"} // 客户头像
     
   })

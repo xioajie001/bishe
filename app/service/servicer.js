@@ -59,7 +59,7 @@ class ServicerService extends Service {
 
   // 登录
   async login(){
-    const{servicerZhanghao,password} = this.ctx.request.body;
+    let {servicerZhanghao,password} = this.ctx.request.body;
     password = await this.ctx.service.tools.md5(password);
     const query = await this.ctx.model.Servicer.find({servicerZhanghao,password});
     if(query.length > 0){

@@ -14,7 +14,7 @@ module.exports = app => {
     auditorName: String, // 发送消息者姓名
     // 消息拼接所需字段
     object: { type: String, required: true }, // 发送对象标识 o:运营商，p:平台，z:专才，y:用户
-    action: String, // 动作标识 处理动作标识 t:提交审核，q:确认审核，p:派单，j:接单
+    action: String, // 动作标识 处理动作标识 t:提交审核，q:确认审核，p:派单，j:接单，f:反馈
     detailObject: String, // 具体处理对象标识 c:品类	t:任务  o:运营商	z:专才 I:单品	log:工作日志  p:分区	g:工单
     detailObjectId: Schema.Types.ObjectId, // 具体处理对象id
     timeOptions: Date, // 时间，备选

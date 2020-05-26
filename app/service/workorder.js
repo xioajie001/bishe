@@ -382,6 +382,25 @@ class WorkorderService extends Service {
         const { ctx } = this;
         const id = ctx.state.user.data.id;
         const data = ctx.request.body;
+
+        //获取专才数据
+        const servicer = await ctx.model.Servicer.findOne({ _id : id });
+        
+
+        //添加消息数据
+        console.log("servicer:",servicer);
+        const news = { 
+            reason : "专才任务反馈", 
+            object : "z", 
+            action : "f", 
+            detailObject : "g",
+            result : "1",
+        }
+        news.receiveId = servicer.operatorId;
+        news.auditorName = servicer.servicerName;
+        news.senderId = id;
+        
+        
         try{
             await ctx.model.Workorderlog.updateOne(
                 {
@@ -391,6 +410,19 @@ class WorkorderService extends Service {
                     serverFeedbackText : data.serverFeedbackText
                 }
             )
+
+            // 获取log表
+            const logdata = await ctx.model.Workorderlog.findOne(
+                {
+                    taskId : data.taskId, 
+                    workorderId : data.workorderId 
+                }
+            ) 
+            
+            news.detailObjectId = logdata._id;
+            news.verifiedData = logdata;
+            // console.log(news);
+            await ctx.model.News.create(news);
             return {status : 1, msg : "提交成功"};
         }catch(err){
             console.log(err);

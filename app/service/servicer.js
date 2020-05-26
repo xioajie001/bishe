@@ -35,9 +35,14 @@ class ServicerService extends Service {
     if( query.length > 0 ){
       return {status : 0, msg : "该账号已存在，请重新输入账号"};
     }else if(data.password == data.password1){
+
+      //给密码进行md5加密
+      data.password = await ctx.service.tools.md5(data.password);
+
       //添加注册时间
       const time = sillyTime.format(new Date(), "YYYY-MM-DD HH:mm:ss");
       data.servicerRegistrationDate = time;
+
     }else{
       return {status : 0, msg : "密码1和密码1不一样，请确认后输入"};
     }
@@ -55,6 +60,7 @@ class ServicerService extends Service {
   // 登录
   async login(){
     const{servicerZhanghao,password} = this.ctx.request.body;
+    password = await this.ctx.service.tools.md5(password);
     const query = await this.ctx.model.Servicer.find({servicerZhanghao,password});
     if(query.length > 0){
       return {status:1,
@@ -69,18 +75,13 @@ class ServicerService extends Service {
   //专才信息修改
   async doEdit(){
     const id =await ctx.state.user.data.id;
-    if(id){
       const data = this.ctx.request.body;
       try{
-        const servicerId = id;
-        await this.ctx.model.Servicer.updateOne({_id : servicerId},data);
+        await this.ctx.model.Servicer.updateOne({_id : id},data);
         return {status : 1, msg : "更新成功"};
       }catch(err){
         return err;
       }     
-    }else{
-      return {status : 0, msg : "请登录"};
-    }   
   }
 
   //专才头像上传

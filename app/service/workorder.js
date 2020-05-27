@@ -26,13 +26,19 @@ class WorkorderService extends Service {
                 $match : {"state" : "1", servicerID : await ctx.service.tools.getObjectId(id)}
             }
         ]);
-        console.log(data)
+        
 
         //循环已经查询出来的信息，根据其中的单品分区id
         for(let i = 0; i < data.length; i++){
             const itemPartitionId = data[i].workorders[0].itemPartition;
             let itemPartition = await ctx.model.Partition.findOne({_id : itemPartitionId});
             data[i].itemPartition = itemPartition;
+        }
+        console.log(data)
+        for(let i = 0; i < data.length; i++){
+            const itemID = data[i].itemPartition.itemID;
+            let item = await ctx.model.Item.findOne({_id : itemID});
+            data[i].item = item;
         }
 
         //判断是否有新增工单，有返回工单，没有返回“没有新增工单”的提示
@@ -217,6 +223,11 @@ class WorkorderService extends Service {
                 $match : { state : "1", servicer : await ctx.service.tools.getObjectId(id)}
             }
         ]);
+        for(let i = 0; i < data.length; i++){
+            const itemID = data[i].itemPartition[0].itemID;
+            let item = await ctx.model.Item.findOne({_id : itemID});
+            data[i].item = item;
+        }
         return { status : 1, msg : data }
     }
 
@@ -236,6 +247,11 @@ class WorkorderService extends Service {
                 $match : { state : "4", servicer : await ctx.service.tools.getObjectId(id)}
             }
         ]);
+        for(let i = 0; i < data.length; i++){
+            const itemID = data[i].itemPartition[0].itemID;
+            let item = await ctx.model.Item.findOne({_id : itemID});
+            data[i].item = item;
+        }
         return { status : 1, msg : data }
     }
 
@@ -255,6 +271,13 @@ class WorkorderService extends Service {
                 $match : { state : "3", servicer : await ctx.service.tools.getObjectId(id)}
             }
         ]);
+        // console.log(data);
+        
+        for(let i = 0; i < data.length; i++){
+            const itemID = data[i].itemPartition[0].itemID;
+            let item = await ctx.model.Item.findOne({_id : itemID});
+            data[i].item = item;
+        }
         return { status : 1, msg : data }
     }
 

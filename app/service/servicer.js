@@ -74,7 +74,7 @@ class ServicerService extends Service {
 
   //专才信息修改
   async doEdit(){
-    const id =await ctx.state.user.data.id;
+    const id =await this.ctx.state.user.data.id;
       const data = this.ctx.request.body;
       try{
         await this.ctx.model.Servicer.updateOne({_id : id},data);

@@ -297,6 +297,13 @@ class WorkorderService extends Service {
                     as : "tasks"
                 }
             },{
+                $lookup : {
+                    from : "items",
+                    localField : "itemID",
+                    foreignField : "_id",
+                    as : "item"
+                }
+            },{
                 $match : { _id : await ctx.service.tools.getObjectId(data.partitionId) }
             }
         ]);

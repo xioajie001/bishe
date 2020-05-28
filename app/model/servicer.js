@@ -21,7 +21,7 @@ module.exports = app => {
       workordering: {type: Number, required: false,default:0}, // 在接项目数量
       servicerItem: { type: Array, required : false }, // 可接项目
       jianjie: {type: String, required: false, default : "请输入简介"},// 简介
-      operatorId: { type: Schema.Types.ObjectId, required: false, default: new mongoose.Types.ObjectId('5ec78ae2db7e224698a7a28c') }, // 运营商5ec78ae2db7e224698a7a28c
+      operatorId: { type: Schema.Types.ObjectId, required: false, default: new mongoose.Types.ObjectId('5ecf74831f2ce24434b49124') }, // 运营商5ecf74831f2ce24434b49124
 
   })
     return mongoose.model('Servicer', servicerSchema);

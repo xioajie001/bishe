@@ -287,12 +287,14 @@ class OrderService extends Service {
     const { ctx } = this;
     const id =await ctx.state.user.data.id;
     const data = ctx.request.body;
+    const workorder = await ctx.model.Workorder.findOne({ orderID : data._id });
 
     try{
       const orserResult = await ctx.model.Order.updateOne(data, {orderState : "5"});
       const workorserResult = await ctx.model.Workorder.updateOne({ orderID : data._id },{state : "0"});
-      console.log(orserResult);
-      console.log(workorserResult);
+      const logdata = await ctx.model.Workorderlog.update({ workorderId : workorder._id },{state : "2"});
+      // console.log(orserResult);
+      // console.log(workorserResult);
       return {status : 1, msg : "确认订单成功"};
     }catch(err){
       return {status : 0, msg : "确认订单失败"};
@@ -304,12 +306,17 @@ class OrderService extends Service {
     const { ctx } = this;
     const id =await ctx.state.user.data.id;
     const data = ctx.request.body;
-
+    const workorder = await ctx.model.Workorder.findOne({ orderID : data._id });
+    // console.log(workorder);
+    
     try{
       const orserResult = await ctx.model.Order.updateOne(data, {orderState : "4"});
       const workorserResult = await ctx.model.Workorder.updateOne({ orderID : data._id }, {state : "3"});
-      console.log(orserResult);
-      console.log(workorserResult);
+      const logdata = await ctx.model.Workorderlog.update({ workorderId : workorder._id },{state : "3"});
+      // console.log(logdata);
+      
+      // console.log(orserResult);
+      // console.log(workorserResult);
       return {status : 1, msg : "取消订单成功"};
     }catch(err){
       console.log(err);

@@ -143,6 +143,9 @@ class OrderService extends Service {
 
     //根据单品分区id获取taskid
     const taskdata = await ctx.model.Task.find({partitionId : data[0].partitionId});
+    taskdata.sort(await ctx.service.tools.compare("order"));
+    // console.log(taskdata);
+    
     data[0].tasks = taskdata;
 
     //获取订单数据

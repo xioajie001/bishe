@@ -125,8 +125,8 @@ class ItemService extends Service {
             
           };
           
-          console.log("xiaoshouliang:",xiaoshouliang);
-          console.log("shouchangliang:",shouchangliang);
+          // console.log("xiaoshouliang:",xiaoshouliang);
+          // console.log("shouchangliang:",shouchangliang);
 
           let minPrice = await ctx.service.tools.getMin(itemPrices);
           let maxPrice = await ctx.service.tools.getMax(itemPrices);
@@ -135,7 +135,9 @@ class ItemService extends Service {
           data[i].itemMinMaxPrice = itemMinMaxPrice;
         }
 
+        //获取评论数据
         commentData = await ctx.model.Comment.find({ itemId : query._id });
+        commentData.reverse();
         // for(let i =0; i < commentData.length; i++){
         //   let customer = await ctx.model.Customer.findOne({_id : commentData[i].customerId })
         //   const name = customer.customerName;

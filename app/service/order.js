@@ -47,7 +47,7 @@ class OrderService extends Service {
       let item = await ctx.model.Item.findOne({_id : itemID});
       data[i].item = item;
     }
-    return {status : 1, msg : data};
+    return {status : 1, msg : data.reverse()};
   }
 
   //查看正在进行的订单
@@ -78,7 +78,7 @@ class OrderService extends Service {
       let item = await ctx.model.Item.findOne({_id : itemID});
       data[i].item = item;
     }
-    return {status : 1, msg : data};
+    return {status : 1, msg : data.reverse()};
   }
 
   //查看已完成的订单
@@ -109,7 +109,7 @@ class OrderService extends Service {
       let item = await ctx.model.Item.findOne({_id : itemID});
       data[i].item = item;
     }
-    return {status : 1, msg : data};
+    return {status : 1, msg : data.reverse()};
   }
 
   //查看正在进行的订单详情  前端传来订单id：_id 方式 URL传值

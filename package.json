@@ -14,7 +14,7 @@
     "egg-scripts": "^2.11.0",
     "egg-view-ejs": "^2.0.1",
     "md5": "^2.2.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "silly-datetime": "^0.1.2",
     "svg-captcha": "^1.4.0"
   },
